@@ -1,13 +1,13 @@
 {
   "name": "@mjendza/entra-permissions-mcp",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "MCP server exposing Microsoft Graph permissions and Microsoft first-party apps data",
   "type": "module",
   "license": "MIT",
   "main": "dist/stdio.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mjendza/entra-permissions-mcp"
+    "url": "git+https://github.com/mjendza/entra-id-permissions-mcp.git"
   },
   "bin": {
     "entra-permissions-mcp": "dist/stdio.js"
