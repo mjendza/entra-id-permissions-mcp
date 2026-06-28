@@ -1,8 +1,8 @@
 {
   "mcpServers": {
     "entra-permissions": {
-      "command": "npx",
-      "args": ["-y", "@mjendza/entra-permissions-mcp"]
+      "command": "cmd",
+      "args": ["/c", "entra-permissions-mcp"]
     },
     "microsoft-learn": {
       "type": "http",

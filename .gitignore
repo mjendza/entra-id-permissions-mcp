@@ -3,3 +3,5 @@ dist
 *.log
 .env
 .env.local
+
+claude_code/terraform/
