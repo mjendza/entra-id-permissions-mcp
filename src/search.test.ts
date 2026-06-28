@@ -13,7 +13,8 @@ const fields = (i: (typeof items)[number]) => [i.name, i.desc];
 describe("searchRecords", () => {
   it("matches case-insensitively across fields", () => {
     const r = searchRecords(items, "mail", fields, 25);
-    expect(r.totalMatches).toBe(3); // two names + "Read mail" / "Send mail" descriptions
+    // Two items match (Mail.Read, Mail.Send) — matches are counted per item, not per field.
+    expect(r.totalMatches).toBe(2);
     expect(r.truncated).toBe(false);
   });
 

@@ -67,7 +67,7 @@ describe("searchMicrosoftApps / getMicrosoftApp", () => {
   it("fetches a full app record by AppId and returns not-found otherwise", () => {
     const known = tools.searchMicrosoftApps(data, "Azure", 1).results[0].AppId;
     expect(tools.getMicrosoftApp(data, known).found).toBe(true);
-    expect(tools.getMicrosoftApp(data, "00000000-0000-0000-0000-000000000000").found).toBe(false);
+    expect(tools.getMicrosoftApp(data, "ffffffff-ffff-ffff-ffff-ffffffffffff").found).toBe(false);
   });
 });
 
