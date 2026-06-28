@@ -1,6 +1,8 @@
 import { readFileSync } from "node:fs";
-import { fileURLToPath } from "node:url";
-import { dirname, join } from "node:path";
+import { join } from "node:path";
+import type { Config } from "./config.js";
+import type { Logger } from "./logger.js";
+import { DataFetchError } from "./errors.js";
 
 // ---------------------------------------------------------------------------
 // Record types (derived from the canonical JSON in the repo's `data/` folder)
@@ -56,31 +58,6 @@ export interface MicrosoftApp {
 // Loading
 // ---------------------------------------------------------------------------
 
-// Public CDN that serves the repo's `data/` folder, refreshed by the scrape
-// pipeline. jsDelivr is globally cached (cheap + fast) — the server fetches the
-// JSON from here at startup instead of bundling/hosting it.
-const DEFAULT_DATA_BASE_URL =
-  "https://cdn.jsdelivr.net/gh/mjendza/entra-id-permissions-mcp@main/data";
-
-function resolveBaseUrl(): string | null {
-  // ENTRA_DATA_LOCAL_ONLY skips the network entirely (offline / pure-local dev).
-  if (process.env.ENTRA_DATA_LOCAL_ONLY) return null;
-  const override = process.env.ENTRA_DATA_BASE_URL;
-  if (override !== undefined) return override.trim() === "" ? null : override.replace(/\/+$/, "");
-  return DEFAULT_DATA_BASE_URL;
-}
-
-function resolveDataDir(): string {
-  // Local fallback directory. Allow a host to point it elsewhere.
-  if (process.env.ENTRA_DATA_DIR) {
-    return process.env.ENTRA_DATA_DIR;
-  }
-  // Default: the repo's canonical `data/` folder, two levels up from this
-  // module (mcp-server/dist/data.js or mcp-server/src/data.ts -> repo/data).
-  const here = dirname(fileURLToPath(import.meta.url));
-  return join(here, "..", "..", "data");
-}
-
 function parseArray<T>(text: string, source: string): T[] {
   const parsed = JSON.parse(text);
   if (!Array.isArray(parsed)) {
@@ -89,27 +66,76 @@ function parseArray<T>(text: string, source: string): T[] {
   return parsed as T[];
 }
 
+/** Read a fetch body with a hard byte cap, guarding both the Content-Length
+ *  header and the streamed bytes so an over-sized response can't exhaust memory. */
+async function readBodyCapped(res: Response, maxBytes: number, url: string): Promise<string> {
+  const declared = res.headers.get("content-length");
+  if (declared && Number(declared) > maxBytes) {
+    throw new DataFetchError(
+      `Response too large: Content-Length ${declared} exceeds cap ${maxBytes}`,
+      url,
+      res.status,
+    );
+  }
+  if (!res.body) return res.text();
+
+  const reader = res.body.getReader();
+  const chunks: Uint8Array[] = [];
+  let total = 0;
+  for (;;) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    if (!value) continue;
+    total += value.byteLength;
+    if (total > maxBytes) {
+      await reader.cancel();
+      throw new DataFetchError(`Response exceeded ${maxBytes} bytes`, url, res.status);
+    }
+    chunks.push(value);
+  }
+  return Buffer.concat(chunks.map((c) => Buffer.from(c))).toString("utf-8");
+}
+
+/** Fetch one dataset from the remote CDN with a timeout and size cap. */
+async function fetchRemote<T>(config: Config, file: string): Promise<T[]> {
+  const url = `${config.dataBaseUrl}/${file}`;
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), config.requestTimeoutMs);
+  try {
+    const res = await fetch(url, {
+      signal: controller.signal,
+      headers: { "User-Agent": config.userAgent, Accept: "application/json" },
+    });
+    if (!res.ok) throw new DataFetchError(`HTTP ${res.status} fetching ${file}`, url, res.status);
+    return parseArray<T>(await readBodyCapped(res, config.maxResponseBytes, url), url);
+  } catch (err) {
+    if (err instanceof DataFetchError) throw err;
+    const reason = controller.signal.aborted ? `timed out after ${config.requestTimeoutMs}ms` : (err as Error).message;
+    throw new DataFetchError(`Fetch of ${file} failed: ${reason}`, url);
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
 /**
  * Load one dataset remote-first (from the public CDN) with a local-file
  * fallback if the fetch fails or remote is disabled.
  */
-async function fetchJson<T>(baseUrl: string | null, dir: string, file: string): Promise<T[]> {
-  if (baseUrl) {
-    const url = `${baseUrl}/${file}`;
+async function loadDataset<T>(config: Config, logger: Logger, file: string): Promise<T[]> {
+  if (config.dataBaseUrl) {
     try {
-      const res = await fetch(url);
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const data = parseArray<T>(await res.text(), url);
-      console.error(`[data] loaded ${file} from ${url}`);
+      const data = await fetchRemote<T>(config, file);
+      logger.log(`loaded ${file} from ${config.dataBaseUrl}/${file}`);
       return data;
     } catch (err) {
-      console.error(
-        `[data] remote fetch of ${file} failed (${(err as Error).message}); falling back to local`,
-      );
+      logger.log(`remote fetch of ${file} failed; falling back to local`, {
+        error: (err as Error).message,
+      });
     }
   }
-  const data = parseArray<T>(readFileSync(join(dir, file), "utf-8"), join(dir, file));
-  console.error(`[data] loaded ${file} from local ${dir}`);
+  const path = join(config.dataDir, file);
+  const data = parseArray<T>(readFileSync(path, "utf-8"), path);
+  logger.log(`loaded ${file} from local ${path}`);
   return data;
 }
 
@@ -130,10 +156,10 @@ let store: DataStore | null = null;
 let loading: Promise<DataStore> | null = null;
 
 /** Load and index all datasets once; subsequent calls return the cache. */
-export async function loadData(): Promise<DataStore> {
+export async function loadData(config: Config, logger: Logger): Promise<DataStore> {
   if (store) return store;
   if (loading) return loading;
-  loading = doLoad().then((s) => {
+  loading = doLoad(config, logger).then((s) => {
     store = s;
     loading = null;
     return s;
@@ -141,13 +167,11 @@ export async function loadData(): Promise<DataStore> {
   return loading;
 }
 
-async function doLoad(): Promise<DataStore> {
-  const baseUrl = resolveBaseUrl();
-  const dir = resolveDataDir();
+async function doLoad(config: Config, logger: Logger): Promise<DataStore> {
   const [appPermissions, delegatedPermissions, microsoftApps] = await Promise.all([
-    fetchJson<GraphAppRole>(baseUrl, dir, "GraphAppRoles.json"),
-    fetchJson<GraphDelegatedRole>(baseUrl, dir, "GraphDelegateRoles.json"),
-    fetchJson<MicrosoftApp>(baseUrl, dir, "MicrosoftApps.json"),
+    loadDataset<GraphAppRole>(config, logger, "GraphAppRoles.json"),
+    loadDataset<GraphDelegatedRole>(config, logger, "GraphDelegateRoles.json"),
+    loadDataset<MicrosoftApp>(config, logger, "MicrosoftApps.json"),
   ]);
 
   // Many app records omit AppRoles entirely; normalize so consumers can always iterate.

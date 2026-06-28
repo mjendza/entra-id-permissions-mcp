@@ -1,7 +1,11 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
-import { loadData } from "./data.js";
-import { searchRecords, DEFAULT_LIMIT } from "./search.js";
+import type { DataStore } from "./data.js";
+import type { Logger } from "./logger.js";
+import { DEFAULT_LIMIT } from "./search.js";
+import { jsonResult, errorResult, type ToolResult } from "./result.js";
+import { formatError } from "./errors.js";
+import * as tools from "./tools.js";
 
 const INSTRUCTIONS = `Exposes Microsoft Entra ID / Microsoft Graph permissions data.
 
@@ -14,20 +18,25 @@ Use search_* tools to find scopes/apps by keyword, get_permission for an exact s
 lookup across both Graph datasets, get_microsoft_app for a single app's full role list, and
 search_app_roles to discover which Microsoft app exposes a given role.`;
 
-/** JSON-text tool result helper. */
-function jsonResult(data: unknown) {
-  return {
-    content: [{ type: "text" as const, text: JSON.stringify(data, null, 2) }],
-  };
+export interface ServerDeps {
+  version: string;
+  data: DataStore;
+  logger: Logger;
 }
 
-export async function createServer(): Promise<McpServer> {
-  const data = await loadData();
+export function createServer({ version, data, logger }: ServerDeps): McpServer {
+  const server = new McpServer({ name: "entra-permissions-mcp", version }, { instructions: INSTRUCTIONS });
 
-  const server = new McpServer(
-    { name: "entra-permissions-mcp", version: "1.0.0" },
-    { instructions: INSTRUCTIONS },
-  );
+  // Run a tool body, converting any thrown value into an isError result and
+  // logging it (stdout is reserved for JSON-RPC).
+  const run = (name: string, fn: () => unknown): ToolResult => {
+    try {
+      return jsonResult(fn());
+    } catch (err) {
+      logger.log(`tool ${name} failed`, { error: formatError(err) });
+      return errorResult(`Tool ${name} failed: ${formatError(err)}`);
+    }
+  };
 
   const limitSchema = z
     .number()
@@ -51,25 +60,10 @@ export async function createServer(): Promise<McpServer> {
         limit: limitSchema,
       },
     },
-    async ({ query, limit }) => {
-      const res = searchRecords(
-        data.appPermissions,
-        query,
-        (p) => [p.Value, p.DisplayName, p.Description],
-        limit ?? DEFAULT_LIMIT,
-      );
-      return jsonResult({
-        totalMatches: res.totalMatches,
-        returned: res.returned,
-        results: res.results.map((p) => ({
-          Value: p.Value,
-          Id: p.Id,
-          DisplayName: p.DisplayName,
-          Description: p.Description,
-          AllowedMemberTypes: p.AllowedMemberTypes,
-        })),
-      });
-    },
+    async ({ query, limit }) =>
+      run("search_graph_application_permissions", () =>
+        tools.searchGraphApplicationPermissions(data, query, limit ?? DEFAULT_LIMIT),
+      ),
   );
 
   // 2. Search Graph Delegated permissions -----------------------------------
@@ -90,36 +84,10 @@ export async function createServer(): Promise<McpServer> {
         limit: limitSchema,
       },
     },
-    async ({ query, type, limit }) => {
-      const pool = type
-        ? data.delegatedPermissions.filter((p) => p.Type === type)
-        : data.delegatedPermissions;
-      const res = searchRecords(
-        pool,
-        query,
-        (p) => [
-          p.Value,
-          p.AdminConsentDisplayName,
-          p.AdminConsentDescription,
-          p.UserConsentDisplayName,
-          p.UserConsentDescription,
-        ],
-        limit ?? DEFAULT_LIMIT,
-      );
-      return jsonResult({
-        totalMatches: res.totalMatches,
-        returned: res.returned,
-        results: res.results.map((p) => ({
-          Value: p.Value,
-          Id: p.Id,
-          Type: p.Type,
-          AdminConsentDisplayName: p.AdminConsentDisplayName,
-          AdminConsentDescription: p.AdminConsentDescription,
-          UserConsentDisplayName: p.UserConsentDisplayName,
-          UserConsentDescription: p.UserConsentDescription,
-        })),
-      });
-    },
+    async ({ query, type, limit }) =>
+      run("search_graph_delegated_permissions", () =>
+        tools.searchGraphDelegatedPermissions(data, query, limit ?? DEFAULT_LIMIT, type),
+      ),
   );
 
   // 3. Exact permission lookup ----------------------------------------------
@@ -141,26 +109,8 @@ export async function createServer(): Promise<McpServer> {
       },
     },
     async ({ value, id, kind }) => {
-      if (!value && !id) {
-        return jsonResult({ error: "Provide either 'value' or 'id'." });
-      }
-      const which = kind ?? "any";
-      const key = (value ?? id ?? "").toLowerCase();
-
-      const application =
-        which !== "delegated"
-          ? (value ? data.appPermsByValue.get(key) : data.appPermsById.get(key)) ?? null
-          : null;
-      const delegated =
-        which !== "application"
-          ? (value ? data.delegatedByValue.get(key) : data.delegatedById.get(key)) ?? null
-          : null;
-
-      return jsonResult({
-        found: Boolean(application || delegated),
-        application,
-        delegated,
-      });
+      if (!value && !id) return errorResult("Provide either 'value' or 'id'.");
+      return run("get_permission", () => tools.getPermission(data, { value, id, kind }));
     },
   );
 
@@ -177,24 +127,10 @@ export async function createServer(): Promise<McpServer> {
         limit: limitSchema,
       },
     },
-    async ({ query, limit }) => {
-      const res = searchRecords(
-        data.microsoftApps,
-        query,
-        (a) => [a.AppDisplayName, a.AppId],
-        limit ?? DEFAULT_LIMIT,
-      );
-      return jsonResult({
-        totalMatches: res.totalMatches,
-        returned: res.returned,
-        results: res.results.map((a) => ({
-          AppId: a.AppId,
-          AppDisplayName: a.AppDisplayName,
-          Source: a.Source,
-          appRoleCount: a.AppRoles.length,
-        })),
-      });
-    },
+    async ({ query, limit }) =>
+      run("search_microsoft_apps", () =>
+        tools.searchMicrosoftApps(data, query, limit ?? DEFAULT_LIMIT),
+      ),
   );
 
   // 5. Get a single Microsoft app (with roles) ------------------------------
@@ -209,10 +145,7 @@ export async function createServer(): Promise<McpServer> {
         appId: z.string().describe("Exact application (client) ID GUID."),
       },
     },
-    async ({ appId }) => {
-      const app = data.appsById.get(appId.toLowerCase()) ?? null;
-      return jsonResult({ found: Boolean(app), app });
-    },
+    async ({ appId }) => run("get_microsoft_app", () => tools.getMicrosoftApp(data, appId)),
   );
 
   // 6. Search app roles across all Microsoft apps ---------------------------
@@ -229,42 +162,8 @@ export async function createServer(): Promise<McpServer> {
         limit: limitSchema,
       },
     },
-    async ({ query, limit }) => {
-      const q = query.trim().toLowerCase();
-      const max = limit ?? DEFAULT_LIMIT;
-      const matches: Array<{
-        AppId: string;
-        AppDisplayName: string;
-        Role: { Id: string; Value: string; DisplayName: string; Description: string };
-      }> = [];
-      let total = 0;
-
-      for (const app of data.microsoftApps) {
-        for (const role of app.AppRoles) {
-          const hit =
-            q === "" ||
-            role.Value?.toLowerCase().includes(q) ||
-            role.DisplayName?.toLowerCase().includes(q) ||
-            role.Description?.toLowerCase().includes(q);
-          if (!hit) continue;
-          total++;
-          if (matches.length < max) {
-            matches.push({
-              AppId: app.AppId,
-              AppDisplayName: app.AppDisplayName,
-              Role: {
-                Id: role.Id,
-                Value: role.Value,
-                DisplayName: role.DisplayName,
-                Description: role.Description,
-              },
-            });
-          }
-        }
-      }
-
-      return jsonResult({ totalMatches: total, returned: matches.length, results: matches });
-    },
+    async ({ query, limit }) =>
+      run("search_app_roles", () => tools.searchAppRoles(data, query, limit ?? DEFAULT_LIMIT)),
   );
 
   // Resources: raw datasets --------------------------------------------------

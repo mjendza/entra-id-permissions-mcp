@@ -3,6 +3,8 @@ export const DEFAULT_LIMIT = 25;
 export interface SearchResult<T> {
   totalMatches: number;
   returned: number;
+  /** True when more matches exist than were returned (response was capped). */
+  truncated: boolean;
   results: T[];
 }
 
@@ -36,6 +38,7 @@ export function searchRecords<T>(
   return {
     totalMatches: matches.length,
     returned: Math.min(matches.length, limit),
+    truncated: matches.length > limit,
     results: matches.slice(0, limit),
   };
 }
