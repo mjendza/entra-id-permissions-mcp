@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "entra-permissions": {
+      "command": "cmd",
+      "args": ["/c", "entra-permissions-mcp"]
+    },
+    "microsoft-learn": {
+      "type": "http",
+      "url": "https://learn.microsoft.com/api/mcp"
+    },
+    "terraform": {
+      "command": "docker",
+      "args": ["run", "-i", "--rm", "hashicorp/terraform-mcp-server"]
+    }
+  }
+}

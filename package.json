@@ -1,6 +1,6 @@
 {
   "name": "@mjendza/entra-permissions-mcp",
-  "version": "0.2.2",
+  "version": "0.5.0",
   "description": "MCP server exposing Microsoft Graph permissions and Microsoft first-party apps data",
   "type": "module",
   "license": "MIT",
