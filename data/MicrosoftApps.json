@@ -1231,6 +1231,13 @@
     "Source": "Graph"
   },
   {
+    "AppId": "d8877f27-09c0-43aa-8113-40151dae8b14",
+    "AppDisplayName": "Microsoft Intune AndroidSync",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
+    "Source": "Graph"
+  },
+  {
     "AppId": "1690c5aa-925a-4d0e-836b-722c795bd0d0",
     "AppDisplayName": "Group Configuration Processor",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
@@ -3629,6 +3636,13 @@
     "Source": "Graph"
   },
   {
+    "AppId": "fd14a986-6fe4-409a-883e-cdec1009cd54",
+    "AppDisplayName": "Intune Grouping and Targeting Client Prod",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
+    "Source": "Graph"
+  },
+  {
     "AppId": "8ad61c39-5b6e-447c-b26a-a64eee436502",
     "AppDisplayName": "M365AdminAgent",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
@@ -4461,6 +4475,105 @@
     "Source": "Graph"
   },
   {
+    "AppId": "c9d36ed4-91b3-4c87-b8d7-68d92826c96c",
+    "AppDisplayName": "Modern Workplace Customer APIs",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [
+      {
+        "Id": "d5760789-170d-4f8a-aafd-a03522e38f43",
+        "DisplayName": "Intune Windows Updates Sync Management",
+        "Description": "Allows the application to manage synchronization of Windows Updates from Intune",
+        "Value": "WindowsUpdates.IntuneSync.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "50d736c0-5102-4a54-b3f6-95509aae4293",
+        "DisplayName": "Microsoft Managed Desktop Support Manager",
+        "Description": "Allows read and write access to Microsoft Managed Desktop support tools",
+        "Value": "MmdSupport.ReadWrite",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application",
+          "User"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "cc7c4bbe-899d-4d36-931e-acd7450e2257",
+        "DisplayName": "Microsoft Managed Desktop Security Manager",
+        "Description": "Allows full access to Microsoft Managed Desktop security content",
+        "Value": "MmdSecurityManager.ReadWrite",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "User"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "e2b1b7fd-b461-407c-acc6-4a2f357fc161",
+        "DisplayName": "Microsoft Managed Desktop Service Reader",
+        "Description": "Allows read access to Microsoft Managed Desktop service content",
+        "Value": "MmdServiceAdmin.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "User"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "aa1475a5-78d9-4322-af2b-8906947c76b7",
+        "DisplayName": "Microsoft Managed Desktop Service Administrator",
+        "Description": "Allows full access to Microsoft Managed Desktop service content",
+        "Value": "MmdServiceAdmin.ReadWrite",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "User"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "c6590ff6-a8c9-4a49-a7df-97e6a0bf8025",
+        "DisplayName": "MMD Support Partner",
+        "Description": "Allows full access to MMD support partner content",
+        "Value": "MmdSupportPartner.ReadWrite",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "User"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "1dcf702a-7efe-47e6-961f-68634c4a4ecd",
+        "DisplayName": "MMD Application Tester",
+        "Description": "Allows access to MMD application tester content",
+        "Value": "MmdAppTester.ReadWrite",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application",
+          "User"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "318a1541-71b6-4e1e-ab46-874e6095cdfa",
+        "DisplayName": "Microsoft Managed Desktop Device Enroller",
+        "Description": "Allows full access to Microsoft Managed Desktop device enrollment content",
+        "Value": "MmdDeviceEnroller.ReadWrite",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application",
+          "User"
+        ],
+        "Origin": "Application"
+      }
+    ],
+    "Source": "Graph"
+  },
+  {
     "AppId": "328fd23b-de6e-462c-9433-e207470a5727",
     "AppDisplayName": "NFV Resource Provider",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
@@ -4524,6 +4637,13 @@
   {
     "AppId": "3184af01-7a88-49e0-8b55-8ecdce0aa950",
     "AppDisplayName": "Azure Cost Management XCloud",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
+    "Source": "Graph"
+  },
+  {
+    "AppId": "74bcdadc-2fdc-4bb3-8459-76d06952a0e9",
+    "AppDisplayName": "Microsoft Intune Web Company Portal",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [],
     "Source": "Graph"
@@ -4614,6 +4734,13 @@
   {
     "AppId": "5b534afd-fdc0-4b38-a77f-af25442e3149",
     "AppDisplayName": "Microsoft Support Diagnostics",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
+    "Source": "Graph"
+  },
+  {
+    "AppId": "7e313d81-57dd-4bdd-906e-337963583de3",
+    "AppDisplayName": "Intune DeviceDirectory ConfidentialClient",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [],
     "Source": "Graph"
@@ -4902,7 +5029,7 @@
       },
       {
         "Id": "e65ee1da-d1d5-467b-bdd0-3e9bb94e6e0c",
-        "DisplayName": "Read all collections in Agent Registry",
+        "DisplayName": "Read all collections in Agent Registry, except quarantined and global",
         "Description": "Allows the app to read all collections and their membership in your organization's Agent Registry without a signed-in user.",
         "Value": "AgentCollection.Read.All",
         "IsEnabled": true,
@@ -4913,7 +5040,7 @@
       },
       {
         "Id": "feb31d7d-a227-4487-898c-e014840d07b3",
-        "DisplayName": "Read and write all collections in Agent Registry",
+        "DisplayName": "Read and write all collections in Agent Registry, except quarantined and global",
         "Description": "Allows the app to create, read, update, and delete all collections and manage their membership in your organization's Agent Registry without a signed-in user.",
         "Value": "AgentCollection.ReadWrite.All",
         "IsEnabled": true,
@@ -4936,7 +5063,7 @@
       {
         "Id": "ad25cc1d-84d8-47df-a08e-b34c2e800819",
         "DisplayName": "Create agent identities without an agent blueprint parent",
-        "Description": "Allows the app to create agent identities, even if the app is not the parent agent identity blueprint.",
+        "Description": "Allows the client to create agent identities without a signed-in user, even if the client is not the parent agent identity blueprint.",
         "Value": "AgentIdentity.Create.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
@@ -4946,8 +5073,8 @@
       },
       {
         "Id": "4c390976-b2b7-42e0-9187-c6be3bead001",
-        "DisplayName": "Create agent identities linked to itself.",
-        "Description": "Allows the app to create linked agent identities without a signed-in user.",
+        "DisplayName": "Create and manage agent identities as the parent agent identity blueprint",
+        "Description": "Allows the app to create agent identities as the parent agent identity blueprint and fully manage them, including reading, updating, and deleting, without a signed-in user.",
         "Value": "AgentIdentity.CreateAsManager",
         "IsEnabled": true,
         "AllowedMemberTypes": [
@@ -4958,7 +5085,7 @@
       {
         "Id": "5b016f9b-18eb-41d4-869a-66931914d1c8",
         "DisplayName": "Delete and restore agent identities",
-        "Description": "Allows the app to delete and restore agent identities without a signed-in user.",
+        "Description": "Allows the client to delete and restore agent identities without a signed-in user.",
         "Value": "AgentIdentity.DeleteRestore.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
@@ -4969,7 +5096,7 @@
       {
         "Id": "69ee0943-4fa4-4ec8-8e52-d12e4ea661a3",
         "DisplayName": "Enable or disable agent identities",
-        "Description": "Allows the app to enable or disable agent identities without a signed-in user.",
+        "Description": "Allows the client to enable or disable agent identities without a signed-in user.",
         "Value": "AgentIdentity.EnableDisable.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
@@ -4991,7 +5118,7 @@
       {
         "Id": "dcf7150a-88d4-4fe6-9be1-c2744c455397",
         "DisplayName": "Read and write all agent identities",
-        "Description": "Allows the app to read, update, and delete agent identities without a signed-in user.",
+        "Description": "Allows the client to read, update, create, and delete agent identities without a signed-in user.",
         "Value": "AgentIdentity.ReadWrite.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
@@ -5035,7 +5162,7 @@
       {
         "Id": "7547a7d1-36fa-4479-9c31-559a600eaa4f",
         "DisplayName": "Read all agent identity blueprints",
-        "Description": "Allows the app to read all agent identity blueprints without a signed-in user.",
+        "Description": "Allows the client to read all agent identity blueprints without a signed-in user.",
         "Value": "AgentIdentityBlueprint.Read.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
@@ -5046,7 +5173,7 @@
       {
         "Id": "7fddd33b-d884-4ec0-8696-72cff90ff825",
         "DisplayName": "Read and write all agent identity blueprints.",
-        "Description": "Allows the app to read, update, create, and delete agent identity blueprints without a signed-in user.",
+        "Description": "Allows the client to read, update, create, and delete agent identity blueprints without a signed-in user.",
         "Value": "AgentIdentityBlueprint.ReadWrite.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
@@ -7651,6 +7778,17 @@
         "Origin": "Application"
       },
       {
+        "Id": "60f8cea0-2476-45c9-ab18-70e79e60ad14",
+        "DisplayName": "Manage the Microsoft Information Protection (MIP) label for M365 and security groups.",
+        "Description": "Allows the app to list groups, and to read their basic properties and manage the MIP label for all label enabled groups without a signed-in user.",
+        "Value": "Group.ManageProtection.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
         "Id": "5b567255-7703-4780-807c-7be8301ae99b",
         "DisplayName": "Read all groups",
         "Description": "Allows the app to read group properties and memberships, and read conversations for all groups, without a signed-in user.",
@@ -9169,6 +9307,17 @@
         "Origin": "Application"
       },
       {
+        "Id": "8fc84b9a-5c21-479b-ba9d-02d252d062aa",
+        "DisplayName": "Read your organization's cross tenant access policies",
+        "Description": "Allows the app to read your organization's cross tenant access policies without a signed-in user.",
+        "Value": "Policy.Read.CrossTenantAccess",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
         "Id": "bdba4817-6ba1-4a7c-8a01-be9bc7c242dd",
         "DisplayName": "Read your organization's device configuration policies",
         "Description": "Allows the application to read your organization's device configuration policies without a signed-in user.  For example, device registration policy can limit initial provisioning controls using quota restrictions, additional authentication and authorization checks.",
@@ -9855,6 +10004,17 @@
         "DisplayName": "Read and write Records Management configuration, labels and policies",
         "Description": "Allow the application to create, update and delete any data from Records Management, such as configuration, labels, and policies without the signed in user.",
         "Value": "RecordsManagement.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "faa08cc0-0dcd-4ea9-9f9c-8b16f842b36e",
+        "DisplayName": "Read RemoteTenantGroups information",
+        "Description": "Allows the app to read available properties on remoteTenantGroups, without a signed-in user.",
+        "Value": "RemoteTenantGroups.Read.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -15414,6 +15574,13 @@
     "Source": "Graph"
   },
   {
+    "AppId": "a882f5bd-2492-44fe-bb55-a811aab59451",
+    "AppDisplayName": "Intune Compliance Client Prod",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
+    "Source": "Graph"
+  },
+  {
     "AppId": "59534ab2-0027-4a45-b9ec-61d1b6b871c9",
     "AppDisplayName": "Power Platform Connector Management Service - PROD",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
@@ -16146,6 +16313,13 @@
   {
     "AppId": "b15f3d14-f6d1-4c0d-93da-d4136c97f006",
     "AppDisplayName": "Azure Storage Discovery Resource Provider",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
+    "Source": "Graph"
+  },
+  {
+    "AppId": "95813a7c-0efb-4173-a866-c2079e02378a",
+    "AppDisplayName": "MMD Intune Partner Sync",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [],
     "Source": "Graph"
@@ -34263,12 +34437,6 @@
   {
     "AppId": "47629505-c2b6-4a80-adb1-9b3a3d233b7b",
     "AppDisplayName": "Microsoft Exchange Web Services",
-    "AppOwnerOrganizationId": "",
-    "Source": "EntraDocs"
-  },
-  {
-    "AppId": "74bcdadc-2fdc-4bb3-8459-76d06952a0e9",
-    "AppDisplayName": "Microsoft Intune Web Company Portal",
     "AppOwnerOrganizationId": "",
     "Source": "EntraDocs"
   },
