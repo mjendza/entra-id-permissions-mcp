@@ -935,6 +935,25 @@
     "Source": "Graph"
   },
   {
+    "AppId": "2b8844d8-6c87-4fce-97a0-fbec9006e140",
+    "AppDisplayName": "AssistAPI",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [
+      {
+        "Id": "7f4267a9-db7c-4f04-9302-63f5344c62c6",
+        "DisplayName": "Assist.All",
+        "Description": "allow access to all of assist api",
+        "Value": "Assist.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      }
+    ],
+    "Source": "Graph"
+  },
+  {
     "AppId": "8c420feb-03df-47cc-8a05-55df0cf3064b",
     "AppDisplayName": "Azure Update Manager",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
@@ -2860,6 +2879,13 @@
   {
     "AppId": "035f9e1d-4f00-4419-bf50-bf2d87eb4878",
     "AppDisplayName": "Azure Monitor Restricted",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
+    "Source": "Graph"
+  },
+  {
+    "AppId": "db44d869-9bce-4198-809b-a806756b0d31",
+    "AppDisplayName": "ExchangeRevocationSync",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [],
     "Source": "Graph"
@@ -4850,7 +4876,7 @@
   },
   {
     "AppId": "dc457883-bafe-4f8b-a333-29685e7eaa9e",
-    "AppDisplayName": "PPE-DataResidencyService",
+    "AppDisplayName": "DataResidencyServiceApp",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [],
     "Source": "Graph"
@@ -9351,6 +9377,17 @@
         "Origin": "Application"
       },
       {
+        "Id": "447f996a-7c58-4ce7-9a9e-da80381a45ab",
+        "DisplayName": "Read your organization's recovery policy",
+        "Description": "Allows the application to read and update the organization's recovery policy without a signed-in user.",
+        "Value": "Policy.Read.Recovery",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
         "Id": "77c863fd-06c0-47ce-a7eb-49773e89d319",
         "DisplayName": "Read and write your organization's directory access review default policy",
         "Description": "Allows the app to read and write your organization's directory access review default policy without a signed-in user.",
@@ -11694,6 +11731,28 @@
         "Origin": "Application"
       },
       {
+        "Id": "85643b08-0e25-4d99-9d68-04ba0fef9740",
+        "DisplayName": "Create custom emoji",
+        "Description": "Create custom emoji without a signed-in user.",
+        "Value": "TeamworkCustomEmoji.Create.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "1efa3d37-1703-4685-9a59-baf6296fb956",
+        "DisplayName": "Read custom emoji",
+        "Description": "Read custom emoji without a signed-in user.",
+        "Value": "TeamworkCustomEmoji.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
         "Id": "0591bafd-7c1c-4c30-a2a5-2b9aacb1dfe8",
         "DisplayName": "Read Teams devices",
         "Description": "Allow the app to read the management data for Teams devices, without a signed-in user.",
@@ -12391,6 +12450,28 @@
         "DisplayName": "Read and write all users' QR methods",
         "Description": "Allows the application to read and write QR authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods.",
         "Value": "UserAuthMethod-QR.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "94ed018c-a499-47e0-beef-803b93873ece",
+        "DisplayName": "Read and write all users' external authentication methods",
+        "Description": "Allows the app to read the keys associated with the user representing a resource account.",
+        "Value": "UserAuthMethod-ResourceKey.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "1bf7461f-222a-4525-9760-f7739228d0f4",
+        "DisplayName": "Read and delete all users' external authentication methods",
+        "Description": "Allows the app to read and delete the keys associated with the user representing a resource account.",
+        "Value": "UserAuthMethod-ResourceKey.ReadWrite.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
