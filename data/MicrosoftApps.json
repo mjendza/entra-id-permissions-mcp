@@ -1271,6 +1271,13 @@
     "Source": "Graph"
   },
   {
+    "AppId": "2d215f00-80d1-4f4b-a6c8-28080dfafc81",
+    "AppDisplayName": "Microsoft Authorization System Policy",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
+    "Source": "Graph"
+  },
+  {
     "AppId": "c9a559d2-7aab-4f13-a6ed-e7e9c52aec87",
     "AppDisplayName": "Microsoft Forms",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
@@ -3513,6 +3520,13 @@
     "Source": "Graph"
   },
   {
+    "AppId": "792f12a3-4a76-40f7-9037-7cdf6ac226af",
+    "AppDisplayName": "Engage Grouper",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
+    "Source": "Graph"
+  },
+  {
     "AppId": "f77c2a8f-8a0a-4776-8e0a-bcb2549610ca",
     "AppDisplayName": "RPSaaS Meta RP",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
@@ -3679,6 +3693,13 @@
   {
     "AppId": "934d626a-1ead-4a36-a77d-12ec63b87a0d",
     "AppDisplayName": "Microsoft Rights Management Services Default",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
+    "Source": "Graph"
+  },
+  {
+    "AppId": "4eaceb75-fe6c-4953-b873-0fd565ecd334",
+    "AppDisplayName": "Request Approvals Write Platform",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [],
     "Source": "Graph"
@@ -4927,6 +4948,13 @@
   {
     "AppId": "3471ca03-f150-4759-88e6-0bfc97daf723",
     "AppDisplayName": "OneCert-AzureDns-Prod",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
+    "Source": "Graph"
+  },
+  {
+    "AppId": "c4bd54e4-c607-435b-8a5a-0d61edff7554",
+    "AppDisplayName": "Intune Mobile Application Management Client",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [],
     "Source": "Graph"
@@ -13452,6 +13480,13 @@
     "Source": "Graph"
   },
   {
+    "AppId": "b8566c1c-2b37-4f6b-97ad-9aaf1fc20560",
+    "AppDisplayName": "Intune MonoDeviceService ConfidentialClient",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
+    "Source": "Graph"
+  },
+  {
     "AppId": "7ae5462d-d9d1-42f6-93ca-198d7b0ca997",
     "AppDisplayName": "Microsoft Security Data Connectors",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
@@ -13885,6 +13920,13 @@
   {
     "AppId": "608f6f31-fed0-4f7b-809f-90f6c9b3de78",
     "AppDisplayName": "Azure Maps Resource Provider",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
+    "Source": "Graph"
+  },
+  {
+    "AppId": "1a4b5304-a0fd-4017-8a3d-466fc083b73e",
+    "AppDisplayName": "MSATenantRestrictions",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [],
     "Source": "Graph"
