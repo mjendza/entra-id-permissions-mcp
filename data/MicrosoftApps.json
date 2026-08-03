@@ -346,21 +346,10 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
-        "Id": "ce6129ca-e2fe-4201-9761-31c8e2752088",
-        "DisplayName": "Read access to Alchemy PL Intune data",
-        "Description": "Read access to Alchemy PL Intune data",
-        "Value": "Alchemy.PowerLift.Intune.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "06761e8b-0d27-430c-9d46-bfacea52f6a7",
-        "DisplayName": "Read access to Alchemy PL Outlook Mac data",
-        "Description": "Read access to Alchemy PL Outlook Mac data",
-        "Value": "Alchemy.PowerLift.OutlookMac.Read",
+        "Id": "3d79c929-50e8-47d2-b1b7-924e5a5a157c",
+        "DisplayName": "Read access to Alchemy PL Authenticator data",
+        "Description": "Read access to Alchemy PL Authenticator data",
+        "Value": "Alchemy.PowerLift.Authenticator.Read",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -379,10 +368,21 @@
         "Origin": "Application"
       },
       {
-        "Id": "3d79c929-50e8-47d2-b1b7-924e5a5a157c",
-        "DisplayName": "Read access to Alchemy PL Authenticator data",
-        "Description": "Read access to Alchemy PL Authenticator data",
-        "Value": "Alchemy.PowerLift.Authenticator.Read",
+        "Id": "06761e8b-0d27-430c-9d46-bfacea52f6a7",
+        "DisplayName": "Read access to Alchemy PL Outlook Mac data",
+        "Description": "Read access to Alchemy PL Outlook Mac data",
+        "Value": "Alchemy.PowerLift.OutlookMac.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "ce6129ca-e2fe-4201-9761-31c8e2752088",
+        "DisplayName": "Read access to Alchemy PL Intune data",
+        "Description": "Read access to Alchemy PL Intune data",
+        "Value": "Alchemy.PowerLift.Intune.Read",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -1821,98 +1821,10 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
-        "Id": "68c6d621-ef73-4169-82d9-8a3e930a2087",
-        "DisplayName": "Have full access to the Chat Service Aggregator",
-        "Description": "Allow application full access to the Chat service aggregator on behalf of the signed-in user",
-        "Value": "user_impersonation",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "9125c627-3755-4ad3-8742-4d6b193c4fc2",
-        "DisplayName": "Read all filtered hierarchy",
-        "Description": "Allow reading of all filtered hierarchy",
-        "Value": "filteredhierarchy.read.all",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "8762e452-5668-459a-b06a-b8f7c8469dd2",
-        "DisplayName": "Read channel messages",
-        "Description": "Allows an application to read the messages in a channel",
-        "Value": "channelmessage.read.all",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "6ca54517-8a0c-421a-b622-4616966bdd75",
-        "DisplayName": "teamworktag.readwrite.all",
-        "Description": "Read or Write Access to Targeting Tag APIs",
-        "Value": "teamworktag.readwrite.all",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "182611cf-791c-4a5a-ad8a-73a350a8acfd",
-        "DisplayName": "teamsettings.readwrite.all",
-        "Description": "Temp. scope for TGS APIs to consume Targeting APIs",
-        "Value": "teamsettings.readwrite.all",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "95c0908c-6f05-4ffd-894c-ca317e39b023",
-        "DisplayName": "Read all tag members",
-        "Description": "Allow reading of all tag members",
-        "Value": "tagmembers.read.all",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "5309cf8f-3921-43c0-9ca9-0f4805e77c6c",
-        "DisplayName": "channel.read.all",
-        "Description": "Allow reading all channel objects",
-        "Value": "channel.read.all",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "4c3d78f3-c4de-458d-9394-22e459393232",
-        "DisplayName": "chat.read.all",
-        "Description": "Allows reading of all chats",
-        "Value": "chat.read.all",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "855fb32a-d020-4bb6-a6de-b4973e6fb72d",
-        "DisplayName": "scheduledtags.readwrite.all",
-        "Description": "Update scheduled tasks",
-        "Value": "scheduledtags.readwrite.all",
+        "Id": "811e23df-61a9-44db-9987-e37355ae33b1",
+        "DisplayName": "nodeaccess.read.all",
+        "Description": "Allows read all on node access",
+        "Value": "nodeaccess.read.all",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -1931,10 +1843,98 @@
         "Origin": "Application"
       },
       {
-        "Id": "811e23df-61a9-44db-9987-e37355ae33b1",
-        "DisplayName": "nodeaccess.read.all",
-        "Description": "Allows read all on node access",
-        "Value": "nodeaccess.read.all",
+        "Id": "855fb32a-d020-4bb6-a6de-b4973e6fb72d",
+        "DisplayName": "scheduledtags.readwrite.all",
+        "Description": "Update scheduled tasks",
+        "Value": "scheduledtags.readwrite.all",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "4c3d78f3-c4de-458d-9394-22e459393232",
+        "DisplayName": "chat.read.all",
+        "Description": "Allows reading of all chats",
+        "Value": "chat.read.all",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "5309cf8f-3921-43c0-9ca9-0f4805e77c6c",
+        "DisplayName": "channel.read.all",
+        "Description": "Allow reading all channel objects",
+        "Value": "channel.read.all",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "95c0908c-6f05-4ffd-894c-ca317e39b023",
+        "DisplayName": "Read all tag members",
+        "Description": "Allow reading of all tag members",
+        "Value": "tagmembers.read.all",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "182611cf-791c-4a5a-ad8a-73a350a8acfd",
+        "DisplayName": "teamsettings.readwrite.all",
+        "Description": "Temp. scope for TGS APIs to consume Targeting APIs",
+        "Value": "teamsettings.readwrite.all",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "6ca54517-8a0c-421a-b622-4616966bdd75",
+        "DisplayName": "teamworktag.readwrite.all",
+        "Description": "Read or Write Access to Targeting Tag APIs",
+        "Value": "teamworktag.readwrite.all",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "8762e452-5668-459a-b06a-b8f7c8469dd2",
+        "DisplayName": "Read channel messages",
+        "Description": "Allows an application to read the messages in a channel",
+        "Value": "channelmessage.read.all",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "9125c627-3755-4ad3-8742-4d6b193c4fc2",
+        "DisplayName": "Read all filtered hierarchy",
+        "Description": "Allow reading of all filtered hierarchy",
+        "Value": "filteredhierarchy.read.all",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "68c6d621-ef73-4169-82d9-8a3e930a2087",
+        "DisplayName": "Have full access to the Chat Service Aggregator",
+        "Description": "Allow application full access to the Chat service aggregator on behalf of the signed-in user",
+        "Value": "user_impersonation",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -3752,43 +3752,10 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
-        "Id": "87f88136-d120-40e4-b53a-c4a275d08025",
-        "DisplayName": "SecurityCompliance.RBAC.OCE.Write",
-        "Description": "Permission to call SecurityCompliance.RBAC Write-able APIs in OCE scenarios",
-        "Value": "SecurityCompliance.RBAC.OCE.Write",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "f80a7637-92dd-4f51-84c1-75405ef871aa",
-        "DisplayName": "SecurityCompliance.RBAC.OCE.Read",
-        "Description": "Permission to call SecurityCompliance.RBAC Get APIs in OCE scenarios",
-        "Value": "SecurityCompliance.RBAC.OCE.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "9ee3c580-6006-4c03-b20f-5bc264cd59b9",
-        "DisplayName": "SecurityCompliance.Partner.PAM.Write",
-        "Description": "Permission to call SecurityCompliance.Partner.PAM Write-able APIs",
-        "Value": "SecurityCompliance.Partner.PAM.Write",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "4e2f52a2-980a-4eae-be32-3127b7c5f4e8",
-        "DisplayName": "SecurityCompliance.Partner.PAM.Read",
-        "Description": "Permission to call SecurityCompliance.Partner.PAM Get APIs",
-        "Value": "SecurityCompliance.Partner.PAM.Read",
+        "Id": "e6f09bc4-a49b-4dc4-8923-c7e2cee4c01d",
+        "DisplayName": "SecurityCompliance.RBAC.Read",
+        "Description": "Permission to call SecurityCompliance.RBAC Get APIs",
+        "Value": "SecurityCompliance.RBAC.Read",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -3807,10 +3774,43 @@
         "Origin": "Application"
       },
       {
-        "Id": "e6f09bc4-a49b-4dc4-8923-c7e2cee4c01d",
-        "DisplayName": "SecurityCompliance.RBAC.Read",
-        "Description": "Permission to call SecurityCompliance.RBAC Get APIs",
-        "Value": "SecurityCompliance.RBAC.Read",
+        "Id": "4e2f52a2-980a-4eae-be32-3127b7c5f4e8",
+        "DisplayName": "SecurityCompliance.Partner.PAM.Read",
+        "Description": "Permission to call SecurityCompliance.Partner.PAM Get APIs",
+        "Value": "SecurityCompliance.Partner.PAM.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "9ee3c580-6006-4c03-b20f-5bc264cd59b9",
+        "DisplayName": "SecurityCompliance.Partner.PAM.Write",
+        "Description": "Permission to call SecurityCompliance.Partner.PAM Write-able APIs",
+        "Value": "SecurityCompliance.Partner.PAM.Write",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "f80a7637-92dd-4f51-84c1-75405ef871aa",
+        "DisplayName": "SecurityCompliance.RBAC.OCE.Read",
+        "Description": "Permission to call SecurityCompliance.RBAC Get APIs in OCE scenarios",
+        "Value": "SecurityCompliance.RBAC.OCE.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "87f88136-d120-40e4-b53a-c4a275d08025",
+        "DisplayName": "SecurityCompliance.RBAC.OCE.Write",
+        "Description": "Permission to call SecurityCompliance.RBAC Write-able APIs in OCE scenarios",
+        "Value": "SecurityCompliance.RBAC.OCE.Write",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -5549,7 +5549,7 @@
       {
         "Id": "1bfefb4e-e0b5-418b-a88f-73c46d2cc8e9",
         "DisplayName": "Read and write all applications",
-        "Description": "Allows the app to create, read, update and delete applications and service principals without a signed-in user.  Does not allow management of consent grants.",
+        "Description": "Allows the app to create, read, update and delete applications and service principals without a signed-in user. Allows management of app role assignments, except those exposed by Microsoft Graph. Does not allow management of delegated permission grants.",
         "Value": "Application.ReadWrite.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
@@ -12314,7 +12314,7 @@
       {
         "Id": "50483e42-d915-4231-9639-7fdb7fd190e5",
         "DisplayName": "Read and write all users' authentication methods ",
-        "Description": "Allows the application to read and write authentication methods of all users in your organization, without a signed-in user.                       Authentication methods include things like a user’s phone numbers and Authenticator app settings. This                      does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods",
+        "Description": "Allows the application to read and write authentication methods of all users in your organization, without a signed-in user.                       Authentication methods include things like a user's phone numbers and Authenticator app settings. This                      does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods",
         "Value": "UserAuthenticationMethod.ReadWrite.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
@@ -12836,6 +12836,13 @@
     "Source": "Graph"
   },
   {
+    "AppId": "89e9c2d3-7281-441d-922a-f067e03ba840",
+    "AppDisplayName": "Skype and Teams Real Time Telemetry",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
+    "Source": "Graph"
+  },
+  {
     "AppId": "4ac7d521-0382-477b-b0f8-7e1d95f85ca2",
     "AppDisplayName": "Azure Analysis Services",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
@@ -12878,6 +12885,13 @@
   {
     "AppId": "c9224372-5534-42cb-a48b-8db4f4a3892e",
     "AppDisplayName": "MS Teams Griffin Assistant",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
+    "Source": "Graph"
+  },
+  {
+    "AppId": "acc07cbb-e7af-485c-a042-9b0fe9216595",
+    "AppDisplayName": "Intune Application Protection CA Client",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [],
     "Source": "Graph"
@@ -13266,153 +13280,10 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
-        "Id": "03830c81-7471-499e-a514-e86f71829003",
-        "DisplayName": "RemPolicyManager",
-        "Description": "Rem Policy Manager",
-        "Value": "RemPolicyManager",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "66b0d3be-66cc-465d-852a-87d76566ce29",
-        "DisplayName": "PartnerDetailsManager",
-        "Description": "Partner Details Manager",
-        "Value": "PartnerDetailsManager",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "a010eb98-c8e4-40c5-afc7-87df9f063e89",
-        "DisplayName": "FullTrustProjectReader",
-        "Description": "Full Trust Project Reader",
-        "Value": "FullTrustProjectReader",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "501b1467-43a9-475e-9fbb-5e840ff5b597",
-        "DisplayName": "FullTrustBillingSubscriptionRefundManager",
-        "Description": "Full Trust Billing Subscription Refund Manager",
-        "Value": "FullTrustBillingSubscriptionRefundManager",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "1cbc9fa5-af3f-44ad-9455-35ef4dd212aa",
-        "DisplayName": "AddressCustomerMasterReader",
-        "Description": "Address Customer Master Reader",
-        "Value": "AddressCustomerMasterReader",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "a589c920-4000-431e-8a26-3c849e60d9e8",
-        "DisplayName": "CustomerReader",
-        "Description": "Customer Reader",
-        "Value": "CustomerReader",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "8e62a787-fdef-400f-86a5-c8ba447b1e3a",
-        "DisplayName": "BillingPeriodReader",
-        "Description": "Billing Period Reader",
-        "Value": "BillingPeriodReader",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "88c2cc2d-c66c-4343-83ae-31fd6fd413b6",
-        "DisplayName": "ProjectReader",
-        "Description": "Project Reader",
-        "Value": "ProjectReader",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "73ba0d8a-0f84-44f8-9857-fb364934f4db",
-        "DisplayName": "RefreshManager",
-        "Description": "Refresh Manager",
-        "Value": "RefreshManager",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "3c3a3b03-4791-4e89-8753-fa338df5564d",
-        "DisplayName": "CustomerOffboardingManager",
-        "Description": "Customer Offboarding Manager",
-        "Value": "CustomerOffboardingManager",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "42f62651-2fce-49b0-8b8a-b2c36bdb2c28",
-        "DisplayName": "FullTrustInternalBillingAccountReader",
-        "Description": "Full Trust Internal Billing Account Reader",
-        "Value": "FullTrustInternalBillingAccountReader",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "ddbd0f71-1ff8-4335-a4b5-420bab16e11e",
-        "DisplayName": "IndirectResellerOffboardingManager",
-        "Description": "Indirect Reseller Offboarding Manager",
-        "Value": "IndirectResellerOffboardingManager",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "54bff1ce-0f2d-4eb3-a2f0-49d67447a80e",
-        "DisplayName": "PartnerOffboardingManager",
-        "Description": "Partner Offboarding Manager",
-        "Value": "PartnerOffboardingManager",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "b0096bea-94b4-42b2-990c-6eedd19f4f4a",
-        "DisplayName": "LegacyManager",
-        "Description": "Manger of legacy APIs",
-        "Value": "LegacyManager",
+        "Id": "1224c7b4-5fd0-40e8-a122-2fb278e6d012",
+        "DisplayName": "FullTrustEAPartnerOrganizationsReader",
+        "Description": "FullTrust EA Partner Organizations Reader",
+        "Value": "FullTrustEAPartnerOrganizationsReader",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -13431,10 +13302,153 @@
         "Origin": "Application"
       },
       {
-        "Id": "1224c7b4-5fd0-40e8-a122-2fb278e6d012",
-        "DisplayName": "FullTrustEAPartnerOrganizationsReader",
-        "Description": "FullTrust EA Partner Organizations Reader",
-        "Value": "FullTrustEAPartnerOrganizationsReader",
+        "Id": "b0096bea-94b4-42b2-990c-6eedd19f4f4a",
+        "DisplayName": "LegacyManager",
+        "Description": "Manger of legacy APIs",
+        "Value": "LegacyManager",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "54bff1ce-0f2d-4eb3-a2f0-49d67447a80e",
+        "DisplayName": "PartnerOffboardingManager",
+        "Description": "Partner Offboarding Manager",
+        "Value": "PartnerOffboardingManager",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "ddbd0f71-1ff8-4335-a4b5-420bab16e11e",
+        "DisplayName": "IndirectResellerOffboardingManager",
+        "Description": "Indirect Reseller Offboarding Manager",
+        "Value": "IndirectResellerOffboardingManager",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "42f62651-2fce-49b0-8b8a-b2c36bdb2c28",
+        "DisplayName": "FullTrustInternalBillingAccountReader",
+        "Description": "Full Trust Internal Billing Account Reader",
+        "Value": "FullTrustInternalBillingAccountReader",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "3c3a3b03-4791-4e89-8753-fa338df5564d",
+        "DisplayName": "CustomerOffboardingManager",
+        "Description": "Customer Offboarding Manager",
+        "Value": "CustomerOffboardingManager",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "73ba0d8a-0f84-44f8-9857-fb364934f4db",
+        "DisplayName": "RefreshManager",
+        "Description": "Refresh Manager",
+        "Value": "RefreshManager",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "88c2cc2d-c66c-4343-83ae-31fd6fd413b6",
+        "DisplayName": "ProjectReader",
+        "Description": "Project Reader",
+        "Value": "ProjectReader",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "8e62a787-fdef-400f-86a5-c8ba447b1e3a",
+        "DisplayName": "BillingPeriodReader",
+        "Description": "Billing Period Reader",
+        "Value": "BillingPeriodReader",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "a589c920-4000-431e-8a26-3c849e60d9e8",
+        "DisplayName": "CustomerReader",
+        "Description": "Customer Reader",
+        "Value": "CustomerReader",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "1cbc9fa5-af3f-44ad-9455-35ef4dd212aa",
+        "DisplayName": "AddressCustomerMasterReader",
+        "Description": "Address Customer Master Reader",
+        "Value": "AddressCustomerMasterReader",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "501b1467-43a9-475e-9fbb-5e840ff5b597",
+        "DisplayName": "FullTrustBillingSubscriptionRefundManager",
+        "Description": "Full Trust Billing Subscription Refund Manager",
+        "Value": "FullTrustBillingSubscriptionRefundManager",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "a010eb98-c8e4-40c5-afc7-87df9f063e89",
+        "DisplayName": "FullTrustProjectReader",
+        "Description": "Full Trust Project Reader",
+        "Value": "FullTrustProjectReader",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "66b0d3be-66cc-465d-852a-87d76566ce29",
+        "DisplayName": "PartnerDetailsManager",
+        "Description": "Partner Details Manager",
+        "Value": "PartnerDetailsManager",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "03830c81-7471-499e-a514-e86f71829003",
+        "DisplayName": "RemPolicyManager",
+        "Description": "Rem Policy Manager",
+        "Value": "RemPolicyManager",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -15473,11 +15487,11 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
-        "Id": "2becb389-af30-4221-8e0a-3384b5a0c656",
-        "DisplayName": "Permission for Survivable Branch Appliance (SBA) only",
-        "Description": "Grant Sba Appliance permissions",
-        "Value": "application_access_custom_sba_appliance",
-        "IsEnabled": true,
+        "Id": "f9d2a51f-70e2-41af-b617-3fceaa33ae55",
+        "DisplayName": "Get Communication data",
+        "Description": "Get communication data for the tenant.",
+        "Value": "Communications.Get",
+        "IsEnabled": false,
         "AllowedMemberTypes": [
           "Application"
         ],
@@ -15495,11 +15509,11 @@
         "Origin": "Application"
       },
       {
-        "Id": "f9d2a51f-70e2-41af-b617-3fceaa33ae55",
-        "DisplayName": "Get Communication data",
-        "Description": "Get communication data for the tenant.",
-        "Value": "Communications.Get",
-        "IsEnabled": false,
+        "Id": "2becb389-af30-4221-8e0a-3384b5a0c656",
+        "DisplayName": "Permission for Survivable Branch Appliance (SBA) only",
+        "Description": "Grant Sba Appliance permissions",
+        "Value": "application_access_custom_sba_appliance",
+        "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
         ],
@@ -16873,6 +16887,13 @@
     "AppId": "14d82eec-204b-4c2f-b7e8-296a70dab67e",
     "AppDisplayName": "Microsoft Graph Command Line Tools",
     "AppOwnerOrganizationId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "AppRoles": [],
+    "Source": "Graph"
+  },
+  {
+    "AppId": "09213cdc-9f30-4e82-aa6f-9b6e8d82dab3",
+    "AppDisplayName": "Microsoft Tech Community",
+    "AppOwnerOrganizationId": "cdc5aeea-15c5-4db6-b079-fcadd2505dc2",
     "AppRoles": [],
     "Source": "Graph"
   },
@@ -38983,6 +39004,24 @@
   {
     "AppId": "7347eb49-7a1a-43c5-8eac-a5cd1d1c7cf0",
     "AppDisplayName": "AzureAISearchMicrosoftRightsMgmntService",
+    "AppOwnerOrganizationId": "",
+    "Source": "EntraDocs"
+  },
+  {
+    "AppId": "cbd93bc2-71e5-4566-b3a7-595d8eeca6e8",
+    "AppDisplayName": "Microsoft-ServiceFabricETW",
+    "AppOwnerOrganizationId": "",
+    "Source": "EntraDocs"
+  },
+  {
+    "AppId": "0f80e901-8f4c-449a-bf90-13d5d082f187",
+    "AppDisplayName": "IAppHostPathMapper2MapPathMethod",
+    "AppOwnerOrganizationId": "",
+    "Source": "EntraDocs"
+  },
+  {
+    "AppId": "d209f6fa-3839-4d70-b83f-60b1c64d0e8f",
+    "AppDisplayName": "MicrosoftEntraSecurityGroupEnableMIPLabels",
     "AppOwnerOrganizationId": "",
     "Source": "EntraDocs"
   }
