@@ -1692,58 +1692,10 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
-        "Id": "c246da7c-436d-4ac5-910f-017a012341f0",
-        "DisplayName": "Read and write access to a list of most recently used documents and locations for the user",
-        "Description": "Allows the app read and write access to a list of user’s most recently used documents and locations",
-        "Value": "MRU.ReadWrite",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application",
-          "User"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "018e07ee-3746-48e3-8427-3b141199b5d5",
-        "DisplayName": "Access connected services for the user",
-        "Description": "Allows the app to access connected services for the user",
-        "Value": "DiscoveryConnectedServices.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application",
-          "User"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "8cba7bad-850f-4d75-904f-8c724092bbc5",
-        "DisplayName": "Read and write access to connected services for the user",
-        "Description": "Allows the app read and write access to connected services for the user",
-        "Value": "DiscoveryConnectedServices.ReadWrite",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application",
-          "User"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "e7c1e95b-7e6c-49ab-afcc-323ccecc029e",
-        "DisplayName": "Access a list of documents shared with user",
-        "Description": "Allows the app to access a list of documents shared with user",
-        "Value": "SharedWithMe.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application",
-          "User"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "faf03b3c-f5b2-4a6e-97a6-f021ba310a83",
-        "DisplayName": "Access a list of most recently used documents and locations for the user",
-        "Description": "Allows the app to access a list of user’s most recently used documents and locations",
-        "Value": "MRU.Read",
+        "Id": "83c08380-fd2d-433a-99e3-adc7302ffc6c",
+        "DisplayName": "Access user settings for Office applications",
+        "Description": "Allows the app to access user settings for Office applications",
+        "Value": "RoamingUserSettings.Read",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application",
@@ -1764,10 +1716,58 @@
         "Origin": "Application"
       },
       {
-        "Id": "83c08380-fd2d-433a-99e3-adc7302ffc6c",
-        "DisplayName": "Access user settings for Office applications",
-        "Description": "Allows the app to access user settings for Office applications",
-        "Value": "RoamingUserSettings.Read",
+        "Id": "faf03b3c-f5b2-4a6e-97a6-f021ba310a83",
+        "DisplayName": "Access a list of most recently used documents and locations for the user",
+        "Description": "Allows the app to access a list of user’s most recently used documents and locations",
+        "Value": "MRU.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application",
+          "User"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "e7c1e95b-7e6c-49ab-afcc-323ccecc029e",
+        "DisplayName": "Access a list of documents shared with user",
+        "Description": "Allows the app to access a list of documents shared with user",
+        "Value": "SharedWithMe.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application",
+          "User"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "8cba7bad-850f-4d75-904f-8c724092bbc5",
+        "DisplayName": "Read and write access to connected services for the user",
+        "Description": "Allows the app read and write access to connected services for the user",
+        "Value": "DiscoveryConnectedServices.ReadWrite",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application",
+          "User"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "018e07ee-3746-48e3-8427-3b141199b5d5",
+        "DisplayName": "Access connected services for the user",
+        "Description": "Allows the app to access connected services for the user",
+        "Value": "DiscoveryConnectedServices.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application",
+          "User"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "c246da7c-436d-4ac5-910f-017a012341f0",
+        "DisplayName": "Read and write access to a list of most recently used documents and locations for the user",
+        "Description": "Allows the app read and write access to a list of user’s most recently used documents and locations",
+        "Value": "MRU.ReadWrite",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application",
@@ -2737,32 +2737,10 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
-        "Id": "78ff4d1f-611d-4a41-9989-698762b46a0e",
-        "DisplayName": "Read and manage AllowSelfServicePurchase policy settings",
-        "Description": "Allows the app to read and manage AllowSelfServicePurchase policy settings, which govern the availability of self-service purchases by non-admin members of your organization.",
-        "Value": "Policy.ReadWrite.AllowSelfServicePurchase",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "5803e913-b904-44a0-9928-864642a45960",
-        "DisplayName": "Read AllowSelfServicePurchase policy settings",
-        "Description": "Allows the app to read AllowSelfServicePurchase policy settings, which govern the availability of self-service purchases by non-admin members of your organization.",
-        "Value": "Policy.Read.AllowSelfServicePurchase",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "cbbf6a32-6dcd-4f22-9be7-ffb128119fae",
-        "DisplayName": "LicenseManager.Fulfillment",
-        "Description": "Allows the application to submit Fulfillment actions.",
-        "Value": "LicenseManager.Fulfillment",
+        "Id": "9a7146cc-f57d-4b51-83a1-4e2a1b31b749",
+        "DisplayName": "LicensedProduct.Read.All",
+        "Description": "Enables the client to read all Licensed Product information.",
+        "Value": "LicensedProduct.Read.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -2781,10 +2759,32 @@
         "Origin": "Application"
       },
       {
-        "Id": "9a7146cc-f57d-4b51-83a1-4e2a1b31b749",
-        "DisplayName": "LicensedProduct.Read.All",
-        "Description": "Enables the client to read all Licensed Product information.",
-        "Value": "LicensedProduct.Read.All",
+        "Id": "cbbf6a32-6dcd-4f22-9be7-ffb128119fae",
+        "DisplayName": "LicenseManager.Fulfillment",
+        "Description": "Allows the application to submit Fulfillment actions.",
+        "Value": "LicenseManager.Fulfillment",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "5803e913-b904-44a0-9928-864642a45960",
+        "DisplayName": "Read AllowSelfServicePurchase policy settings",
+        "Description": "Allows the app to read AllowSelfServicePurchase policy settings, which govern the availability of self-service purchases by non-admin members of your organization.",
+        "Value": "Policy.Read.AllowSelfServicePurchase",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "78ff4d1f-611d-4a41-9989-698762b46a0e",
+        "DisplayName": "Read and manage AllowSelfServicePurchase policy settings",
+        "Description": "Allows the app to read and manage AllowSelfServicePurchase policy settings, which govern the availability of self-service purchases by non-admin members of your organization.",
+        "Value": "Policy.ReadWrite.AllowSelfServicePurchase",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -3374,120 +3374,10 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
-        "Id": "6a37fcfd-2481-4625-b88f-50bd819a07cc",
-        "DisplayName": "AgentInstance.ReadSelected.All",
-        "Description": "Allows the app to read Agent ID instances",
-        "Value": "AgentInstance.ReadSelected.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "c3d0ca49-f209-4c91-9c9e-0cf8a8475a01",
-        "DisplayName": "AgentInstance.ReadWriteSelected.All",
-        "Description": "Allows the app to read and write Agent ID instances",
-        "Value": "AgentInstance.ReadWriteSelected.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "ee9e43f5-8bda-44d0-808f-885b38113567",
-        "DisplayName": "AgentBlueprint.ReadSelected.All",
-        "Description": "Allows the app to read Agent Blueprints",
-        "Value": "AgentBlueprint.ReadSelected.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "7cddb0e5-ad5a-42c1-aa3d-c1c04f6a30e4",
-        "DisplayName": "AgentBlueprint.ReadWriteSelected.All",
-        "Description": "Allows the app to read and write selected Agent Blueprints",
-        "Value": "AgentBlueprint.ReadWriteSelected.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "9062175b-9da6-4337-a11b-9cb8c1cdef08",
-        "DisplayName": "AgentInstance.Read.All",
-        "Description": "Allows the app to read Agent ID instances",
-        "Value": "AgentInstance.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "14bd51a3-8784-481a-aaae-342e98e8039e",
-        "DisplayName": "AgentInstance.ReadWrite.All",
-        "Description": "Allows the app to read and write Agent ID instances",
-        "Value": "AgentInstance.ReadWrite.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "6fdbf6e8-d61d-4b53-84e5-35bdc7fb608b",
-        "DisplayName": "AgentBlueprint.Read.All",
-        "Description": "Allows the app to read Agent Blueprints",
-        "Value": "AgentBlueprint.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "d7e34e2a-d3c6-4619-95a2-0e6829f90a32",
-        "DisplayName": "AgentBlueprint.ReadWrite.All",
-        "Description": "Allows the app to read and write Agent Blueprints",
-        "Value": "AgentBlueprint.ReadWrite.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "ed20b8a8-12e9-45f5-b3e5-69f25572d7be",
-        "DisplayName": "Access APIs exposed by Teams Graph worload",
-        "Description": "Allows Microsoft Graph to call into the service to perform operations on application's behalf",
-        "Value": "Graph.ReadWrite.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "226fe4b3-a51b-403f-887c-b4f10a79c5aa",
-        "DisplayName": "Allow reading resource specific permissions",
-        "Description": "Allows reading resource specific permissions for an application",
-        "Value": "ResourceSpecificPermission.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "610a1fb0-5de2-4e6c-923b-b01b49ae9c54",
-        "DisplayName": "ResourceSpecificPermission.ReadWrite.All",
-        "Description": "Allows reading and writing resource specific permissions for an application, without a signed-in user.",
-        "Value": "ResourceSpecificPermission.ReadWrite.All",
+        "Id": "af8f2fa3-fc06-41b1-aed5-e2645bfe886f",
+        "DisplayName": "Allows reading unredacted Teams App Api secret registrations",
+        "Description": "Allows reading unredacted Teams App Api secret registrations",
+        "Value": "ApiSecretRegistration.ReadUnredacted.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -3506,10 +3396,120 @@
         "Origin": "Application"
       },
       {
-        "Id": "af8f2fa3-fc06-41b1-aed5-e2645bfe886f",
-        "DisplayName": "Allows reading unredacted Teams App Api secret registrations",
-        "Description": "Allows reading unredacted Teams App Api secret registrations",
-        "Value": "ApiSecretRegistration.ReadUnredacted.All",
+        "Id": "610a1fb0-5de2-4e6c-923b-b01b49ae9c54",
+        "DisplayName": "ResourceSpecificPermission.ReadWrite.All",
+        "Description": "Allows reading and writing resource specific permissions for an application, without a signed-in user.",
+        "Value": "ResourceSpecificPermission.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "226fe4b3-a51b-403f-887c-b4f10a79c5aa",
+        "DisplayName": "Allow reading resource specific permissions",
+        "Description": "Allows reading resource specific permissions for an application",
+        "Value": "ResourceSpecificPermission.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "ed20b8a8-12e9-45f5-b3e5-69f25572d7be",
+        "DisplayName": "Access APIs exposed by Teams Graph worload",
+        "Description": "Allows Microsoft Graph to call into the service to perform operations on application's behalf",
+        "Value": "Graph.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "d7e34e2a-d3c6-4619-95a2-0e6829f90a32",
+        "DisplayName": "AgentBlueprint.ReadWrite.All",
+        "Description": "Allows the app to read and write Agent Blueprints",
+        "Value": "AgentBlueprint.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "6fdbf6e8-d61d-4b53-84e5-35bdc7fb608b",
+        "DisplayName": "AgentBlueprint.Read.All",
+        "Description": "Allows the app to read Agent Blueprints",
+        "Value": "AgentBlueprint.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "14bd51a3-8784-481a-aaae-342e98e8039e",
+        "DisplayName": "AgentInstance.ReadWrite.All",
+        "Description": "Allows the app to read and write Agent ID instances",
+        "Value": "AgentInstance.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "9062175b-9da6-4337-a11b-9cb8c1cdef08",
+        "DisplayName": "AgentInstance.Read.All",
+        "Description": "Allows the app to read Agent ID instances",
+        "Value": "AgentInstance.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "7cddb0e5-ad5a-42c1-aa3d-c1c04f6a30e4",
+        "DisplayName": "AgentBlueprint.ReadWriteSelected.All",
+        "Description": "Allows the app to read and write selected Agent Blueprints",
+        "Value": "AgentBlueprint.ReadWriteSelected.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "ee9e43f5-8bda-44d0-808f-885b38113567",
+        "DisplayName": "AgentBlueprint.ReadSelected.All",
+        "Description": "Allows the app to read Agent Blueprints",
+        "Value": "AgentBlueprint.ReadSelected.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "c3d0ca49-f209-4c91-9c9e-0cf8a8475a01",
+        "DisplayName": "AgentInstance.ReadWriteSelected.All",
+        "Description": "Allows the app to read and write Agent ID instances",
+        "Value": "AgentInstance.ReadWriteSelected.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "6a37fcfd-2481-4625-b88f-50bd819a07cc",
+        "DisplayName": "AgentInstance.ReadSelected.All",
+        "Description": "Allows the app to read Agent ID instances",
+        "Value": "AgentInstance.ReadSelected.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -12886,7 +12886,19 @@
     "AppId": "c9224372-5534-42cb-a48b-8db4f4a3892e",
     "AppDisplayName": "MS Teams Griffin Assistant",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
-    "AppRoles": [],
+    "AppRoles": [
+      {
+        "Id": "0998b94f-35aa-4d5d-8168-2428b8967840",
+        "DisplayName": "Event.Send",
+        "Description": "Event.Send",
+        "Value": "Event.Send",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      }
+    ],
     "Source": "Graph"
   },
   {
@@ -13211,10 +13223,10 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
-        "Id": "0165bd66-5f36-41ef-abde-4e8fc0c91294",
-        "DisplayName": "VerifiableCredential.Create.IssueRequest",
-        "Description": "This allows the application to create Verifiable Credential issuance requests",
-        "Value": "VerifiableCredential.Create.IssueRequest",
+        "Id": "949ebb93-18f8-41b4-b677-c2bfea940027",
+        "DisplayName": "VerifiableCredential.Create.All",
+        "Description": "This allows the application to create Verifiable Credential issuance and presentation requests",
+        "Value": "VerifiableCredential.Create.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -13233,10 +13245,10 @@
         "Origin": "Application"
       },
       {
-        "Id": "949ebb93-18f8-41b4-b677-c2bfea940027",
-        "DisplayName": "VerifiableCredential.Create.All",
-        "Description": "This allows the application to create Verifiable Credential issuance and presentation requests",
-        "Value": "VerifiableCredential.Create.All",
+        "Id": "0165bd66-5f36-41ef-abde-4e8fc0c91294",
+        "DisplayName": "VerifiableCredential.Create.IssueRequest",
+        "Description": "This allows the application to create Verifiable Credential issuance requests",
+        "Value": "VerifiableCredential.Create.IssueRequest",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -14821,98 +14833,10 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
-        "Id": "875b7cce-8b8e-4f69-8744-0d0d285c25f3",
-        "DisplayName": "WebhookData.Read.All",
-        "Description": "Allows the app to read all webhook connection details without a signed-in user.",
-        "Value": "WebhookData.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "296c3066-18b3-4977-9e2b-9d2ca1fda62c",
-        "DisplayName": "ExternalConnection.ReadWrite.All",
-        "Description": "Allows the app to read and write all external connections without a signed-in user.",
-        "Value": "ExternalConnection.ReadWrite.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "38c3d6ee-69ee-422f-b954-e17819665354",
-        "DisplayName": "ExternalItem.ReadWrite.All",
-        "Description": "Allows the app to read and write all external items without a signed-in user.",
-        "Value": "ExternalItem.ReadWrite.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "6ed7b42a-d211-4a23-9d86-4ad9bb3cd8c9",
-        "DisplayName": "ExternalConnection.Read.OwnedBy",
-        "Description": "Allows the app to read external connections without a signed-in user. The app can only read external connections that it is authorized to. ",
-        "Value": "ExternalConnection.Read.OwnedBy",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "f4601885-7fd6-4ade-9175-09e03e5bc85c",
-        "DisplayName": "ExternalConnection.ReadWrite.OwnedBy",
-        "Description": "Allows the app to read and write external connections without a signed-in user. The app can only read and write external connections that it is authorized to, or it can create new external connections. ",
-        "Value": "ExternalConnection.ReadWrite.OwnedBy",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "e5f41e81-b3e3-4345-8fc2-33254784c76b",
-        "DisplayName": "ExternalConnectionSetting.Read.OwnedBy",
-        "Description": "Allows the app to read settings of external connections without a signed-in user. The app can only read settings of connections that it is authorized to. ",
-        "Value": "ExternalConnectionSetting.Read.OwnedBy",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "a82b69a1-5441-4adf-b26d-0fe741adab90",
-        "DisplayName": "ExternalConnectionSetting.ReadWrite.OwnedBy",
-        "Description": "Allows the app to read and write settings of external connections without a signed-in user. The app can only read settings of connections that it is authorized to. ",
-        "Value": "ExternalConnectionSetting.ReadWrite.OwnedBy",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "2d39c17b-ba50-4d0b-9b85-6bc10574bcdb",
-        "DisplayName": "ExternalItem.Read.OwnedBy",
-        "Description": "Allows the app to read external items without a signed-in user. The app can only read items of the connection that it is authorized to.",
-        "Value": "ExternalItem.Read.OwnedBy",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "c01869db-7dda-4be3-a224-eea18a6e6beb",
-        "DisplayName": "ExternalItem.ReadWrite.OwnedBy",
-        "Description": "Allows the app to read and write external items without a signed-in user. The app can only read external items of the connection that it is authorized to.",
-        "Value": "ExternalItem.ReadWrite.OwnedBy",
+        "Id": "1ef94f6e-ade0-4b79-9f7f-a72563e3ad60",
+        "DisplayName": "ExternalConnection.Read.All",
+        "Description": "Allows the app to read all external connections without a signed-in user.",
+        "Value": "ExternalConnection.Read.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -14931,10 +14855,98 @@
         "Origin": "Application"
       },
       {
-        "Id": "1ef94f6e-ade0-4b79-9f7f-a72563e3ad60",
-        "DisplayName": "ExternalConnection.Read.All",
-        "Description": "Allows the app to read all external connections without a signed-in user.",
-        "Value": "ExternalConnection.Read.All",
+        "Id": "c01869db-7dda-4be3-a224-eea18a6e6beb",
+        "DisplayName": "ExternalItem.ReadWrite.OwnedBy",
+        "Description": "Allows the app to read and write external items without a signed-in user. The app can only read external items of the connection that it is authorized to.",
+        "Value": "ExternalItem.ReadWrite.OwnedBy",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "2d39c17b-ba50-4d0b-9b85-6bc10574bcdb",
+        "DisplayName": "ExternalItem.Read.OwnedBy",
+        "Description": "Allows the app to read external items without a signed-in user. The app can only read items of the connection that it is authorized to.",
+        "Value": "ExternalItem.Read.OwnedBy",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "a82b69a1-5441-4adf-b26d-0fe741adab90",
+        "DisplayName": "ExternalConnectionSetting.ReadWrite.OwnedBy",
+        "Description": "Allows the app to read and write settings of external connections without a signed-in user. The app can only read settings of connections that it is authorized to. ",
+        "Value": "ExternalConnectionSetting.ReadWrite.OwnedBy",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "e5f41e81-b3e3-4345-8fc2-33254784c76b",
+        "DisplayName": "ExternalConnectionSetting.Read.OwnedBy",
+        "Description": "Allows the app to read settings of external connections without a signed-in user. The app can only read settings of connections that it is authorized to. ",
+        "Value": "ExternalConnectionSetting.Read.OwnedBy",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "f4601885-7fd6-4ade-9175-09e03e5bc85c",
+        "DisplayName": "ExternalConnection.ReadWrite.OwnedBy",
+        "Description": "Allows the app to read and write external connections without a signed-in user. The app can only read and write external connections that it is authorized to, or it can create new external connections. ",
+        "Value": "ExternalConnection.ReadWrite.OwnedBy",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "6ed7b42a-d211-4a23-9d86-4ad9bb3cd8c9",
+        "DisplayName": "ExternalConnection.Read.OwnedBy",
+        "Description": "Allows the app to read external connections without a signed-in user. The app can only read external connections that it is authorized to. ",
+        "Value": "ExternalConnection.Read.OwnedBy",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "38c3d6ee-69ee-422f-b954-e17819665354",
+        "DisplayName": "ExternalItem.ReadWrite.All",
+        "Description": "Allows the app to read and write all external items without a signed-in user.",
+        "Value": "ExternalItem.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "296c3066-18b3-4977-9e2b-9d2ca1fda62c",
+        "DisplayName": "ExternalConnection.ReadWrite.All",
+        "Description": "Allows the app to read and write all external connections without a signed-in user.",
+        "Value": "ExternalConnection.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "875b7cce-8b8e-4f69-8744-0d0d285c25f3",
+        "DisplayName": "WebhookData.Read.All",
+        "Description": "Allows the app to read all webhook connection details without a signed-in user.",
+        "Value": "WebhookData.Read.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -14983,32 +14995,10 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
-        "Id": "e23bd57d-bfd5-4906-867f-89fb5ed8cd43",
-        "DisplayName": "Read all service configuration and log data for the Azure Information Protection service.",
-        "Description": "Allows the application to get or read all service configuration and log data",
-        "Value": "Application.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "006e763d-a822-41fc-8df5-8d3d7fe20022",
-        "DisplayName": "Create protected content",
-        "Description": "Create protected content",
-        "Value": "Content.Writer",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "7347eb49-7a1a-43c5-8eac-a5cd1d1c7cf0",
-        "DisplayName": "Read all protected content for this tenant",
-        "Description": "Read all protected content for this tenant",
-        "Value": "Content.SuperUser",
+        "Id": "d13f921c-7f21-4c08-bade-db9d048bd0da",
+        "DisplayName": "Create protected content on behalf of a user",
+        "Description": "Create protected content on behalf of a user",
+        "Value": "Content.DelegatedWriter",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -15027,10 +15017,32 @@
         "Origin": "Application"
       },
       {
-        "Id": "d13f921c-7f21-4c08-bade-db9d048bd0da",
-        "DisplayName": "Create protected content on behalf of a user",
-        "Description": "Create protected content on behalf of a user",
-        "Value": "Content.DelegatedWriter",
+        "Id": "7347eb49-7a1a-43c5-8eac-a5cd1d1c7cf0",
+        "DisplayName": "Read all protected content for this tenant",
+        "Description": "Read all protected content for this tenant",
+        "Value": "Content.SuperUser",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "006e763d-a822-41fc-8df5-8d3d7fe20022",
+        "DisplayName": "Create protected content",
+        "Description": "Create protected content",
+        "Value": "Content.Writer",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "e23bd57d-bfd5-4906-867f-89fb5ed8cd43",
+        "DisplayName": "Read all service configuration and log data for the Azure Information Protection service.",
+        "Description": "Allows the application to get or read all service configuration and log data",
+        "Value": "Application.Read.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -16457,10 +16469,10 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
-        "Id": "654b31ae-d941-4e22-8798-7add8fdf049f",
-        "DisplayName": "View all content in tenant",
-        "Description": "The app can view all content in the tenant without a signed in user.",
-        "Value": "Tenant.Read.All",
+        "Id": "28379fa9-8596-4fd9-869e-cb60a93b5d84",
+        "DisplayName": "Read and write all content in tenant",
+        "Description": "The app can create, edit, view, and delete all content in the tenant without a signed in user.",
+        "Value": "Tenant.ReadWrite.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -16468,10 +16480,10 @@
         "Origin": "Application"
       },
       {
-        "Id": "28379fa9-8596-4fd9-869e-cb60a93b5d84",
-        "DisplayName": "Read and write all content in tenant",
-        "Description": "The app can create, edit, view, and delete all content in the tenant without a signed in user.",
-        "Value": "Tenant.ReadWrite.All",
+        "Id": "654b31ae-d941-4e22-8798-7add8fdf049f",
+        "DisplayName": "View all content in tenant",
+        "Description": "The app can view all content in the tenant without a signed in user.",
+        "Value": "Tenant.Read.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
