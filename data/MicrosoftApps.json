@@ -417,21 +417,10 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
-        "Id": "7734e8e5-8dde-42fc-b5ae-6eafea078693",
-        "DisplayName": "Run advanced hunting queries",
-        "Description": "Allows the app to run advanced hunting queries",
-        "Value": "AdvancedHunting.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "8d90f441-09cf-4fdc-ab45-e874fa3a28e8",
-        "DisplayName": "Read and write all incidents",
-        "Description": "Allows the app to create or update any incident",
-        "Value": "Incident.ReadWrite.All",
+        "Id": "a7deff90-e2f5-4e4e-83a3-2c74e7002e28",
+        "DisplayName": "Read and write all custom detection rules",
+        "Description": "Allows the app to create or update any custom detection rule",
+        "Value": "CustomDetections.ReadWrite.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -450,10 +439,21 @@
         "Origin": "Application"
       },
       {
-        "Id": "a7deff90-e2f5-4e4e-83a3-2c74e7002e28",
-        "DisplayName": "Read and write all custom detection rules",
-        "Description": "Allows the app to create or update any custom detection rule",
-        "Value": "CustomDetections.ReadWrite.All",
+        "Id": "8d90f441-09cf-4fdc-ab45-e874fa3a28e8",
+        "DisplayName": "Read and write all incidents",
+        "Description": "Allows the app to create or update any incident",
+        "Value": "Incident.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "7734e8e5-8dde-42fc-b5ae-6eafea078693",
+        "DisplayName": "Run advanced hunting queries",
+        "Description": "Allows the app to run advanced hunting queries",
+        "Value": "AdvancedHunting.Read.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -773,21 +773,10 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
-        "Id": "d365bc00-a990-0000-00bc-160000000001",
-        "DisplayName": "Full access to automation",
-        "Description": "Grants full access to the Business Central automation APIs. These APIs provide the capability to automate company setup.",
-        "Value": "Automation.ReadWrite.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "3983b928-ed40-4111-bbad-e7910cf234bd",
-        "DisplayName": "Access according to the application's permissions in Dynamics 365 Business Central",
-        "Description": "Dynamics 365 is a business management solution that’s connecting people and processes like never before. From day one, it makes ordering, selling, invoicing, and reporting easier and faster.",
-        "Value": "app_access",
+        "Id": "a20fe46f-4f63-4666-8e0e-9b882d90b837",
+        "DisplayName": "Full access to Admin Center API",
+        "Description": "Grants full access to the Business Central Admin Center API. This API provides capability to execute administrative tasks for a Business Central tenant.",
+        "Value": "AdminCenter.ReadWrite.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -806,10 +795,21 @@
         "Origin": "Application"
       },
       {
-        "Id": "a20fe46f-4f63-4666-8e0e-9b882d90b837",
-        "DisplayName": "Full access to Admin Center API",
-        "Description": "Grants full access to the Business Central Admin Center API. This API provides capability to execute administrative tasks for a Business Central tenant.",
-        "Value": "AdminCenter.ReadWrite.All",
+        "Id": "3983b928-ed40-4111-bbad-e7910cf234bd",
+        "DisplayName": "Access according to the application's permissions in Dynamics 365 Business Central",
+        "Description": "Dynamics 365 is a business management solution that’s connecting people and processes like never before. From day one, it makes ordering, selling, invoicing, and reporting easier and faster.",
+        "Value": "app_access",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "d365bc00-a990-0000-00bc-160000000001",
+        "DisplayName": "Full access to automation",
+        "Description": "Grants full access to the Business Central automation APIs. These APIs provide the capability to automate company setup.",
+        "Value": "Automation.ReadWrite.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -3940,285 +3940,10 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
-        "Id": "95930782-af91-4e2e-89b7-e34ce33a0450",
-        "DisplayName": "Manage Exchange Online Admin API as App",
-        "Description": "Allows the app to manage a limited set of Exchange Online configuration objects without user interaction, for specific scenarios supported by the adminapi/v2.0 endpoint. To enable management actions an admin must also assign the appropriate Exchange RBAC roles directly to the app. This permission replaces the previous Exchange.ManageAsAppV2 permission.",
-        "Value": "Exchange.AdminAPI.ManageAsApp",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "ea3d980d-ebc7-4be4-8298-a167e5b8797c",
-        "DisplayName": "Manage Exchange as application v2",
-        "Description": "Allows the app to manage a limited set of Exchange Online configuration objects without user interaction, for specific scenarios supported by the adminapi/v2.0 endpoint. To enable management actions an admin must also assign the appropriate Exchange RBAC roles directly to the app.",
-        "Value": "Exchange.ManageAsAppV2",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "dc50a0fb-09a3-484d-be87-e023b12c6440",
-        "DisplayName": "Manage Exchange As Application",
-        "Description": "Allows the app to manage the organization's Exchange environment without any user interaction. This includes mailboxes, groups, and other configuration objects. To enable management actions, an admin must assign the appropriate roles directly to the app.",
-        "Value": "Exchange.ManageAsApp",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "4830e04b-48ac-4de5-bbd9-8aceb58e506b",
-        "DisplayName": "Read all company places",
-        "Description": "Allows the app to read company places (conference rooms and room lists) for calendar events and other applications, without a signed-in user.",
-        "Value": "Place.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "2dfdc6dc-2fa7-4a2c-a922-dbd4f85d17be",
-        "DisplayName": "Read calendars in all mailboxes",
-        "Description": "Allows the app to read events of all R without a signed-in user",
-        "Value": "Calendars.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "ef54d2bf-783f-4e0f-bca1-3210c0444d99",
-        "DisplayName": "Read and write calendars in all mailboxes",
-        "Description": "Allows the app to create, read, update, and delete events of all calendars without a signed-in user.",
-        "Value": "Calendars.ReadWrite.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "2c6a42ca-0d4d-49ad-bc0e-21222c449a65",
-        "DisplayName": "Read and write tasks in all mailboxes",
-        "Description": "Allows the app to create, read, update, and delete tasks in all mailboxes without a signed-in user.",
-        "Value": "Tasks.ReadWrite",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "c1b0de0a-1de9-455d-919f-eca451053141",
-        "DisplayName": "Read user tasks in all mailboxes",
-        "Description": "Allows the app to read user tasks in all mailboxes without a signed-in user.",
-        "Value": "Tasks.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "f9156939-25cd-4ba8-abfe-7fabcf003749",
-        "DisplayName": "Read and write all user mailbox settings",
-        "Description": "Allows the app to create, read, update, and delete user's mailbox settings without a signed-in user. Does not include permission to send mail.",
-        "Value": "MailboxSettings.ReadWrite",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "6918b873-d17a-4dc1-b314-35f528134491",
-        "DisplayName": "Read and write contacts in all mailboxes",
-        "Description": "Allows the app to create, read, update, and delete all contacts in all mailboxes without a signed-in user.",
-        "Value": "Contacts.ReadWrite",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "e2a3a72e-5f79-4c64-b1b1-878b674786c9",
-        "DisplayName": "Read and write mail in all mailboxes",
-        "Description": "Allows the app to create, read, update, and delete mail in all mailboxes without a signed-in user. Does not include permission to send mail.",
-        "Value": "Mail.ReadWrite",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "810c84a8-4a9e-49e6-bf7d-12d183f40d01",
-        "DisplayName": "Read mail in all mailboxes",
-        "Description": "Allows the app to read mail in all mailboxes without a signed-in user.",
-        "Value": "Mail.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "089fe4d0-434a-44c5-8827-41ba8a0b17f5",
-        "DisplayName": "Read contacts in all mailboxes",
-        "Description": "Allows the app to read all contacts in all mailboxes without a signed-in user.",
-        "Value": "Contacts.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "798ee544-9d2d-430c-a058-570e29e34338",
-        "DisplayName": "Read calendars in all mailboxes",
-        "Description": "Allows the app to read events of all calendars without a signed-in user.",
-        "Value": "Calendars.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "b633e1c5-b582-4048-a93e-9f11b44c7e96",
-        "DisplayName": "Send mail as any user",
-        "Description": "Allows the app to send mail as any user without a signed-in user.",
-        "Value": "Mail.Send",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "dc890d15-9560-4a4c-9b7f-a736ec74ec40",
-        "DisplayName": "Use Exchange Web Services with full access to all mailboxes",
-        "Description": "Allows the app to have full access via Exchange Web Services to all mailboxes without a signed-in user.",
-        "Value": "full_access_as_app",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "d45fa9f8-36e5-4cd2-b601-b063c7cf9ac2",
-        "DisplayName": "Read all user mailbox settings",
-        "Description": "Allows the app to read user's mailbox settings without a signed-in user. Does not include permission to send mail.",
-        "Value": "MailboxSettings.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "77e65b5a-ceae-48b3-9490-50a86a038a48",
-        "DisplayName": "Read all users' basic profiles",
-        "Description": "Allows the app to read a basic set of profile properties of other users in your organization on behalf of the signed-in user. This includes display name, first and last name, email address and photo.",
-        "Value": "User.ReadBasic.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "bf24470f-10c1-436d-8d53-7b997eb473be",
-        "DisplayName": "Read all users' full profiles",
-        "Description": "Allows the app to read the full set of profile properties, reports, and managers of other users in your organization, on behalf of the signed-in user.",
-        "Value": "User.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "f7264778-fba9-422d-8e9e-2675a2c4b513",
-        "DisplayName": "Move mailboxes between organizations",
-        "Description": "Application permission grants permission to move mailboxes between Office365 organizations",
-        "Value": "Mailbox.Migration",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "15f260d6-f874-4366-8672-6b3658c5a09b",
-        "DisplayName": "Organization.Read.All",
-        "Description": "Allows the app to read the organization and related resources, on behalf of the signed-in user. Related resources include things like subscribed SKUs and tenant branding information.",
-        "Value": "Organization.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "5e5addcd-3e8d-4e90-baf5-964efab2b20a",
-        "DisplayName": "IMAP.AccessAsApp",
-        "Description": "Allow application to access user’s mailbox via IMAP protocol",
-        "Value": "IMAP.AccessAsApp",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "cb842b43-da6e-4506-86fe-bb12199c656d",
-        "DisplayName": "POP.AccessAsApp",
-        "Description": "Allow application to access user’s mailbox via POP protocol",
-        "Value": "POP.AccessAsApp",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "c976971c-a54d-4835-a240-2479e3dac74a",
-        "DisplayName": "Organization.ReadWrite.All",
-        "Description": "Allows the app to read and write the organization and related resources, on behalf of the signed-in user. Related resources include things like subscribed SKUs and tenant branding information.",
-        "Value": "Organization.ReadWrite.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "b4d5a5c7-c085-487f-b922-ef0d6ebde6b1",
-        "DisplayName": "ReportingWebService.Read.All",
-        "Description": "Download all reports via the Office 365 reporting web service",
-        "Value": "ReportingWebService.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "7146a1f0-8703-45b3-9eae-527a64c00995",
-        "DisplayName": "Application access for sending emails via SMTP AUTH",
-        "Description": "Allows the app to have send access to all mailboxes",
-        "Value": "SMTP.SendAsApp",
+        "Id": "98ed40ef-611a-4479-bd35-eaa7863e946a",
+        "DisplayName": "Read and write all tenant-wide people settings",
+        "Description": "Allows the application to read and write tenant-wide people settings without a signed-in user.",
+        "Value": "PeopleSettings.ReadWrite.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -4237,10 +3962,285 @@
         "Origin": "Application"
       },
       {
-        "Id": "98ed40ef-611a-4479-bd35-eaa7863e946a",
-        "DisplayName": "Read and write all tenant-wide people settings",
-        "Description": "Allows the application to read and write tenant-wide people settings without a signed-in user.",
-        "Value": "PeopleSettings.ReadWrite.All",
+        "Id": "7146a1f0-8703-45b3-9eae-527a64c00995",
+        "DisplayName": "Application access for sending emails via SMTP AUTH",
+        "Description": "Allows the app to have send access to all mailboxes",
+        "Value": "SMTP.SendAsApp",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "b4d5a5c7-c085-487f-b922-ef0d6ebde6b1",
+        "DisplayName": "ReportingWebService.Read.All",
+        "Description": "Download all reports via the Office 365 reporting web service",
+        "Value": "ReportingWebService.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "c976971c-a54d-4835-a240-2479e3dac74a",
+        "DisplayName": "Organization.ReadWrite.All",
+        "Description": "Allows the app to read and write the organization and related resources, on behalf of the signed-in user. Related resources include things like subscribed SKUs and tenant branding information.",
+        "Value": "Organization.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "cb842b43-da6e-4506-86fe-bb12199c656d",
+        "DisplayName": "POP.AccessAsApp",
+        "Description": "Allow application to access user’s mailbox via POP protocol",
+        "Value": "POP.AccessAsApp",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "5e5addcd-3e8d-4e90-baf5-964efab2b20a",
+        "DisplayName": "IMAP.AccessAsApp",
+        "Description": "Allow application to access user’s mailbox via IMAP protocol",
+        "Value": "IMAP.AccessAsApp",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "15f260d6-f874-4366-8672-6b3658c5a09b",
+        "DisplayName": "Organization.Read.All",
+        "Description": "Allows the app to read the organization and related resources, on behalf of the signed-in user. Related resources include things like subscribed SKUs and tenant branding information.",
+        "Value": "Organization.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "f7264778-fba9-422d-8e9e-2675a2c4b513",
+        "DisplayName": "Move mailboxes between organizations",
+        "Description": "Application permission grants permission to move mailboxes between Office365 organizations",
+        "Value": "Mailbox.Migration",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "bf24470f-10c1-436d-8d53-7b997eb473be",
+        "DisplayName": "Read all users' full profiles",
+        "Description": "Allows the app to read the full set of profile properties, reports, and managers of other users in your organization, on behalf of the signed-in user.",
+        "Value": "User.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "77e65b5a-ceae-48b3-9490-50a86a038a48",
+        "DisplayName": "Read all users' basic profiles",
+        "Description": "Allows the app to read a basic set of profile properties of other users in your organization on behalf of the signed-in user. This includes display name, first and last name, email address and photo.",
+        "Value": "User.ReadBasic.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "d45fa9f8-36e5-4cd2-b601-b063c7cf9ac2",
+        "DisplayName": "Read all user mailbox settings",
+        "Description": "Allows the app to read user's mailbox settings without a signed-in user. Does not include permission to send mail.",
+        "Value": "MailboxSettings.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "dc890d15-9560-4a4c-9b7f-a736ec74ec40",
+        "DisplayName": "Use Exchange Web Services with full access to all mailboxes",
+        "Description": "Allows the app to have full access via Exchange Web Services to all mailboxes without a signed-in user.",
+        "Value": "full_access_as_app",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "b633e1c5-b582-4048-a93e-9f11b44c7e96",
+        "DisplayName": "Send mail as any user",
+        "Description": "Allows the app to send mail as any user without a signed-in user.",
+        "Value": "Mail.Send",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "798ee544-9d2d-430c-a058-570e29e34338",
+        "DisplayName": "Read calendars in all mailboxes",
+        "Description": "Allows the app to read events of all calendars without a signed-in user.",
+        "Value": "Calendars.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "089fe4d0-434a-44c5-8827-41ba8a0b17f5",
+        "DisplayName": "Read contacts in all mailboxes",
+        "Description": "Allows the app to read all contacts in all mailboxes without a signed-in user.",
+        "Value": "Contacts.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "810c84a8-4a9e-49e6-bf7d-12d183f40d01",
+        "DisplayName": "Read mail in all mailboxes",
+        "Description": "Allows the app to read mail in all mailboxes without a signed-in user.",
+        "Value": "Mail.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "e2a3a72e-5f79-4c64-b1b1-878b674786c9",
+        "DisplayName": "Read and write mail in all mailboxes",
+        "Description": "Allows the app to create, read, update, and delete mail in all mailboxes without a signed-in user. Does not include permission to send mail.",
+        "Value": "Mail.ReadWrite",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "6918b873-d17a-4dc1-b314-35f528134491",
+        "DisplayName": "Read and write contacts in all mailboxes",
+        "Description": "Allows the app to create, read, update, and delete all contacts in all mailboxes without a signed-in user.",
+        "Value": "Contacts.ReadWrite",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "f9156939-25cd-4ba8-abfe-7fabcf003749",
+        "DisplayName": "Read and write all user mailbox settings",
+        "Description": "Allows the app to create, read, update, and delete user's mailbox settings without a signed-in user. Does not include permission to send mail.",
+        "Value": "MailboxSettings.ReadWrite",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "c1b0de0a-1de9-455d-919f-eca451053141",
+        "DisplayName": "Read user tasks in all mailboxes",
+        "Description": "Allows the app to read user tasks in all mailboxes without a signed-in user.",
+        "Value": "Tasks.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "2c6a42ca-0d4d-49ad-bc0e-21222c449a65",
+        "DisplayName": "Read and write tasks in all mailboxes",
+        "Description": "Allows the app to create, read, update, and delete tasks in all mailboxes without a signed-in user.",
+        "Value": "Tasks.ReadWrite",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "ef54d2bf-783f-4e0f-bca1-3210c0444d99",
+        "DisplayName": "Read and write calendars in all mailboxes",
+        "Description": "Allows the app to create, read, update, and delete events of all calendars without a signed-in user.",
+        "Value": "Calendars.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "2dfdc6dc-2fa7-4a2c-a922-dbd4f85d17be",
+        "DisplayName": "Read calendars in all mailboxes",
+        "Description": "Allows the app to read events of all R without a signed-in user",
+        "Value": "Calendars.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "4830e04b-48ac-4de5-bbd9-8aceb58e506b",
+        "DisplayName": "Read all company places",
+        "Description": "Allows the app to read company places (conference rooms and room lists) for calendar events and other applications, without a signed-in user.",
+        "Value": "Place.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "dc50a0fb-09a3-484d-be87-e023b12c6440",
+        "DisplayName": "Manage Exchange As Application",
+        "Description": "Allows the app to manage the organization's Exchange environment without any user interaction. This includes mailboxes, groups, and other configuration objects. To enable management actions, an admin must assign the appropriate roles directly to the app.",
+        "Value": "Exchange.ManageAsApp",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "ea3d980d-ebc7-4be4-8298-a167e5b8797c",
+        "DisplayName": "Manage Exchange as application v2",
+        "Description": "Allows the app to manage a limited set of Exchange Online configuration objects without user interaction, for specific scenarios supported by the adminapi/v2.0 endpoint. To enable management actions an admin must also assign the appropriate Exchange RBAC roles directly to the app.",
+        "Value": "Exchange.ManageAsAppV2",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "95930782-af91-4e2e-89b7-e34ce33a0450",
+        "DisplayName": "Manage Exchange Online Admin API as App",
+        "Description": "Allows the app to manage a limited set of Exchange Online configuration objects without user interaction, for specific scenarios supported by the adminapi/v2.0 endpoint. To enable management actions an admin must also assign the appropriate Exchange RBAC roles directly to the app. This permission replaces the previous Exchange.ManageAsAppV2 permission.",
+        "Value": "Exchange.AdminAPI.ManageAsApp",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -5144,6 +5144,28 @@
         "DisplayName": "Read and write managed-by collections in Agent Registry",
         "Description": "Allows the app to create, read, update, and delete collections that designate the calling app as their manager and manage their membership in your organization's Agent Registry without a signed-in user.",
         "Value": "AgentCollection.ReadWrite.ManagedBy",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "eccf3f2d-f81a-4718-95d7-ef4a0c42ac43",
+        "DisplayName": "Read all agent communication configurations",
+        "Description": "Allows the app to read the communication configuration of agent blueprints without a signed-in user.",
+        "Value": "AgentCommunicationConfiguration.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "9c72696d-c77b-4d8d-b59e-dfca4792c9ec",
+        "DisplayName": "Read and write all agent communication configurations",
+        "Description": "Allows the app to read and update the communication configuration of agent blueprints without a signed-in user.",
+        "Value": "AgentCommunicationConfiguration.ReadWrite.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -7076,6 +7098,28 @@
         "Origin": "Application"
       },
       {
+        "Id": "c5825671-0390-4bf2-b99b-80496fd4b673",
+        "DisplayName": "Read Microsoft Intune Deployment Plans",
+        "Description": "Allows the app to read properties of Microsoft Intune-managed deployment plans and their ring configurations, without a signed-in user.",
+        "Value": "DeviceManagementDeploymentPlans.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "68356fd1-028d-4ce3-b724-241dec11127a",
+        "DisplayName": "Read and write Microsoft Intune Deployment Plans",
+        "Description": "Allows the app to read and write properties of Microsoft Intune-managed deployment plans and their ring configurations, without a signed-in user.",
+        "Value": "DeviceManagementDeploymentPlans.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
         "Id": "5b07b0dd-2377-4e44-a38d-703f09a0dc3c",
         "DisplayName": "Perform user-impacting remote actions on Microsoft Intune devices",
         "Description": "Allows the app to perform remote high impact actions such as wiping the device or resetting the passcode on devices managed by Microsoft Intune, without a signed-in user.",
@@ -8455,6 +8499,28 @@
         "DisplayName": "Manage all license assignments",
         "Description": "Allows an app to manage license assignments for users and groups, without a signed-in user.",
         "Value": "LicenseAssignment.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "6343d63f-034f-45b5-832d-9f9d7632e182",
+        "DisplayName": "Read identity lifecycle policies for agent identities",
+        "Description": "Allows the app to read identity lifecycle policies for agent identities in the organization, without a signed-in user.",
+        "Value": "LifecyclePolicies-AgentId.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "00d1c504-8dc7-461b-8a0b-dc15c8f1bd5a",
+        "DisplayName": "Read and write identity lifecycle policies for agent identities",
+        "Description": "Allows the app to read, create, update and delete identity lifecycle policies for agent identities in the organization, without a signed-in user.",
+        "Value": "LifecyclePolicies-AgentId.ReadWrite.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -10083,6 +10149,17 @@
         "DisplayName": "Read and write all certificate based authentication configurations",
         "Description": "Allows the application to read and write certificate-based authentication configuration such as all public key infrastructures (PKI) and certificate authorities (CA) configured for the organization, without a signed-in user.",
         "Value": "PublicKeyInfrastructure.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "f369d3b8-fe98-4772-85e1-b23e7cf41982",
+        "DisplayName": "Read pull-print printers",
+        "Description": "Allows the application to read pull-print printers without a signed-in user. ",
+        "Value": "PullPrintPrinter.Read.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -13245,10 +13322,10 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
-        "Id": "949ebb93-18f8-41b4-b677-c2bfea940027",
-        "DisplayName": "VerifiableCredential.Create.All",
-        "Description": "This allows the application to create Verifiable Credential issuance and presentation requests",
-        "Value": "VerifiableCredential.Create.All",
+        "Id": "0165bd66-5f36-41ef-abde-4e8fc0c91294",
+        "DisplayName": "VerifiableCredential.Create.IssueRequest",
+        "Description": "This allows the application to create Verifiable Credential issuance requests",
+        "Value": "VerifiableCredential.Create.IssueRequest",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -13267,10 +13344,10 @@
         "Origin": "Application"
       },
       {
-        "Id": "0165bd66-5f36-41ef-abde-4e8fc0c91294",
-        "DisplayName": "VerifiableCredential.Create.IssueRequest",
-        "Description": "This allows the application to create Verifiable Credential issuance requests",
-        "Value": "VerifiableCredential.Create.IssueRequest",
+        "Id": "949ebb93-18f8-41b4-b677-c2bfea940027",
+        "DisplayName": "VerifiableCredential.Create.All",
+        "Description": "This allows the application to create Verifiable Credential issuance and presentation requests",
+        "Value": "VerifiableCredential.Create.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -14088,32 +14165,10 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
-        "Id": "e83a13aa-744d-44ee-9a42-d6f5137d9d0a",
-        "DisplayName": "Publish Tasks into Planner",
-        "Description": "Allows app to publish tasks to planner. Only operations pertaining to publish will be allowed. Examples of allowed operations within this role are task creation. ",
-        "Value": "Task.Publish.Create",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "0f6934a9-4e8f-4059-b2f4-a4a59d2c5407",
-        "DisplayName": "Recall published tasks from Planner",
-        "Description": "Allows an app to recall tasks published by the app in planner. Only recall operations (delete task) will be allowed in this scope.",
-        "Value": "Task.Publish.Delete",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "fdc2d224-c588-43f8-b0c0-8abf2b7abda7",
-        "DisplayName": "Update a task that has been published in Planner",
-        "Description": "Allows an app to update a published task in planner. Only task edit operations are allowed in this scope.",
-        "Value": "Task.Publish.Update",
+        "Id": "fc2a0408-0ddc-4173-80b9-15a933a5ff57",
+        "DisplayName": "Read organization-wide Microsoft Planner settings",
+        "Description": "Allows the app to read organization-wide Microsoft Planner settings, without a signed-in user.",
+        "Value": "OrgSettings-Planner.Read.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -14132,10 +14187,32 @@
         "Origin": "Application"
       },
       {
-        "Id": "fc2a0408-0ddc-4173-80b9-15a933a5ff57",
-        "DisplayName": "Read organization-wide Microsoft Planner settings",
-        "Description": "Allows the app to read organization-wide Microsoft Planner settings, without a signed-in user.",
-        "Value": "OrgSettings-Planner.Read.All",
+        "Id": "fdc2d224-c588-43f8-b0c0-8abf2b7abda7",
+        "DisplayName": "Update a task that has been published in Planner",
+        "Description": "Allows an app to update a published task in planner. Only task edit operations are allowed in this scope.",
+        "Value": "Task.Publish.Update",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "0f6934a9-4e8f-4059-b2f4-a4a59d2c5407",
+        "DisplayName": "Recall published tasks from Planner",
+        "Description": "Allows an app to recall tasks published by the app in planner. Only recall operations (delete task) will be allowed in this scope.",
+        "Value": "Task.Publish.Delete",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "e83a13aa-744d-44ee-9a42-d6f5137d9d0a",
+        "DisplayName": "Publish Tasks into Planner",
+        "Description": "Allows app to publish tasks to planner. Only operations pertaining to publish will be allowed. Examples of allowed operations within this role are task creation. ",
+        "Value": "Task.Publish.Create",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -14303,131 +14380,10 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
-        "Id": "f04d1efa-b98b-4a56-ad63-a259c4859fdd",
-        "DisplayName": "Qualification_Commercial",
-        "Description": "Allow user to add commercial qualification.",
-        "Value": "Qualification_Commercial",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "d0175eef-86a5-4f91-ba11-e69a87656565",
-        "DisplayName": "Qualification_DOD",
-        "Description": "Allow user to add dod qualification.",
-        "Value": "Qualification_DOD",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "ab0c514c-6a2b-4a77-81bc-74019dff79d3",
-        "DisplayName": "Qualification_GCCHigh",
-        "Description": "Allow user to add gcc high qualification.",
-        "Value": "Qualification_GCCHigh",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "0fab173d-4ed1-478b-976a-8c8ee219758b",
-        "DisplayName": "Qualification_Charity",
-        "Description": "Allow user to add charity qualification.",
-        "Value": "Qualification_Charity",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "3e74b245-2d1f-4ffb-a5e8-9a05aceca540",
-        "DisplayName": "Qualification_Government",
-        "Description": "Allow user to add government qualification.",
-        "Value": "Qualification_Government",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "5653af47-c35e-4df8-b835-bd1b642b6931",
-        "DisplayName": "UpdateBillingStage",
-        "Description": "Allows the app to update the billing stage.",
-        "Value": "UpdateBillingStage",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "d59f33c1-1406-4028-a0f7-8f00ae1dbf10",
-        "DisplayName": "Tag_ea",
-        "Description": "Allows partners to add tags with ea namespace.",
-        "Value": "Tag_ea",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "537eda31-79dd-4d7a-882a-00651883dcec",
-        "DisplayName": "Tag_gov",
-        "Description": "Allows partners to add tags with gov namespace.",
-        "Value": "Tag_gov",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "eb6f173a-fd78-41c4-9208-e2df4e4e0475",
-        "DisplayName": "Tag_charity",
-        "Description": "Allows partners to add tags with charity namespace.",
-        "Value": "Tag_charity",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "be01a05d-841f-49e7-9fd9-06ddc2bd6e28",
-        "DisplayName": "Tag_edu",
-        "Description": "Allows partners to add tags with edu namespace.",
-        "Value": "Tag_edu",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "b9a6ff0b-f721-41df-915d-a0094656547b",
-        "DisplayName": "Tag_servicescope",
-        "Description": "Allows partners to add tags with servicescope namespace.",
-        "Value": "Tag_servicescope",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "8de2faed-dae7-4e94-8d5d-a49be218c680",
-        "DisplayName": "SignupPlatformDelegatedRole",
-        "Description": "Provides delegated role to the caller.",
-        "Value": "SignupPlatformDelegatedRole",
+        "Id": "b39d576f-c5a3-4820-b851-00060443f895",
+        "DisplayName": "CreateInvitation20230101",
+        "Description": "Allows the app to create and get a new InvitationId for tenant and billing account creation.",
+        "Value": "CreateInvitation20230101",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -14446,29 +14402,131 @@
         "Origin": "Application"
       },
       {
-        "Id": "b39d576f-c5a3-4820-b851-00060443f895",
-        "DisplayName": "CreateInvitation20230101",
-        "Description": "Allows the app to create and get a new InvitationId for tenant and billing account creation.",
-        "Value": "CreateInvitation20230101",
+        "Id": "8de2faed-dae7-4e94-8d5d-a49be218c680",
+        "DisplayName": "SignupPlatformDelegatedRole",
+        "Description": "Provides delegated role to the caller.",
+        "Value": "SignupPlatformDelegatedRole",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
         ],
         "Origin": "Application"
-      }
-    ],
-    "Source": "Graph"
-  },
-  {
-    "AppId": "bc56af95-7a3b-459f-98a9-bd86532b0e89",
-    "AppDisplayName": "EntraGDAP",
-    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
-    "AppRoles": [
+      },
       {
-        "Id": "300da3a8-12a5-4d2e-a63a-43565cd8dfa8",
-        "DisplayName": "EntraXTAP.All",
-        "Description": "Allows access to all EntraXTAP APIs",
-        "Value": "EntraXTAP.All",
+        "Id": "b9a6ff0b-f721-41df-915d-a0094656547b",
+        "DisplayName": "Tag_servicescope",
+        "Description": "Allows partners to add tags with servicescope namespace.",
+        "Value": "Tag_servicescope",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "be01a05d-841f-49e7-9fd9-06ddc2bd6e28",
+        "DisplayName": "Tag_edu",
+        "Description": "Allows partners to add tags with edu namespace.",
+        "Value": "Tag_edu",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "eb6f173a-fd78-41c4-9208-e2df4e4e0475",
+        "DisplayName": "Tag_charity",
+        "Description": "Allows partners to add tags with charity namespace.",
+        "Value": "Tag_charity",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "537eda31-79dd-4d7a-882a-00651883dcec",
+        "DisplayName": "Tag_gov",
+        "Description": "Allows partners to add tags with gov namespace.",
+        "Value": "Tag_gov",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "d59f33c1-1406-4028-a0f7-8f00ae1dbf10",
+        "DisplayName": "Tag_ea",
+        "Description": "Allows partners to add tags with ea namespace.",
+        "Value": "Tag_ea",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "5653af47-c35e-4df8-b835-bd1b642b6931",
+        "DisplayName": "UpdateBillingStage",
+        "Description": "Allows the app to update the billing stage.",
+        "Value": "UpdateBillingStage",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "3e74b245-2d1f-4ffb-a5e8-9a05aceca540",
+        "DisplayName": "Qualification_Government",
+        "Description": "Allow user to add government qualification.",
+        "Value": "Qualification_Government",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "0fab173d-4ed1-478b-976a-8c8ee219758b",
+        "DisplayName": "Qualification_Charity",
+        "Description": "Allow user to add charity qualification.",
+        "Value": "Qualification_Charity",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "ab0c514c-6a2b-4a77-81bc-74019dff79d3",
+        "DisplayName": "Qualification_GCCHigh",
+        "Description": "Allow user to add gcc high qualification.",
+        "Value": "Qualification_GCCHigh",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "d0175eef-86a5-4f91-ba11-e69a87656565",
+        "DisplayName": "Qualification_DOD",
+        "Description": "Allow user to add dod qualification.",
+        "Value": "Qualification_DOD",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "f04d1efa-b98b-4a56-ad63-a259c4859fdd",
+        "DisplayName": "Qualification_Commercial",
+        "Description": "Allow user to add commercial qualification.",
+        "Value": "Qualification_Commercial",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
