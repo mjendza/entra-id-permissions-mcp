@@ -1569,7 +1569,7 @@
   },
   {
     "AppId": "89e7f920-bdc3-4e71-99e5-30d84827b610",
-    "AppDisplayName": "Dunloe Dataplane Service",
+    "AppDisplayName": "Microsoft Authorization Service Dataplane",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [],
     "Source": "Graph"
@@ -4744,10 +4744,10 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
-        "Id": "455e5cd2-84e8-4751-8344-5672145dfa17",
-        "DisplayName": "Exchange.ManageAsApp",
-        "Description": "Exchange.ManageAsApp",
-        "Value": "Exchange.ManageAsApp",
+        "Id": "8f819283-077c-4c68-aa24-0ad706da26e0",
+        "DisplayName": "ThreatSubmission.ReadWrite.All",
+        "Description": "ThreatSubmission.ReadWrite.All",
+        "Value": "ThreatSubmission.ReadWrite.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -4766,10 +4766,10 @@
         "Origin": "Application"
       },
       {
-        "Id": "8f819283-077c-4c68-aa24-0ad706da26e0",
-        "DisplayName": "ThreatSubmission.ReadWrite.All",
-        "Description": "ThreatSubmission.ReadWrite.All",
-        "Value": "ThreatSubmission.ReadWrite.All",
+        "Id": "455e5cd2-84e8-4751-8344-5672145dfa17",
+        "DisplayName": "Exchange.ManageAsApp",
+        "Description": "Exchange.ManageAsApp",
+        "Value": "Exchange.ManageAsApp",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -12400,6 +12400,17 @@
         "Origin": "Application"
       },
       {
+        "Id": "712f5e0d-bc8d-4ae5-8242-cfb9a4921ed3",
+        "DisplayName": "Delete all users' authentication methods",
+        "Description": "Allows the app to delete authentication methods of all users in your organization, without a signed-in user. Authentication methods include things like a user's phone numbers and Authenticator app settings. This does not allow the app to read, create, or modify authentication methods.",
+        "Value": "UserAuthenticationMethod.Delete.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
         "Id": "38d9df27-64da-44fd-b7c5-a6fbac20248f",
         "DisplayName": "Read all users' authentication methods",
         "Description": "Allows the app to read authentication methods of all users in your organization, without a signed-in user. Authentication methods include things like a user’s phone numbers and Authenticator app settings. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods.",
@@ -12415,6 +12426,17 @@
         "DisplayName": "Read and write all users' authentication methods ",
         "Description": "Allows the application to read and write authentication methods of all users in your organization, without a signed-in user.                       Authentication methods include things like a user's phone numbers and Authenticator app settings. This                      does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods",
         "Value": "UserAuthenticationMethod.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "f0e9adfd-ed6b-45f5-b969-324a75286a39",
+        "DisplayName": "Delete all users' email methods",
+        "Description": "Allows the application to delete email methods of all users in your organization, without a signed-in user. This does not allow the app to read, create, or modify email methods.",
+        "Value": "UserAuthMethod-Email.Delete.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -12444,6 +12466,17 @@
         "Origin": "Application"
       },
       {
+        "Id": "7fa6d39e-1e4e-44be-bf9c-e8260b12e1f5",
+        "DisplayName": "Delete all users' external authentication methods",
+        "Description": "Allows the application to delete external authentication methods of all users in your organization, without a signed-in user. This does not allow the app to read, create, or modify external authentication methods.",
+        "Value": "UserAuthMethod-External.Delete.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
         "Id": "d2c4289f-9f95-40da-ad43-eeb1506f0db7",
         "DisplayName": "Read all users' external authentication methods",
         "Description": "Allows the app to read external authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods.",
@@ -12459,6 +12492,17 @@
         "DisplayName": "Read and write all users' external authentication methods",
         "Description": "Allows the application to read and write external authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods.",
         "Value": "UserAuthMethod-External.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "9d8eb432-7ea3-491a-9ed7-e6361b308f08",
+        "DisplayName": "Delete all users' HardwareOATH authentication methods",
+        "Description": "Allows the application to delete HardwareOATH authentication methods of all users in your organization, without a signed-in user. This does not allow the app to read, create, or modify HardwareOATH authentication methods.",
+        "Value": "UserAuthMethod-HardwareOATH.Delete.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -12488,6 +12532,17 @@
         "Origin": "Application"
       },
       {
+        "Id": "ae494ca6-9612-417a-972a-ef52efaf2de3",
+        "DisplayName": "Delete all users' Microsoft Authentication methods",
+        "Description": "Allows the application to delete Microsoft Authentication methods of all users in your organization, without a signed-in user. This does not allow the app to read, create, or modify Microsoft Authentication methods.",
+        "Value": "UserAuthMethod-MicrosoftAuthApp.Delete.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
         "Id": "a9c5f16e-e5ca-4e33-89ad-903fcfc01c23",
         "DisplayName": "Read all users' Microsoft authentication methods",
         "Description": "Allows the app to read Microsoft authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods.",
@@ -12503,6 +12558,17 @@
         "DisplayName": "Read and write all users' Microsoft Authentication methods",
         "Description": "Allows the application to read and write Microsoft Authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods.",
         "Value": "UserAuthMethod-MicrosoftAuthApp.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "9563fbd0-03a7-466e-8042-63d668b7d1a3",
+        "DisplayName": "Delete all users' passkey authentication methods",
+        "Description": "Allows the application to delete passkey authentication methods of all users in your organization, without a signed-in user. This does not allow the app to read, create, or modify passkey authentication methods.",
+        "Value": "UserAuthMethod-Passkey.Delete.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -12554,6 +12620,17 @@
         "Origin": "Application"
       },
       {
+        "Id": "59f17651-8b6c-494e-a269-4ac582fbbca0",
+        "DisplayName": "Delete all users' phone methods",
+        "Description": "Allows the application to delete phone methods of all users in your organization, without a signed-in user. This does not allow the app to read, create, or modify phone methods.",
+        "Value": "UserAuthMethod-Phone.Delete.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
         "Id": "f529a223-ea70-43ec-b268-5012de2fbaa2",
         "DisplayName": "Read all users' phone authentication methods",
         "Description": "Allows the app to read phone authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods.",
@@ -12569,6 +12646,17 @@
         "DisplayName": "Read and write all users' phone methods",
         "Description": "Allows the application to read and write phone methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods.",
         "Value": "UserAuthMethod-Phone.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "bd760918-651f-4e67-b66f-8f614384dec2",
+        "DisplayName": "Delete all users' platform credentials methods",
+        "Description": "Allows the application to delete platform credentials methods of all users in your organization, without a signed-in user. This does not allow the app to read, create, or modify platform credentials methods.",
+        "Value": "UserAuthMethod-PlatformCred.Delete.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -12598,6 +12686,17 @@
         "Origin": "Application"
       },
       {
+        "Id": "e1c34213-26ac-400b-9548-a749f1b1a4e0",
+        "DisplayName": "Delete all users' QR authentication methods",
+        "Description": "Allows the application to delete QR authentication methods of all users in your organization, without a signed-in user. This does not allow the app to read, create, or modify QR authentication methods.",
+        "Value": "UserAuthMethod-QR.Delete.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
         "Id": "9a45bc50-cddd-4ebe-bd9c-4f2eacf646ae",
         "DisplayName": "Read all users' QR methods",
         "Description": "Allows the app to read QR authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods.",
@@ -12613,6 +12712,17 @@
         "DisplayName": "Read and write all users' QR methods",
         "Description": "Allows the application to read and write QR authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods.",
         "Value": "UserAuthMethod-QR.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "a71aecaf-82f1-47c5-ad0a-5e63503b928f",
+        "DisplayName": "Delete all users' resource key authentication methods",
+        "Description": "Allows the application to delete resource key authentication methods of all users in your organization, without a signed-in user. This does not allow the app to read, create, or modify resource key authentication methods.",
+        "Value": "UserAuthMethod-ResourceKey.Delete.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -12642,6 +12752,17 @@
         "Origin": "Application"
       },
       {
+        "Id": "e5676e10-1a16-452b-ad10-71f54b755852",
+        "DisplayName": "Delete all users' SoftwareOATH authentication methods",
+        "Description": "Allows the application to delete SoftwareOATH authentication methods of all users in your organization, without a signed-in user. This does not allow the app to read, create, or modify SoftwareOATH authentication methods.",
+        "Value": "UserAuthMethod-SoftwareOATH.Delete.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
         "Id": "a6b423df-a0c8-411d-a809-a4a5985d2939",
         "DisplayName": "Read all users' SoftwareOATH methods",
         "Description": "Allows the app to read SoftwareOATH authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods.",
@@ -12664,6 +12785,17 @@
         "Origin": "Application"
       },
       {
+        "Id": "4f872e9d-d232-4ecd-ab9c-337cbdb184e5",
+        "DisplayName": "Delete all users' Temporary Access Pass authentication methods",
+        "Description": "Allows the application to delete Temporary Access Pass authentication methods of all users in your organization, without a signed-in user. This does not allow the app to read, create, or modify Temporary Access Pass authentication methods.",
+        "Value": "UserAuthMethod-TAP.Delete.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
         "Id": "bf82209c-b22b-4747-ac88-a68be99032cf",
         "DisplayName": "Read all users' Temporary Access Pass methods",
         "Description": "Allows the app to read Temporary Access Pass authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods.",
@@ -12679,6 +12811,17 @@
         "DisplayName": "Read and write all users' Temporary Access Pass methods",
         "Description": "Allows the application to read and write Temporary Access Pass authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods.",
         "Value": "UserAuthMethod-TAP.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "f3197110-aa7f-4acd-a0fd-71981ad68d42",
+        "DisplayName": "Delete all users' Windows Hello authentication methods",
+        "Description": "Allows the application to delete Windows Hello authentication methods of all users in your organization, without a signed-in user. This does not allow the app to read, create, or modify Windows Hello authentication methods.",
+        "Value": "UserAuthMethod-WindowsHello.Delete.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -14789,32 +14932,22 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
-        "Id": "fcd57aa7-c2b4-4b41-aa8b-266b6c42e1a5",
-        "DisplayName": "OrganizationAnalytics.EssStream.Read.All",
-        "Description": "OrganizationAnalytics.EssStream.Read.All",
-        "Value": "OrganizationAnalytics.EssStream.Read.All",
+        "Id": "00a72033-22db-4037-9c68-f8b0d437bce4",
+        "DisplayName": "OrganizationAnalytics.ReadWrite",
+        "Description": "Allows read-write access to org-wide analytics e.g Custom Nudges ",
+        "Value": "OrganizationAnalytics.ReadWrite",
         "IsEnabled": true,
         "AllowedMemberTypes": [
-          "Application"
+          "Application",
+          "User"
         ],
         "Origin": "Application"
       },
       {
-        "Id": "97073fc4-341a-4124-94ec-ea70cff53f9f",
-        "DisplayName": "QuietTimeStatus.Read.All",
-        "Description": "This allows access to check whether a given user is currently in their quiet time window",
-        "Value": "QuietTimeStatus.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "2bf589c4-d055-4872-a96d-15d99b610750",
-        "DisplayName": "OrganizationSettings.ReadWrite",
-        "Description": "This allows access to read and write Organization Settings.",
-        "Value": "OrganizationSettings.ReadWrite",
+        "Id": "9dc0bf61-2c27-4f46-a5ad-84d524c9cba4",
+        "DisplayName": "AnalyticsConfig.Read",
+        "Description": "AnalyticsConfig.Read",
+        "Value": "AnalyticsConfig.Read",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -14833,10 +14966,10 @@
         "Origin": "Application"
       },
       {
-        "Id": "9dc0bf61-2c27-4f46-a5ad-84d524c9cba4",
-        "DisplayName": "AnalyticsConfig.Read",
-        "Description": "AnalyticsConfig.Read",
-        "Value": "AnalyticsConfig.Read",
+        "Id": "2bf589c4-d055-4872-a96d-15d99b610750",
+        "DisplayName": "OrganizationSettings.ReadWrite",
+        "Description": "This allows access to read and write Organization Settings.",
+        "Value": "OrganizationSettings.ReadWrite",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -14844,14 +14977,24 @@
         "Origin": "Application"
       },
       {
-        "Id": "00a72033-22db-4037-9c68-f8b0d437bce4",
-        "DisplayName": "OrganizationAnalytics.ReadWrite",
-        "Description": "Allows read-write access to org-wide analytics e.g Custom Nudges ",
-        "Value": "OrganizationAnalytics.ReadWrite",
+        "Id": "97073fc4-341a-4124-94ec-ea70cff53f9f",
+        "DisplayName": "QuietTimeStatus.Read.All",
+        "Description": "This allows access to check whether a given user is currently in their quiet time window",
+        "Value": "QuietTimeStatus.Read.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
-          "Application",
-          "User"
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "fcd57aa7-c2b4-4b41-aa8b-266b6c42e1a5",
+        "DisplayName": "OrganizationAnalytics.EssStream.Read.All",
+        "Description": "OrganizationAnalytics.EssStream.Read.All",
+        "Value": "OrganizationAnalytics.EssStream.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
         ],
         "Origin": "Application"
       }
@@ -15980,505 +16123,10 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
-        "Id": "cfbd1345-3cf0-408c-8c99-1491bde7ce52",
-        "DisplayName": "EopDataInsights.AccessAsApp",
-        "Description": "EopDataInsights.AccessAsApp",
-        "Value": "EopDataInsights.AccessAsApp",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "26872368-3756-4995-a1d0-73cfa9d8f83a",
-        "DisplayName": "M365ContentExplorer.Read.All",
-        "Description": "M365ContentExplorer.Read.All",
-        "Value": "M365ContentExplorer.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "06ab0d31-7112-476e-a479-66394bec63d6",
-        "DisplayName": "MessageTrace.Read.All",
-        "Description": "MessageTrace.Read.All",
-        "Value": "MessageTrace.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "3e4e080e-55db-4fa9-8d68-0d9199d4c792",
-        "DisplayName": "QuarantinedMessage.Read.All",
-        "Description": "QuarantinedMessage.Read.All",
-        "Value": "QuarantinedMessage.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "cc02f7ae-3d9b-42c9-bc91-3424d92c5547",
-        "DisplayName": "AirAdminAction.tenant.read",
-        "Description": "This allows the app to read AirAdminAction alerts",
-        "Value": "AirAdminAction.tenant.read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "43f2aa58-36d7-421e-8628-fbe9b129bf76",
-        "DisplayName": "AirAdminAction.tenant.write",
-        "Description": "This allows apps to write the AirAdminAction alerts",
-        "Value": "AirAdminAction.tenant.write",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "27787a44-0423-4f0d-a417-1276c93397fb",
-        "DisplayName": "TenantLicenseStatus.Read.All",
-        "Description": "TenantLicenseStatus.Read.All",
-        "Value": "TenantLicenseStatus.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "092afc53-fa1b-44c3-9fdf-46fcd25a5d99",
-        "DisplayName": "Relocation.ReadWrite.All",
-        "Description": "Relocation.ReadWrite.All",
-        "Value": "Relocation.ReadWrite.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "926c05c5-5941-491b-973a-509c2a4a2542",
-        "DisplayName": "AzureActivityData.Read.All",
-        "Description": "AzureActivityData.Read.All",
-        "Value": "AzureActivityData.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "a585dd3a-70b6-4ff4-a1b9-093b4214e7e4",
-        "DisplayName": "OcrBillingConfiguration-Internal.Write.All",
-        "Description": "OcrBillingConfiguration-Internal.Write.All",
-        "Value": "OcrBillingConfiguration-Internal.Write.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "9760b448-d4d4-478b-bebc-0ebe62c935c9",
-        "DisplayName": "AuditProvisioningData.Tenant.Read",
-        "Description": "AuditProvisioningData.Tenant.Read",
-        "Value": "AuditProvisioningData.Tenant.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "67a4e76f-5125-4b64-bcd6-b42a60d47dbe",
-        "DisplayName": "Purview.DataAccess.All",
-        "Description": "Purview.DataAccess.All",
-        "Value": "Purview.DataAccess.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "43e3dfa5-222e-4a48-8253-d36086c5558c",
-        "DisplayName": "Alert.Read.All",
-        "Description": "Alert.Read.All",
-        "Value": "Alert.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "5f124282-d2c3-47dd-87ff-106ba9aa079b",
-        "DisplayName": "MtpMailboxRuleAction.tenant.write",
-        "Description": "MtpMailboxRuleAction.tenant.write",
-        "Value": "MtpMailboxRuleAction.tenant.write",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "ca69fdfa-5ba6-4c33-9eac-013653c2c3af",
-        "DisplayName": "MtpMailboxRuleAction.tenant.read",
-        "Description": "MtpMailboxRuleAction.tenant.read",
-        "Value": "MtpMailboxRuleAction.tenant.read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "182f95e9-8c6f-4c32-8de2-e1abc1fe6ea4",
-        "DisplayName": "DataInsightsSubscription.tenant.write",
-        "Description": "DataInsightsSubscription.tenant.write",
-        "Value": "DataInsightsSubscription.tenant.write",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "bfeb98e9-5067-42b0-a7df-9022b927a10e",
-        "DisplayName": "DataInsightsSubscription.tenant.read",
-        "Description": "DataInsightsSubscription.tenant.read",
-        "Value": "DataInsightsSubscription.tenant.read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "59c90462-e42e-4698-8a51-196ebd407166",
-        "DisplayName": "compliancestatus.tenant.read",
-        "Description": "compliancestatus.tenant.read",
-        "Value": "compliancestatus.tenant.read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "39de55cd-e81d-4d2a-880d-3872c4fb992d",
-        "DisplayName": "RecipientBatch.tenant.write",
-        "Description": "RecipientBatch.tenant.write",
-        "Value": "RecipientBatch.tenant.write",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "0eabd45c-e771-460d-a601-2d534e78a1be",
-        "DisplayName": "DataInsightsUsersData.tenant.read",
-        "Description": "DataInsightsUsersData.tenant.read",
-        "Value": "DataInsightsUsersData.tenant.read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "e0ff780c-d4f4-4ef4-b0ad-b19863ca72a2",
-        "DisplayName": "UsersAggregateByAttackSimulation.tenant.read",
-        "Description": "UsersAggregateByAttackSimulation.tenant.read",
-        "Value": "UsersAggregateByAttackSimulation.tenant.read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "81eac90b-5b5b-422f-8d2a-9bc2055c5453",
-        "DisplayName": "Recipient.tenant.read",
-        "Description": "Recipient.tenant.read",
-        "Value": "Recipient.tenant.read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "7b67f132-5c43-45cb-8cc3-e78fd80d0776",
-        "DisplayName": "Recipient.tenant.write",
-        "Description": "Recipient.tenant.write",
-        "Value": "Recipient.tenant.write",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "06c43929-37aa-4707-ae05-68d6d967953e",
-        "DisplayName": "AttackSimulationData.tenant.read",
-        "Description": "AttackSimulationData.tenant.read",
-        "Value": "AttackSimulationData.tenant.read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "38b568f3-92e4-4c17-92b7-a49c28904247",
-        "DisplayName": "TiRemediation.ReadWrite.All",
-        "Description": "TiRemediation.ReadWrite.All",
-        "Value": "TiRemediation.ReadWrite.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "5c6799ba-41c0-49cc-9f2d-7486a52d52a0",
-        "DisplayName": "TiRemediation.Read.All",
-        "Description": "TiRemediation.Read.All",
-        "Value": "TiRemediation.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "dac43cb8-9b13-43b1-bc17-e7eb8fe26717",
-        "DisplayName": "RemediationEmailResult.ReadWrite.All",
-        "Description": "RemediationEmailResult.ReadWrite.All",
-        "Value": "RemediationEmailResult.ReadWrite.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "cae0e51f-af85-4f35-870d-9f024147648d",
-        "DisplayName": "RemediationEmailResult.Read.All",
-        "Description": "RemediationEmailResult.Read.All",
-        "Value": "RemediationEmailResult.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "ba4ca83c-e834-4e66-bfe1-df738f63b557",
-        "DisplayName": "activitydata.tenant.read",
-        "Description": "activitydata.tenant.read",
-        "Value": "activitydata.tenant.read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "57fee0bb-e97d-4e5c-a663-2b0c7ce0db37",
-        "DisplayName": "InsiderRiskData.Read.All",
-        "Description": "InsiderRiskData.Read.All",
-        "Value": "InsiderRiskData.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "f9d2daf6-8028-48d1-b4c1-b963f7ae7a73",
-        "DisplayName": "AggConsumptionBillingReport.Read.All",
-        "Description": "AggConsumptionBillingReport.Read.All",
-        "Value": "AggConsumptionBillingReport.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "15188c9e-7879-4e83-9d63-c728da8feb0d",
-        "DisplayName": "DynamicRiskPreventionTag.Tenant.Write",
-        "Description": "DynamicRiskPreventionTag.Tenant.Write",
-        "Value": "DynamicRiskPreventionTag.Tenant.Write",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "f63db487-96bf-49af-8a79-faa86287aee6",
-        "DisplayName": "DynamicRiskPreventionTag.Tenant.Read",
-        "Description": "DynamicRiskPreventionTag.Tenant.Read",
-        "Value": "DynamicRiskPreventionTag.Tenant.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "944c8d5a-fdcd-4aac-af4d-3366942700d5",
-        "DisplayName": "ThreatSubmission.ReadWrite.All",
-        "Description": "ThreatSubmission.ReadWrite.All",
-        "Value": "ThreatSubmission.ReadWrite.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "e0ba9b2a-a247-4d95-bca6-43211b61057f",
-        "DisplayName": "CustomTag.Tenant.Read",
-        "Description": "CustomTag.Tenant.Read",
-        "Value": "CustomTag.Tenant.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "92b5621e-0e43-46c9-b830-bc26b325a150",
-        "DisplayName": "CustomTag.Tenant.Write",
-        "Description": "CustomTag.Tenant.Write",
-        "Value": "CustomTag.Tenant.Write",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "85e837d7-9e4b-4bb2-9535-08bb51aa974a",
-        "DisplayName": "MessageTraceDetail.tenant.read",
-        "Description": "MessageTraceDetail.tenant.read",
-        "Value": "MessageTraceDetail.tenant.read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "03f3ead7-60e6-4522-847b-8a67bb9c50df",
-        "DisplayName": "OneCyberRelocationData.tenant.write",
-        "Description": "This allows apps to write the OneCyberRelocationData",
-        "Value": "OneCyberRelocationData.tenant.write",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "9b31c028-bb6a-4d1a-8295-4514d184c061",
-        "DisplayName": "OneCyberRelocationData.tenant.read",
-        "Description": "This allows apps to read the OneCyberRelocationData",
-        "Value": "OneCyberRelocationData.tenant.read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "86e9643d-f798-40d2-98bb-293a7daaa2d7",
-        "DisplayName": "MtpAction.tenant.read",
-        "Description": "This allows apps to read the MtpAction",
-        "Value": "MtpAction.tenant.read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "e6e79fef-f4ee-4f93-aec3-3f0001087066",
-        "DisplayName": "MtpAction.tenant.write",
-        "Description": "This allows apps to write the MtpAction",
-        "Value": "MtpAction.tenant.write",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "723c28f9-60b9-4cd4-8b04-6d344a3c4d84",
-        "DisplayName": "alert.tenant.write",
-        "Description": "This allows to change any Office 365 alerts belong to the tenant.",
-        "Value": "alert.tenant.write",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "d91202fb-0f5f-4245-8148-dfe12af913e6",
-        "DisplayName": "alert.tenant.read",
-        "Description": "This allows to read tenant Office 365 alerts.",
-        "Value": "alert.tenant.read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "74450f94-a5b1-4243-a991-9a688375883f",
-        "DisplayName": "mtpstatus.tenant.read",
-        "Description": "Allow o365 applications to read MTP Status",
-        "Value": "mtpstatus.tenant.read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "51aa070e-cc8b-45a9-8530-3fc96b0aa701",
-        "DisplayName": "messageeventsummary.tenant.read",
-        "Description": "This scope allows Apps to read tenant's MessageEventSummary data",
-        "Value": "messageeventsummary.tenant.read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "24c052b7-e297-4369-b344-e4b62baa3fca",
-        "DisplayName": "reducedrecipient.read.all",
-        "Description": "this allows to read reducedrecipient",
-        "Value": "reducedrecipient.read.all",
+        "Id": "6c68db0a-4608-48d3-b0bf-4d0917b88bef",
+        "DisplayName": "PolicyStatusSummary-Internal.Write.All",
+        "Description": "PolicyStatusSummary-Internal.Write.All",
+        "Value": "PolicyStatusSummary-Internal.Write.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -16497,10 +16145,505 @@
         "Origin": "Application"
       },
       {
-        "Id": "6c68db0a-4608-48d3-b0bf-4d0917b88bef",
-        "DisplayName": "PolicyStatusSummary-Internal.Write.All",
-        "Description": "PolicyStatusSummary-Internal.Write.All",
-        "Value": "PolicyStatusSummary-Internal.Write.All",
+        "Id": "24c052b7-e297-4369-b344-e4b62baa3fca",
+        "DisplayName": "reducedrecipient.read.all",
+        "Description": "this allows to read reducedrecipient",
+        "Value": "reducedrecipient.read.all",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "51aa070e-cc8b-45a9-8530-3fc96b0aa701",
+        "DisplayName": "messageeventsummary.tenant.read",
+        "Description": "This scope allows Apps to read tenant's MessageEventSummary data",
+        "Value": "messageeventsummary.tenant.read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "74450f94-a5b1-4243-a991-9a688375883f",
+        "DisplayName": "mtpstatus.tenant.read",
+        "Description": "Allow o365 applications to read MTP Status",
+        "Value": "mtpstatus.tenant.read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "d91202fb-0f5f-4245-8148-dfe12af913e6",
+        "DisplayName": "alert.tenant.read",
+        "Description": "This allows to read tenant Office 365 alerts.",
+        "Value": "alert.tenant.read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "723c28f9-60b9-4cd4-8b04-6d344a3c4d84",
+        "DisplayName": "alert.tenant.write",
+        "Description": "This allows to change any Office 365 alerts belong to the tenant.",
+        "Value": "alert.tenant.write",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "e6e79fef-f4ee-4f93-aec3-3f0001087066",
+        "DisplayName": "MtpAction.tenant.write",
+        "Description": "This allows apps to write the MtpAction",
+        "Value": "MtpAction.tenant.write",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "86e9643d-f798-40d2-98bb-293a7daaa2d7",
+        "DisplayName": "MtpAction.tenant.read",
+        "Description": "This allows apps to read the MtpAction",
+        "Value": "MtpAction.tenant.read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "9b31c028-bb6a-4d1a-8295-4514d184c061",
+        "DisplayName": "OneCyberRelocationData.tenant.read",
+        "Description": "This allows apps to read the OneCyberRelocationData",
+        "Value": "OneCyberRelocationData.tenant.read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "03f3ead7-60e6-4522-847b-8a67bb9c50df",
+        "DisplayName": "OneCyberRelocationData.tenant.write",
+        "Description": "This allows apps to write the OneCyberRelocationData",
+        "Value": "OneCyberRelocationData.tenant.write",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "85e837d7-9e4b-4bb2-9535-08bb51aa974a",
+        "DisplayName": "MessageTraceDetail.tenant.read",
+        "Description": "MessageTraceDetail.tenant.read",
+        "Value": "MessageTraceDetail.tenant.read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "92b5621e-0e43-46c9-b830-bc26b325a150",
+        "DisplayName": "CustomTag.Tenant.Write",
+        "Description": "CustomTag.Tenant.Write",
+        "Value": "CustomTag.Tenant.Write",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "e0ba9b2a-a247-4d95-bca6-43211b61057f",
+        "DisplayName": "CustomTag.Tenant.Read",
+        "Description": "CustomTag.Tenant.Read",
+        "Value": "CustomTag.Tenant.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "944c8d5a-fdcd-4aac-af4d-3366942700d5",
+        "DisplayName": "ThreatSubmission.ReadWrite.All",
+        "Description": "ThreatSubmission.ReadWrite.All",
+        "Value": "ThreatSubmission.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "f63db487-96bf-49af-8a79-faa86287aee6",
+        "DisplayName": "DynamicRiskPreventionTag.Tenant.Read",
+        "Description": "DynamicRiskPreventionTag.Tenant.Read",
+        "Value": "DynamicRiskPreventionTag.Tenant.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "15188c9e-7879-4e83-9d63-c728da8feb0d",
+        "DisplayName": "DynamicRiskPreventionTag.Tenant.Write",
+        "Description": "DynamicRiskPreventionTag.Tenant.Write",
+        "Value": "DynamicRiskPreventionTag.Tenant.Write",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "f9d2daf6-8028-48d1-b4c1-b963f7ae7a73",
+        "DisplayName": "AggConsumptionBillingReport.Read.All",
+        "Description": "AggConsumptionBillingReport.Read.All",
+        "Value": "AggConsumptionBillingReport.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "57fee0bb-e97d-4e5c-a663-2b0c7ce0db37",
+        "DisplayName": "InsiderRiskData.Read.All",
+        "Description": "InsiderRiskData.Read.All",
+        "Value": "InsiderRiskData.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "ba4ca83c-e834-4e66-bfe1-df738f63b557",
+        "DisplayName": "activitydata.tenant.read",
+        "Description": "activitydata.tenant.read",
+        "Value": "activitydata.tenant.read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "cae0e51f-af85-4f35-870d-9f024147648d",
+        "DisplayName": "RemediationEmailResult.Read.All",
+        "Description": "RemediationEmailResult.Read.All",
+        "Value": "RemediationEmailResult.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "dac43cb8-9b13-43b1-bc17-e7eb8fe26717",
+        "DisplayName": "RemediationEmailResult.ReadWrite.All",
+        "Description": "RemediationEmailResult.ReadWrite.All",
+        "Value": "RemediationEmailResult.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "5c6799ba-41c0-49cc-9f2d-7486a52d52a0",
+        "DisplayName": "TiRemediation.Read.All",
+        "Description": "TiRemediation.Read.All",
+        "Value": "TiRemediation.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "38b568f3-92e4-4c17-92b7-a49c28904247",
+        "DisplayName": "TiRemediation.ReadWrite.All",
+        "Description": "TiRemediation.ReadWrite.All",
+        "Value": "TiRemediation.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "06c43929-37aa-4707-ae05-68d6d967953e",
+        "DisplayName": "AttackSimulationData.tenant.read",
+        "Description": "AttackSimulationData.tenant.read",
+        "Value": "AttackSimulationData.tenant.read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "7b67f132-5c43-45cb-8cc3-e78fd80d0776",
+        "DisplayName": "Recipient.tenant.write",
+        "Description": "Recipient.tenant.write",
+        "Value": "Recipient.tenant.write",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "81eac90b-5b5b-422f-8d2a-9bc2055c5453",
+        "DisplayName": "Recipient.tenant.read",
+        "Description": "Recipient.tenant.read",
+        "Value": "Recipient.tenant.read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "e0ff780c-d4f4-4ef4-b0ad-b19863ca72a2",
+        "DisplayName": "UsersAggregateByAttackSimulation.tenant.read",
+        "Description": "UsersAggregateByAttackSimulation.tenant.read",
+        "Value": "UsersAggregateByAttackSimulation.tenant.read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "0eabd45c-e771-460d-a601-2d534e78a1be",
+        "DisplayName": "DataInsightsUsersData.tenant.read",
+        "Description": "DataInsightsUsersData.tenant.read",
+        "Value": "DataInsightsUsersData.tenant.read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "39de55cd-e81d-4d2a-880d-3872c4fb992d",
+        "DisplayName": "RecipientBatch.tenant.write",
+        "Description": "RecipientBatch.tenant.write",
+        "Value": "RecipientBatch.tenant.write",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "59c90462-e42e-4698-8a51-196ebd407166",
+        "DisplayName": "compliancestatus.tenant.read",
+        "Description": "compliancestatus.tenant.read",
+        "Value": "compliancestatus.tenant.read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "bfeb98e9-5067-42b0-a7df-9022b927a10e",
+        "DisplayName": "DataInsightsSubscription.tenant.read",
+        "Description": "DataInsightsSubscription.tenant.read",
+        "Value": "DataInsightsSubscription.tenant.read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "182f95e9-8c6f-4c32-8de2-e1abc1fe6ea4",
+        "DisplayName": "DataInsightsSubscription.tenant.write",
+        "Description": "DataInsightsSubscription.tenant.write",
+        "Value": "DataInsightsSubscription.tenant.write",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "ca69fdfa-5ba6-4c33-9eac-013653c2c3af",
+        "DisplayName": "MtpMailboxRuleAction.tenant.read",
+        "Description": "MtpMailboxRuleAction.tenant.read",
+        "Value": "MtpMailboxRuleAction.tenant.read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "5f124282-d2c3-47dd-87ff-106ba9aa079b",
+        "DisplayName": "MtpMailboxRuleAction.tenant.write",
+        "Description": "MtpMailboxRuleAction.tenant.write",
+        "Value": "MtpMailboxRuleAction.tenant.write",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "43e3dfa5-222e-4a48-8253-d36086c5558c",
+        "DisplayName": "Alert.Read.All",
+        "Description": "Alert.Read.All",
+        "Value": "Alert.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "67a4e76f-5125-4b64-bcd6-b42a60d47dbe",
+        "DisplayName": "Purview.DataAccess.All",
+        "Description": "Purview.DataAccess.All",
+        "Value": "Purview.DataAccess.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "9760b448-d4d4-478b-bebc-0ebe62c935c9",
+        "DisplayName": "AuditProvisioningData.Tenant.Read",
+        "Description": "AuditProvisioningData.Tenant.Read",
+        "Value": "AuditProvisioningData.Tenant.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "a585dd3a-70b6-4ff4-a1b9-093b4214e7e4",
+        "DisplayName": "OcrBillingConfiguration-Internal.Write.All",
+        "Description": "OcrBillingConfiguration-Internal.Write.All",
+        "Value": "OcrBillingConfiguration-Internal.Write.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "926c05c5-5941-491b-973a-509c2a4a2542",
+        "DisplayName": "AzureActivityData.Read.All",
+        "Description": "AzureActivityData.Read.All",
+        "Value": "AzureActivityData.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "092afc53-fa1b-44c3-9fdf-46fcd25a5d99",
+        "DisplayName": "Relocation.ReadWrite.All",
+        "Description": "Relocation.ReadWrite.All",
+        "Value": "Relocation.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "27787a44-0423-4f0d-a417-1276c93397fb",
+        "DisplayName": "TenantLicenseStatus.Read.All",
+        "Description": "TenantLicenseStatus.Read.All",
+        "Value": "TenantLicenseStatus.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "43f2aa58-36d7-421e-8628-fbe9b129bf76",
+        "DisplayName": "AirAdminAction.tenant.write",
+        "Description": "This allows apps to write the AirAdminAction alerts",
+        "Value": "AirAdminAction.tenant.write",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "cc02f7ae-3d9b-42c9-bc91-3424d92c5547",
+        "DisplayName": "AirAdminAction.tenant.read",
+        "Description": "This allows the app to read AirAdminAction alerts",
+        "Value": "AirAdminAction.tenant.read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "3e4e080e-55db-4fa9-8d68-0d9199d4c792",
+        "DisplayName": "QuarantinedMessage.Read.All",
+        "Description": "QuarantinedMessage.Read.All",
+        "Value": "QuarantinedMessage.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "06ab0d31-7112-476e-a479-66394bec63d6",
+        "DisplayName": "MessageTrace.Read.All",
+        "Description": "MessageTrace.Read.All",
+        "Value": "MessageTrace.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "26872368-3756-4995-a1d0-73cfa9d8f83a",
+        "DisplayName": "M365ContentExplorer.Read.All",
+        "Description": "M365ContentExplorer.Read.All",
+        "Value": "M365ContentExplorer.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "cfbd1345-3cf0-408c-8c99-1491bde7ce52",
+        "DisplayName": "EopDataInsights.AccessAsApp",
+        "Description": "EopDataInsights.AccessAsApp",
+        "Value": "EopDataInsights.AccessAsApp",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -16944,7 +17087,19 @@
     "AppId": "47ee738b-3f1a-4fc7-ab11-37e4822b007e",
     "AppDisplayName": "Azure AD Application Proxy",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
-    "AppRoles": [],
+    "AppRoles": [
+      {
+        "Id": "46314cfe-5021-44c3-a00c-e5e4fdc9b5ac",
+        "DisplayName": "Register connectors",
+        "Description": "Allows a service or application to register Global Secure Access Private Network Connectors.",
+        "Value": "Connector.Register",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      }
+    ],
     "Source": "Graph"
   },
   {
