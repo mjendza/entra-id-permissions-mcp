@@ -492,6 +492,13 @@
     "Source": "Graph"
   },
   {
+    "AppId": "e92b9b37-1b47-4c01-9fbc-91d84450870e",
+    "AppDisplayName": "All private resources with Global Secure Access",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
+    "Source": "Graph"
+  },
+  {
     "AppId": "ea2f600a-4980-45b7-89bf-d34da487bda1",
     "AppDisplayName": "Microsoft.Azure.DomainRegistration",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
@@ -855,6 +862,25 @@
     "Source": "Graph"
   },
   {
+    "AppId": "bc56af95-7a3b-459f-98a9-bd86532b0e89",
+    "AppDisplayName": "EntraGDAP",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [
+      {
+        "Id": "300da3a8-12a5-4d2e-a63a-43565cd8dfa8",
+        "DisplayName": "EntraXTAP.All",
+        "Description": "Allows access to all EntraXTAP APIs",
+        "Value": "EntraXTAP.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      }
+    ],
+    "Source": "Graph"
+  },
+  {
     "AppId": "a766fecb-91ef-4d42-8bd3-41a61b3eb0e5",
     "AppDisplayName": "AzS VIS Prod App",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
@@ -1024,6 +1050,13 @@
   {
     "AppId": "3bc2296e-aa22-4ed2-9e1e-946d05afa6a2",
     "AppDisplayName": "SharePoint Online Web Client Extensibility Isolated",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
+    "Source": "Graph"
+  },
+  {
+    "AppId": "4bf1d72f-eee1-495f-b12c-2e60a0cc3a5a",
+    "AppDisplayName": "Microsoft Defender for Databases",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [],
     "Source": "Graph"
@@ -2141,6 +2174,13 @@
   {
     "AppId": "38d143fa-a9d8-4e3e-b073-81f3fefeaf95",
     "AppDisplayName": "Microsoft Teams IP Core Service",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
+    "Source": "Graph"
+  },
+  {
+    "AppId": "c08f52c9-8f03-4558-a0ea-9a4c878cf343",
+    "AppDisplayName": "Microsoft apps with Global Secure Access",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [],
     "Source": "Graph"
@@ -4324,10 +4364,10 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
-        "Id": "7b307ce5-1a3c-4a39-861b-ee5bf8a58941",
-        "DisplayName": "User.Read.All",
-        "Description": "User.Read.All",
-        "Value": "User.Read.All",
+        "Id": "338446c9-b981-47d7-a96b-3e02921beace",
+        "DisplayName": "UnifiedPolicy.Tenant.Read",
+        "Description": "UnifiedPolicy.Tenant.Read",
+        "Value": "UnifiedPolicy.Tenant.Read",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -4346,10 +4386,10 @@
         "Origin": "Application"
       },
       {
-        "Id": "338446c9-b981-47d7-a96b-3e02921beace",
-        "DisplayName": "UnifiedPolicy.Tenant.Read",
-        "Description": "UnifiedPolicy.Tenant.Read",
-        "Value": "UnifiedPolicy.Tenant.Read",
+        "Id": "7b307ce5-1a3c-4a39-861b-ee5bf8a58941",
+        "DisplayName": "User.Read.All",
+        "Description": "User.Read.All",
+        "Value": "User.Read.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -4553,6 +4593,13 @@
   {
     "AppId": "81172f0f-5d81-47c7-96f6-49c58b60d192",
     "AppDisplayName": "Microsoft Defender for Cloud MultiCloud Onboarding",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
+    "Source": "Graph"
+  },
+  {
+    "AppId": "5dc48733-b5df-475c-a49b-fa307ef00853",
+    "AppDisplayName": "Internet resources with Global Secure Access",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [],
     "Source": "Graph"
@@ -8026,6 +8073,28 @@
         "DisplayName": "Read and write all scenario monitoring alerts",
         "Description": "Allows the app to read and write all scenario monitoring alerts, without a signed-in user.",
         "Value": "HealthMonitoringAlertConfig.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "bb1e8ab4-fe40-4b26-82ec-65dfaf4d367b",
+        "DisplayName": "Read all identity diagnostics",
+        "Description": "Allows the app to read all identity diagnostics information, including symptoms, runs, statuses, and results for all users in the organization, without a signed-in user.",
+        "Value": "IdentityDiagnostic.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "2607bb8b-0a9b-4f53-9d2f-6f81b99ac145",
+        "DisplayName": "Start identity diagnostics for all users",
+        "Description": "Allows the app to start identity diagnostic processes for all users in the organization, without a signed-in user.",
+        "Value": "IdentityDiagnostic.StartDiagnosis.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -13022,6 +13091,13 @@
     "Source": "Graph"
   },
   {
+    "AppId": "2eba9957-8c82-4bfd-8025-e4a4a97a9110",
+    "AppDisplayName": "GSA-Purview",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
+    "Source": "Graph"
+  },
+  {
     "AppId": "de926fbf-e23b-41f9-ae15-c943a9cfa630",
     "AppDisplayName": "Microsoft Azure Authorization Private Link Provider",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
@@ -14436,6 +14512,13 @@
     "Source": "Graph"
   },
   {
+    "AppId": "3b80cd3f-61ca-49b0-8d0f-7b6760e08705",
+    "AppDisplayName": "ZTNA Policy Service Graph Client ",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
+    "Source": "Graph"
+  },
+  {
     "AppId": "d88a361a-d488-4271-a13f-a83df7dd99c2",
     "AppDisplayName": "IDML Graph Resolver Service and CAD",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
@@ -15023,6 +15106,13 @@
     "Source": "Graph"
   },
   {
+    "AppId": "9d4afbbc-06a4-49e0-8005-4e5afd1d4fec",
+    "AppDisplayName": "ZTNA Network Access Control Plane",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
+    "Source": "Graph"
+  },
+  {
     "AppId": "fabfbdc4-5751-471c-ac43-3826fa1afc31",
     "AppDisplayName": "Microsoft Partner Center",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
@@ -15288,329 +15378,10 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
-        "Id": "1629b959-c0af-42a1-92f0-f6162060bdf1",
-        "DisplayName": "Run live response on a specific machine",
-        "Description": "Allows the app to run a live response on a specific machine",
-        "Value": "Machine.LiveResponse",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "528ca142-c849-4a5b-935e-10b8b9c38a84",
-        "DisplayName": "Read all IOCs",
-        "Description": "Allows the app to read all IOCs",
-        "Value": "Ti.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "7c6f6912-60e9-4fcd-bb2a-c25bc35e8c59",
-        "DisplayName": "Read and Write Integration settings",
-        "Description": "Allows the app to read and modify integration settings between itself and the service",
-        "Value": "IntegrationConfiguration.ReadWrite",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "f820e656-f1d1-4cb8-a566-31d18eeecb40",
-        "DisplayName": "Security Operations - Read Only",
-        "Description": "Users assign to this role will be able to access the Windows Defender ATP portal, view all the data but will not be able to perform any action",
-        "Value": "readonly",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "User"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "2261fd4a-5f23-4b74-9e4d-f4ac92dc86a2",
-        "DisplayName": "Security Operations - Read & Write",
-        "Description": "Users assign to this role will be able to access the Windows Defender ATP portal, view all the data and be able to perform actions such as change alerts status, apply suppression rules etc.",
-        "Value": "secop",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "User"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "0f7000ec-157b-497f-b70e-ef0b0584f140",
-        "DisplayName": "Read and write all alerts",
-        "Description": "Allows the app to create or update any alert",
-        "Value": "Alert.ReadWrite.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "a8bc2240-f96a-46a1-bad5-6a960b7327a1",
-        "DisplayName": "Read and write IOCs belonging to the app",
-        "Description": "Allows the app to create IOCs and to read or update IOCs it created",
-        "Value": "Ti.ReadWrite",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "84ddd701-5fac-4c30-b0ad-aa73a67bea1a",
-        "DisplayName": "Write timeline events",
-        "Description": "Allows the app to create events in the machine timeline",
-        "Value": "Event.Write",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "93489bf5-0fbc-4f2d-b901-33f2fe08ff05",
-        "DisplayName": "Run advanced queries",
-        "Description": "Allows the app to run advanced queries",
-        "Value": "AdvancedQuery.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "ea8291d3-4b9a-44b5-bc3a-6cea3026dc79",
-        "DisplayName": "Read all machine profiles",
-        "Description": "Allows the app to read all machine profiles, including the commands that were sent to each machine",
-        "Value": "Machine.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "aa027352-232b-4ed4-b963-a705fc4d6d2c",
-        "DisplayName": "Read and write all machine information",
-        "Description": "Allows the app to create machine records and to read or update any machine record",
-        "Value": "Machine.ReadWrite.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "7e4e1300-e1b9-4102-88ba-f0cb6e6d5974",
-        "DisplayName": "Isolate machine",
-        "Description": "Allows the app to isolate a machine",
-        "Value": "Machine.Isolate",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "a86d9824-b2b6-45f8-b042-16bc4922ed4e",
-        "DisplayName": "Scan machine",
-        "Description": "Allows the app to scan a machine",
-        "Value": "Machine.Scan",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "96b6b35d-074d-4e2d-b167-8d68d9269648",
-        "DisplayName": "Restrict code execution",
-        "Description": "Allows the app to restrict code execution on a machine according to policy",
-        "Value": "Machine.RestrictExecution",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "96e72b5e-7e68-4171-aad1-3937599e4751",
-        "DisplayName": "Stop and quarantine file",
-        "Description": "Allows the app to stop a file running on a machine and to quarantine that file",
-        "Value": "Machine.StopAndQuarantine",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "594435bf-36dd-4548-83bd-1bdafe157d7a",
-        "DisplayName": "Offboard machine",
-        "Description": "Allows the app to offboard a machine from the service",
-        "Value": "Machine.Offboard",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "8788f1a9-beca-4e26-ba58-10513f3b896f",
-        "DisplayName": "Read file profiles",
-        "Description": "Allows the app to read all file profiles",
-        "Value": "File.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "721af526-ffa8-42d7-9b84-1a56244dd99d",
-        "DisplayName": "Read URL profiles",
-        "Description": "Allows the app to read all URL profiles",
-        "Value": "Url.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "47bf842d-354b-49ef-b741-3a6dd815bc13",
-        "DisplayName": "Read IP address profiles",
-        "Description": "Allows the app to read all IP address profiles",
-        "Value": "Ip.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "a833834a-4cf1-4732-8acf-bbcfa13fb610",
-        "DisplayName": "Read user profiles",
-        "Description": "Allows the app to read all user profiles",
-        "Value": "User.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "71fe6b80-7034-4028-9ed8-0f316df9c3ff",
-        "DisplayName": "Read all alerts",
-        "Description": "Allows the app to read any alert",
-        "Value": "Alert.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "15405ab2-2103-4a3c-ad80-e829841cedcc",
-        "DisplayName": "Collect forensics",
-        "Description": "Allows the app to collect forensics from a machine",
-        "Value": "Machine.CollectForensics",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "fc511a58-3adf-4d71-af24-00f13e35e479",
-        "DisplayName": "Read and write all IOCs",
-        "Description": "Allows the app to manage all IOCs of the tenant",
-        "Value": "Ti.ReadWrite.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "6443965c-7dd2-4cfd-b38f-bb7772bee163",
-        "DisplayName": "Read Threat and Vulnerability Management security recommendations",
-        "Description": "Allows the app to read any Threat and Vulnerability Management security recommendation",
-        "Value": "SecurityRecommendation.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "37f71c98-d198-41ae-964d-2c49aab74926",
-        "DisplayName": "Read Threat and Vulnerability Management software information",
-        "Description": "Allows the app to read any Threat and Vulnerability Management software information",
-        "Value": "Software.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "41269fc5-d04d-4bfd-bce7-43a51cea049a",
-        "DisplayName": "Read Threat and Vulnerability Management vulnerability information",
-        "Description": "Allows the app to read any Threat and Vulnerability Management vulnerability information",
-        "Value": "Vulnerability.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "02b005dd-f804-43b4-8fc7-078460413f74",
-        "DisplayName": "Read Threat and Vulnerability Management score",
-        "Description": "Allows the app to read any Threat and Vulnerability Management  score",
-        "Value": "Score.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "6a33eedf-ba73-4e5a-821b-f057ef63853a",
-        "DisplayName": "Read all remediation tasks",
-        "Description": "Allows the app to read all remediation tasks",
-        "Value": "RemediationTasks.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "41d209c7-2511-4fc9-b899-8008a3976f09",
-        "DisplayName": "Manage live response library files",
-        "Description": "Allows the app to manage live response library files",
-        "Value": "Library.Manage",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "227f2ea0-c2c2-4428-b7af-9ff40f1a720e",
-        "DisplayName": "Read all security configurations",
-        "Description": "Allows the app to read all security configurations",
-        "Value": "SecurityConfiguration.Read.All",
+        "Id": "e870c0c1-c1a2-41ca-948e-a33912d2d3f0",
+        "DisplayName": "Read all security baselines assessment information",
+        "Description": "Allows the app to read all security baselines assessment information",
+        "Value": "SecurityBaselinesAssessment.Read.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -15629,10 +15400,329 @@
         "Origin": "Application"
       },
       {
-        "Id": "e870c0c1-c1a2-41ca-948e-a33912d2d3f0",
-        "DisplayName": "Read all security baselines assessment information",
-        "Description": "Allows the app to read all security baselines assessment information",
-        "Value": "SecurityBaselinesAssessment.Read.All",
+        "Id": "227f2ea0-c2c2-4428-b7af-9ff40f1a720e",
+        "DisplayName": "Read all security configurations",
+        "Description": "Allows the app to read all security configurations",
+        "Value": "SecurityConfiguration.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "41d209c7-2511-4fc9-b899-8008a3976f09",
+        "DisplayName": "Manage live response library files",
+        "Description": "Allows the app to manage live response library files",
+        "Value": "Library.Manage",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "6a33eedf-ba73-4e5a-821b-f057ef63853a",
+        "DisplayName": "Read all remediation tasks",
+        "Description": "Allows the app to read all remediation tasks",
+        "Value": "RemediationTasks.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "02b005dd-f804-43b4-8fc7-078460413f74",
+        "DisplayName": "Read Threat and Vulnerability Management score",
+        "Description": "Allows the app to read any Threat and Vulnerability Management  score",
+        "Value": "Score.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "41269fc5-d04d-4bfd-bce7-43a51cea049a",
+        "DisplayName": "Read Threat and Vulnerability Management vulnerability information",
+        "Description": "Allows the app to read any Threat and Vulnerability Management vulnerability information",
+        "Value": "Vulnerability.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "37f71c98-d198-41ae-964d-2c49aab74926",
+        "DisplayName": "Read Threat and Vulnerability Management software information",
+        "Description": "Allows the app to read any Threat and Vulnerability Management software information",
+        "Value": "Software.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "6443965c-7dd2-4cfd-b38f-bb7772bee163",
+        "DisplayName": "Read Threat and Vulnerability Management security recommendations",
+        "Description": "Allows the app to read any Threat and Vulnerability Management security recommendation",
+        "Value": "SecurityRecommendation.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "fc511a58-3adf-4d71-af24-00f13e35e479",
+        "DisplayName": "Read and write all IOCs",
+        "Description": "Allows the app to manage all IOCs of the tenant",
+        "Value": "Ti.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "15405ab2-2103-4a3c-ad80-e829841cedcc",
+        "DisplayName": "Collect forensics",
+        "Description": "Allows the app to collect forensics from a machine",
+        "Value": "Machine.CollectForensics",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "71fe6b80-7034-4028-9ed8-0f316df9c3ff",
+        "DisplayName": "Read all alerts",
+        "Description": "Allows the app to read any alert",
+        "Value": "Alert.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "a833834a-4cf1-4732-8acf-bbcfa13fb610",
+        "DisplayName": "Read user profiles",
+        "Description": "Allows the app to read all user profiles",
+        "Value": "User.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "47bf842d-354b-49ef-b741-3a6dd815bc13",
+        "DisplayName": "Read IP address profiles",
+        "Description": "Allows the app to read all IP address profiles",
+        "Value": "Ip.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "721af526-ffa8-42d7-9b84-1a56244dd99d",
+        "DisplayName": "Read URL profiles",
+        "Description": "Allows the app to read all URL profiles",
+        "Value": "Url.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "8788f1a9-beca-4e26-ba58-10513f3b896f",
+        "DisplayName": "Read file profiles",
+        "Description": "Allows the app to read all file profiles",
+        "Value": "File.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "594435bf-36dd-4548-83bd-1bdafe157d7a",
+        "DisplayName": "Offboard machine",
+        "Description": "Allows the app to offboard a machine from the service",
+        "Value": "Machine.Offboard",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "96e72b5e-7e68-4171-aad1-3937599e4751",
+        "DisplayName": "Stop and quarantine file",
+        "Description": "Allows the app to stop a file running on a machine and to quarantine that file",
+        "Value": "Machine.StopAndQuarantine",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "96b6b35d-074d-4e2d-b167-8d68d9269648",
+        "DisplayName": "Restrict code execution",
+        "Description": "Allows the app to restrict code execution on a machine according to policy",
+        "Value": "Machine.RestrictExecution",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "a86d9824-b2b6-45f8-b042-16bc4922ed4e",
+        "DisplayName": "Scan machine",
+        "Description": "Allows the app to scan a machine",
+        "Value": "Machine.Scan",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "7e4e1300-e1b9-4102-88ba-f0cb6e6d5974",
+        "DisplayName": "Isolate machine",
+        "Description": "Allows the app to isolate a machine",
+        "Value": "Machine.Isolate",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "aa027352-232b-4ed4-b963-a705fc4d6d2c",
+        "DisplayName": "Read and write all machine information",
+        "Description": "Allows the app to create machine records and to read or update any machine record",
+        "Value": "Machine.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "ea8291d3-4b9a-44b5-bc3a-6cea3026dc79",
+        "DisplayName": "Read all machine profiles",
+        "Description": "Allows the app to read all machine profiles, including the commands that were sent to each machine",
+        "Value": "Machine.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "93489bf5-0fbc-4f2d-b901-33f2fe08ff05",
+        "DisplayName": "Run advanced queries",
+        "Description": "Allows the app to run advanced queries",
+        "Value": "AdvancedQuery.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "84ddd701-5fac-4c30-b0ad-aa73a67bea1a",
+        "DisplayName": "Write timeline events",
+        "Description": "Allows the app to create events in the machine timeline",
+        "Value": "Event.Write",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "a8bc2240-f96a-46a1-bad5-6a960b7327a1",
+        "DisplayName": "Read and write IOCs belonging to the app",
+        "Description": "Allows the app to create IOCs and to read or update IOCs it created",
+        "Value": "Ti.ReadWrite",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "0f7000ec-157b-497f-b70e-ef0b0584f140",
+        "DisplayName": "Read and write all alerts",
+        "Description": "Allows the app to create or update any alert",
+        "Value": "Alert.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "2261fd4a-5f23-4b74-9e4d-f4ac92dc86a2",
+        "DisplayName": "Security Operations - Read & Write",
+        "Description": "Users assign to this role will be able to access the Windows Defender ATP portal, view all the data and be able to perform actions such as change alerts status, apply suppression rules etc.",
+        "Value": "secop",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "User"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "f820e656-f1d1-4cb8-a566-31d18eeecb40",
+        "DisplayName": "Security Operations - Read Only",
+        "Description": "Users assign to this role will be able to access the Windows Defender ATP portal, view all the data but will not be able to perform any action",
+        "Value": "readonly",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "User"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "7c6f6912-60e9-4fcd-bb2a-c25bc35e8c59",
+        "DisplayName": "Read and Write Integration settings",
+        "Description": "Allows the app to read and modify integration settings between itself and the service",
+        "Value": "IntegrationConfiguration.ReadWrite",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "528ca142-c849-4a5b-935e-10b8b9c38a84",
+        "DisplayName": "Read all IOCs",
+        "Description": "Allows the app to read all IOCs",
+        "Value": "Ti.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "1629b959-c0af-42a1-92f0-f6162060bdf1",
+        "DisplayName": "Run live response on a specific machine",
+        "Description": "Allows the app to run a live response on a specific machine",
+        "Value": "Machine.LiveResponse",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -16944,65 +17034,10 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
-        "Id": "400ef46e-3c0a-45d4-bb3d-4eb2d94f832a",
-        "DisplayName": "Read and write Teams team data",
-        "Description": "Read and write Teams team data for team lifecycle (OnTeamUpdated, OnTeamSoftDeleted, OnTeamSoftUndeleted).",
-        "Value": "Team.ReadWrite.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "eb12f503-edcc-4d03-93d7-3462546aeace",
-        "DisplayName": "Read and write Teams team member data",
-        "Description": "Read and write Teams team member data for member lifecycle (onMembersRemoved, onOwnersRemoved).",
-        "Value": "TeamMember.ReadWrite.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "fd7bf697-168c-45be-b7ba-e94b3529deff",
-        "DisplayName": "Have full access to the Skype Teams Service",
-        "Description": "Allow the application full access to the Skype Teams Service on behalf of the signed-in user",
-        "Value": "user_impersonation",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "b8a8280c-fe24-4c24-8b5a-74e833c2c018",
-        "DisplayName": "Read user license details",
-        "Description": "Allows the app to read the user license details for all users in your organization.",
-        "Value": "UserLicense.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "0d9ce864-39e5-424f-8556-b68ce5dac482",
-        "DisplayName": "Read user region",
-        "Description": "Allows the app to read the region for all users in your organization.",
-        "Value": "Region.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "3ed42bc3-d6ed-4cf4-9531-d521e361223e",
-        "DisplayName": "Read or write user region",
-        "Description": "Allows the app to read or write the region for all users in your organization.",
-        "Value": "Region.ReadWrite.All",
+        "Id": "4f217d7c-5ea7-4dde-a269-9025b80f2cd5",
+        "DisplayName": "Read user app assignment",
+        "Description": "This allows reading user app assignments.",
+        "Value": "AdminAppCatalog.Read.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -17021,10 +17056,65 @@
         "Origin": "Application"
       },
       {
-        "Id": "4f217d7c-5ea7-4dde-a269-9025b80f2cd5",
-        "DisplayName": "Read user app assignment",
-        "Description": "This allows reading user app assignments.",
-        "Value": "AdminAppCatalog.Read.All",
+        "Id": "3ed42bc3-d6ed-4cf4-9531-d521e361223e",
+        "DisplayName": "Read or write user region",
+        "Description": "Allows the app to read or write the region for all users in your organization.",
+        "Value": "Region.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "0d9ce864-39e5-424f-8556-b68ce5dac482",
+        "DisplayName": "Read user region",
+        "Description": "Allows the app to read the region for all users in your organization.",
+        "Value": "Region.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "b8a8280c-fe24-4c24-8b5a-74e833c2c018",
+        "DisplayName": "Read user license details",
+        "Description": "Allows the app to read the user license details for all users in your organization.",
+        "Value": "UserLicense.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "fd7bf697-168c-45be-b7ba-e94b3529deff",
+        "DisplayName": "Have full access to the Skype Teams Service",
+        "Description": "Allow the application full access to the Skype Teams Service on behalf of the signed-in user",
+        "Value": "user_impersonation",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "eb12f503-edcc-4d03-93d7-3462546aeace",
+        "DisplayName": "Read and write Teams team member data",
+        "Description": "Read and write Teams team member data for member lifecycle (onMembersRemoved, onOwnersRemoved).",
+        "Value": "TeamMember.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "400ef46e-3c0a-45d4-bb3d-4eb2d94f832a",
+        "DisplayName": "Read and write Teams team data",
+        "Description": "Read and write Teams team data for team lifecycle (OnTeamUpdated, OnTeamSoftDeleted, OnTeamSoftUndeleted).",
+        "Value": "Team.ReadWrite.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -37488,24 +37578,6 @@
   {
     "AppId": "c836cbdb-7a5b-44cc-a54f-564b4b486fc6",
     "AppDisplayName": "US Gov Portal App Id",
-    "AppOwnerOrganizationId": "",
-    "Source": "EntraDocs"
-  },
-  {
-    "AppId": "c08f52c9-8f03-4558-a0ea-9a4c878cf343",
-    "AppDisplayName": "Global Secure Access M365 Traffic Profile Resource Id",
-    "AppOwnerOrganizationId": "",
-    "Source": "EntraDocs"
-  },
-  {
-    "AppId": "5dc48733-b5df-475c-a49b-fa307ef00853",
-    "AppDisplayName": "Global Secure Access Internet Access Traffic Profile Resource Id",
-    "AppOwnerOrganizationId": "",
-    "Source": "EntraDocs"
-  },
-  {
-    "AppId": "e92b9b37-1b47-4c01-9fbc-91d84450870e",
-    "AppDisplayName": "Global Secure Access Private Access Traffic Profile Resource Id",
     "AppOwnerOrganizationId": "",
     "Source": "EntraDocs"
   },
