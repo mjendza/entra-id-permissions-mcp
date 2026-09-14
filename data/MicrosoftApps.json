@@ -14131,98 +14131,10 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
-        "Id": "e52ccd5f-74f3-45ef-bb4c-0464d43522cf",
-        "DisplayName": "Read Viva Engage roles",
-        "Description": "Allows the app to list Viva Engage roles without a signed-in user.",
-        "Value": "EngagementRole.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "4897f557-5d68-4827-8b0e-c7b983e911f1",
-        "DisplayName": "Modify Viva Engage role membership",
-        "Description": "Allows the app to assign Viva Engage role to a user, and remove a Viva Engage role from a user without a signed-in user.",
-        "Value": "EngagementRole.ReadWrite.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "0f511994-a49f-440f-9834-7eb89fec8cc7",
-        "DisplayName": "Read all Viva Engage roles and role memberships",
-        "Description": "Allows the app to list all Viva Engage roles and role memberships without a signed-in user.",
-        "Value": "EngagementRole.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "19de5c8e-95bd-4c18-98c2-7e08900ba9ba",
-        "DisplayName": "Read and write conversations",
-        "Description": "Allows the app to read and write all Viva Engage conversations",
-        "Value": "EngagementConversation.ReadWrite.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "1ded4338-0490-411e-8dba-f6e4aef3bb73",
-        "DisplayName": "Read and write storylines",
-        "Description": "Allows the app to read and write all Viva Engage storylines",
-        "Value": "Storyline.ReadWrite.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "a34f0f09-eee9-41f8-8332-86cf08bd4938",
-        "DisplayName": "Import conversations",
-        "Description": "Allows the app to import conversations",
-        "Value": "EngagementConversation.Migration.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "7a985898-9a60-4514-ad36-f8ff01d9e01a",
-        "DisplayName": "Read all Viva Engage conversations",
-        "Description": "Allows the app to read all Viva Engage conversations",
-        "Value": "EngagementConversation.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "caa014a5-48d2-4a7f-814b-cfd868ac9c75",
-        "DisplayName": "Create and read Viva Engage community",
-        "Description": "Allows the app to create Viva Engage community and read all community properties.",
-        "Value": "Community.ReadWrite.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "66145180-11f6-4003-9868-db9e3f86723e",
-        "DisplayName": "Read Viva Engage community",
-        "Description": "Allows the app to read Viva Engage community and their properties.",
-        "Value": "Community.Read.All",
+        "Id": "42f58b5b-a80d-4260-a1a5-c9a412f6e0d4",
+        "DisplayName": "Send event to Viva Engage.",
+        "Description": "Allows the app to send event to the Viva Engage.",
+        "Value": "Notification.Send.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -14241,10 +14153,98 @@
         "Origin": "Application"
       },
       {
-        "Id": "42f58b5b-a80d-4260-a1a5-c9a412f6e0d4",
-        "DisplayName": "Send event to Viva Engage.",
-        "Description": "Allows the app to send event to the Viva Engage.",
-        "Value": "Notification.Send.All",
+        "Id": "66145180-11f6-4003-9868-db9e3f86723e",
+        "DisplayName": "Read Viva Engage community",
+        "Description": "Allows the app to read Viva Engage community and their properties.",
+        "Value": "Community.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "caa014a5-48d2-4a7f-814b-cfd868ac9c75",
+        "DisplayName": "Create and read Viva Engage community",
+        "Description": "Allows the app to create Viva Engage community and read all community properties.",
+        "Value": "Community.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "7a985898-9a60-4514-ad36-f8ff01d9e01a",
+        "DisplayName": "Read all Viva Engage conversations",
+        "Description": "Allows the app to read all Viva Engage conversations",
+        "Value": "EngagementConversation.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "a34f0f09-eee9-41f8-8332-86cf08bd4938",
+        "DisplayName": "Import conversations",
+        "Description": "Allows the app to import conversations",
+        "Value": "EngagementConversation.Migration.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "1ded4338-0490-411e-8dba-f6e4aef3bb73",
+        "DisplayName": "Read and write storylines",
+        "Description": "Allows the app to read and write all Viva Engage storylines",
+        "Value": "Storyline.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "19de5c8e-95bd-4c18-98c2-7e08900ba9ba",
+        "DisplayName": "Read and write conversations",
+        "Description": "Allows the app to read and write all Viva Engage conversations",
+        "Value": "EngagementConversation.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "0f511994-a49f-440f-9834-7eb89fec8cc7",
+        "DisplayName": "Read all Viva Engage roles and role memberships",
+        "Description": "Allows the app to list all Viva Engage roles and role memberships without a signed-in user.",
+        "Value": "EngagementRole.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "4897f557-5d68-4827-8b0e-c7b983e911f1",
+        "DisplayName": "Modify Viva Engage role membership",
+        "Description": "Allows the app to assign Viva Engage role to a user, and remove a Viva Engage role from a user without a signed-in user.",
+        "Value": "EngagementRole.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "e52ccd5f-74f3-45ef-bb4c-0464d43522cf",
+        "DisplayName": "Read Viva Engage roles",
+        "Description": "Allows the app to list Viva Engage roles without a signed-in user.",
+        "Value": "EngagementRole.Read",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -39348,6 +39348,12 @@
   {
     "AppId": "d209f6fa-3839-4d70-b83f-60b1c64d0e8f",
     "AppDisplayName": "MicrosoftEntraSecurityGroupEnableMIPLabels",
+    "AppOwnerOrganizationId": "",
+    "Source": "EntraDocs"
+  },
+  {
+    "AppId": "1412d89f-b8a8-4111-b4fd-e82905cbd85d",
+    "AppDisplayName": "Microsoft.AzureStackHCI Provider",
     "AppOwnerOrganizationId": "",
     "Source": "EntraDocs"
   }
