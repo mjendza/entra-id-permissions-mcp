@@ -703,6 +703,13 @@
     "Source": "Graph"
   },
   {
+    "AppId": "e64ac7a3-442c-4edb-8f5b-ed1360760258",
+    "AppDisplayName": "Advisor Insights",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
+    "Source": "Graph"
+  },
+  {
     "AppId": "ac6dbf5e-1087-4434-beb2-0ebf7bd1b883",
     "AppDisplayName": "Microsoft Defender for Cloud Apps - Customer Experience",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
@@ -13232,10 +13239,10 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
-        "Id": "b8a8280c-fe24-4c24-8b5a-74e833c2c018",
-        "DisplayName": "Read user license details",
-        "Description": "Allows the app to read the user license details for all users in your organization.",
-        "Value": "UserLicense.Read.All",
+        "Id": "3ed42bc3-d6ed-4cf4-9531-d521e361223e",
+        "DisplayName": "Read or write user region",
+        "Description": "Allows the app to read or write the region for all users in your organization.",
+        "Value": "Region.ReadWrite.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -13254,10 +13261,10 @@
         "Origin": "Application"
       },
       {
-        "Id": "3ed42bc3-d6ed-4cf4-9531-d521e361223e",
-        "DisplayName": "Read or write user region",
-        "Description": "Allows the app to read or write the region for all users in your organization.",
-        "Value": "Region.ReadWrite.All",
+        "Id": "b8a8280c-fe24-4c24-8b5a-74e833c2c018",
+        "DisplayName": "Read user license details",
+        "Description": "Allows the app to read the user license details for all users in your organization.",
+        "Value": "UserLicense.Read.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -14903,6 +14910,13 @@
   {
     "AppId": "e807d0e2-91da-40d6-8cee-e33c91a0b051",
     "AppDisplayName": "PROD Microsoft Defender For Cloud Athena",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
+    "Source": "Graph"
+  },
+  {
+    "AppId": "8e008c98-2bef-4413-95e4-f65d71b27276",
+    "AppDisplayName": "Advisor SG Intelligence",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [],
     "Source": "Graph"
