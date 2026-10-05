@@ -1297,6 +1297,13 @@
     "Source": "Graph"
   },
   {
+    "AppId": "56177bc2-12ea-4456-9de3-510ae6f0fcc3",
+    "AppDisplayName": "AfcControlPlane",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
+    "Source": "Graph"
+  },
+  {
     "AppId": "1690c5aa-925a-4d0e-836b-722c795bd0d0",
     "AppDisplayName": "Group Configuration Processor",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
@@ -4438,7 +4445,30 @@
     "AppId": "a3dfc3c6-2c7d-4f42-aeec-b2877f9bce97",
     "AppDisplayName": "Microsoft Azure AD Identity Protection",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
-    "AppRoles": [],
+    "AppRoles": [
+      {
+        "Id": "70be0778-0406-4e29-9a59-8202bee90e63",
+        "DisplayName": "Read all CA policies",
+        "Description": "Allows the application to CA policy information without a signed-in user.",
+        "Value": "Policy.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "0c28ca26-b7ba-4a45-bd58-48432e56f93c",
+        "DisplayName": "Read all risky agents information",
+        "Description": "Allows the application to read risky agent information without a signed-in user.",
+        "Value": "IdentityRiskyAgent.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      }
+    ],
     "Source": "Graph"
   },
   {
@@ -12333,6 +12363,17 @@
         "DisplayName": "Run hunting queries and read shared saved hunting queries",
         "Description": "Allows the app to run hunting queries and read shared saved hunting queries, without a signed-in user.",
         "Value": "ThreatHunting.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "6e251752-0d87-4158-b87b-b60e768fa657",
+        "DisplayName": "Run hunting queries and manage all hunting functions",
+        "Description": "Allows the app to run hunting queries and to read and write hunting functions, without a signed-in user.",
+        "Value": "ThreatHunting.ReadWrite.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
