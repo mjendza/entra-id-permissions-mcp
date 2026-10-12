@@ -1,5 +1,5 @@
 import type { DataStore } from "./data.js";
-import { searchRecords } from "./search.js";
+import { createMatcher, searchRecords } from "./search.js";
 
 /**
  * Pure query functions backing the MCP tools. They take the loaded DataStore
@@ -108,7 +108,7 @@ export function getMicrosoftApp(data: DataStore, appId: string) {
 }
 
 export function searchAppRoles(data: DataStore, query: string, limit: number) {
-  const q = query.trim().toLowerCase();
+  const matcher = createMatcher(query);
   const matches: Array<{
     AppId: string;
     AppDisplayName: string;
@@ -118,12 +118,7 @@ export function searchAppRoles(data: DataStore, query: string, limit: number) {
 
   for (const app of data.microsoftApps) {
     for (const role of app.AppRoles) {
-      const hit =
-        q === "" ||
-        role.Value?.toLowerCase().includes(q) ||
-        role.DisplayName?.toLowerCase().includes(q) ||
-        role.Description?.toLowerCase().includes(q);
-      if (!hit) continue;
+      if (!matcher([role.Value, role.DisplayName, role.Description])) continue;
       total++;
       if (matches.length < limit) {
         matches.push({

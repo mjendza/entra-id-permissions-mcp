@@ -28,6 +28,22 @@ describe("searchRecords", () => {
     expect(r.totalMatches).toBe(items.length);
   });
 
+  it("ignores separators so hyphenated names match however they're typed", () => {
+    const tap = [{ name: "UserAuthMethod-TAP.Read.All", desc: "Read TAPs" }, ...items];
+    for (const q of ["UserAuthMethod-TAP", "userauthmethod tap", "UserAuthMethodTAP", "TAP.Read"]) {
+      expect(searchRecords(tap, q, fields, 25).totalMatches, q).toBe(1);
+    }
+  });
+
+  it("requires every whitespace-separated term to match", () => {
+    expect(searchRecords(items, "read mail", fields, 25).totalMatches).toBe(1);
+    expect(searchRecords(items, "read nothing", fields, 25).totalMatches).toBe(0);
+  });
+
+  it("treats a separator-only query as empty", () => {
+    expect(searchRecords(items, " - ", fields, 25).totalMatches).toBe(items.length);
+  });
+
   it("caps results at the limit and flags truncation", () => {
     const r = searchRecords(items, "", fields, 2);
     expect(r.returned).toBe(2);
