@@ -1227,6 +1227,25 @@
     "Source": "Graph"
   },
   {
+    "AppId": "73c2949e-da2d-457a-9607-fcc665198967",
+    "AppDisplayName": "Azure Purview",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [
+      {
+        "Id": "8d48872e-7710-4001-bfd0-7dac15c28f69",
+        "DisplayName": "Purview Application API Access",
+        "Description": "Allows the application to call Purview APIs without a signed-in user",
+        "Value": "Purview.ApplicationAccess",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      }
+    ],
+    "Source": "Graph"
+  },
+  {
     "AppId": "abbab087-6193-40ef-a96c-6be85a5f43a0",
     "AppDisplayName": "Azure Vmware Solutions RP Internal",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
@@ -1518,43 +1537,10 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
-        "Id": "16beb6e1-c277-4b64-97fa-5c90295a5c84",
-        "DisplayName": "Basic user",
-        "Description": "Can only access the things made available to them by their organization.",
-        "Value": "basicuser",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "cf498509-9a5c-4d83-aa26-2b70fcbd0e1c",
-        "DisplayName": "Basic purchaser",
-        "Description": "Can buy products for inventory, assign and reclaim licenses.",
-        "Value": "basicpurchaser",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "f75b6470-490d-4b7b-a084-15d2f79fcd26",
-        "DisplayName": "Administrator",
-        "Description": "Has all the permissions of Purchaser. Can also grant access, set permission levels, and change all settings and configurations.",
-        "Value": "bspadmin",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "20220577-b1fd-4061-bfed-05a068857ffc",
-        "DisplayName": "Purchaser",
-        "Description": "Can buy products for inventory, assign and reclaim licenses.",
-        "Value": "bsppurchaser",
+        "Id": "e4c00fbe-aea4-4c3b-b803-335d512be9d6",
+        "DisplayName": "Management Tool",
+        "Description": "A configured management tool can distribute app licenses that have been acquired in the Windows Store for Business Portal to users and devices within an organization.",
+        "Value": "bspmdm",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -1573,10 +1559,43 @@
         "Origin": "Application"
       },
       {
-        "Id": "e4c00fbe-aea4-4c3b-b803-335d512be9d6",
-        "DisplayName": "Management Tool",
-        "Description": "A configured management tool can distribute app licenses that have been acquired in the Windows Store for Business Portal to users and devices within an organization.",
-        "Value": "bspmdm",
+        "Id": "20220577-b1fd-4061-bfed-05a068857ffc",
+        "DisplayName": "Purchaser",
+        "Description": "Can buy products for inventory, assign and reclaim licenses.",
+        "Value": "bsppurchaser",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "f75b6470-490d-4b7b-a084-15d2f79fcd26",
+        "DisplayName": "Administrator",
+        "Description": "Has all the permissions of Purchaser. Can also grant access, set permission levels, and change all settings and configurations.",
+        "Value": "bspadmin",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "cf498509-9a5c-4d83-aa26-2b70fcbd0e1c",
+        "DisplayName": "Basic purchaser",
+        "Description": "Can buy products for inventory, assign and reclaim licenses.",
+        "Value": "basicpurchaser",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "16beb6e1-c277-4b64-97fa-5c90295a5c84",
+        "DisplayName": "Basic user",
+        "Description": "Can only access the things made available to them by their organization.",
+        "Value": "basicuser",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -1875,6 +1894,17 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
+        "Id": "68c6d621-ef73-4169-82d9-8a3e930a2087",
+        "DisplayName": "Have full access to the Chat Service Aggregator",
+        "Description": "Allow application full access to the Chat service aggregator on behalf of the signed-in user",
+        "Value": "user_impersonation",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
         "Id": "811e23df-61a9-44db-9987-e37355ae33b1",
         "DisplayName": "nodeaccess.read.all",
         "Description": "Allows read all on node access",
@@ -1978,17 +2008,6 @@
         "DisplayName": "Read all filtered hierarchy",
         "Description": "Allow reading of all filtered hierarchy",
         "Value": "filteredhierarchy.read.all",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "68c6d621-ef73-4169-82d9-8a3e930a2087",
-        "DisplayName": "Have full access to the Chat Service Aggregator",
-        "Description": "Allow application full access to the Chat service aggregator on behalf of the signed-in user",
-        "Value": "user_impersonation",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -2340,406 +2359,10 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
-        "Id": "113266d1-e11d-43ec-9d1e-c9dd24a16cdf",
-        "DisplayName": "Read additional enrollment properties",
-        "Description": "Allows to read additional enrollment properties without a signed-in user.",
-        "Value": "Enrollment.Metadata.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "08cbda10-873a-454f-a545-4fda65db0aef",
-        "DisplayName": "Read publisher details related to enrollment",
-        "Description": "Allows to read publisher details related to an enrollment without a signed-in user.",
-        "Value": "Enrollment.Publisher.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "dac34b97-f9b8-40eb-b313-349c89f853ae",
-        "DisplayName": "Read account digital certificates",
-        "Description": "Allows to read account digital certificates without a signed-in user.",
-        "Value": "Account.Metadata.DigitalCertificate.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "16f55ad4-8144-43fb-ae7b-d253915f8807",
-        "DisplayName": "Access account metadata",
-        "Description": "Allows to read account metadata",
-        "Value": "Account.Metadata.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "f23ee971-d902-41ca-a324-36342f0a5bef",
-        "DisplayName": "Access to the account role permissions",
-        "Description": "The permission allows access to the to the account role permissions.",
-        "Value": "Account.RoleAssignment.RoleDefinition.Permission.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "1a4e2bae-66b7-4ac4-8998-5695e855322c",
-        "DisplayName": "Access to the account role definition",
-        "Description": "The permission allows access to the to the account role definition",
-        "Value": "Account.RoleAssignment.RoleDefinition.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "a58a6c95-8f13-4688-ab37-5f75eac76107",
-        "DisplayName": "Access account role assignments",
-        "Description": "The permission allows access to the to the account role assignments.",
-        "Value": "Account.RoleAssignment.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "e0401743-cf09-41b9-bf88-aaa4cc027cd7",
-        "DisplayName": "Access Enrollment Status Transition data",
-        "Description": "The permission allows the app to access only the EnrollmentStatusTransition entities. The other child properties as mentioned will require specific permission for access along with Enrollment.StatusTransition.Read",
-        "Value": "Enrollment.StatusTransition.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "37d85f0a-a5b4-4471-8e4a-64ee27de4849",
-        "DisplayName": "Read user data",
-        "Description": "Allows to read data in directory, accounts, preferences, role assignments  without a signed-in user.",
-        "Value": "User.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "89fb7036-9cd4-4d2a-95a2-c629ea307c47",
-        "DisplayName": "Read all user basic data",
-        "Description": "Allows to read a basic data of other users in the tenant or account without a signed-in user.",
-        "Value": "User.ReadBasic.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "d7bb246d-057f-4526-8060-fe376567683d",
-        "DisplayName": "Read all user data",
-        "Description": "Allows to read all data in directory, accounts, preferences, role assignments  in the tenant without a signed-in user.",
-        "Value": "User.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "5939dfe2-a98c-4e6b-92bf-12cd2a1a9137",
-        "DisplayName": "Read tenant data",
-        "Description": "Allows to read all domain data without a signed-in user.",
-        "Value": "Tenant.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "a471ae2a-83ea-4b8b-b784-c4e6e89b98c0",
-        "DisplayName": "Read account data",
-        "Description": "Allows to read data in account without a signed-in user.",
-        "Value": "Account.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "1be96291-1800-4d30-ac71-5982dbb1f297",
-        "DisplayName": "Read all account data",
-        "Description": "Allows to read all account data without a signed-in user.",
-        "Value": "Account.Read.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "d8823cb8-bb0f-4615-9c28-f82688002802",
-        "DisplayName": "Read profile data",
-        "Description": "Allows to read profile data of the account without a signed-in user.",
-        "Value": "Account.Profile.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "fa743923-d777-4eb3-a1eb-9dd5295c565f",
-        "DisplayName": "Read profile address data",
-        "Description": "Allows to read the profile address of the account without a signed-in user.",
-        "Value": "Account.Profile.Address.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "af9d518a-e16f-4280-8039-0ec6b5fbc4eb",
-        "DisplayName": "Read profile verification data",
-        "Description": "Allows to read the profile verification data of the account/enrollment without a signed-in user.",
-        "Value": "Account.Profile.Verification.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "aca97bbb-0198-4c67-babc-2dbb6713d28d",
-        "DisplayName": "Read enrollment data",
-        "Description": "Allows to read all enrollment data without a signed-in user.",
-        "Value": "Enrollment.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "db00fd11-169d-4b06-b4ae-b10cfd7593d5",
-        "DisplayName": "Read enrollment verification data",
-        "Description": "Allows to read all enrollment verification data without a signed-in user.",
-        "Value": "Enrollment.Verification.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "923c1a20-7d93-4632-95ff-0cdac5a67825",
-        "DisplayName": "Read enrollment agreement data",
-        "Description": "Allows to read agreements data without a signed-in user.",
-        "Value": "Enrollment.Agreement.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "a157a6b9-90f1-4929-a399-340cd2584351",
-        "DisplayName": "Read program data",
-        "Description": "Allows to read programs without a signed-in user.",
-        "Value": "Program.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "d8c47afe-bc52-4c21-9194-82a61b80d00b",
-        "DisplayName": "Read Directory Object data of a user",
-        "Description": "The permission allows access to enter the DirectoryObject entity of graphQL and access the accessible fields of the object mentioned on the left for all users in case of Application token. In case of delegated token, only the entities for which the signed in user has access will be returned.",
-        "Value": "User.DirectoryObject.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "4cd8c7df-57ab-4fc5-9416-47482f47170f",
-        "DisplayName": "Read Role Assignment data of a user",
-        "Description": "The permission allows access to the RoleDefintion entity in GQL and access the fields directly for all the users in case of application token. In case of delegated token, only the entities for which the signed in user has access will be returned.\nThe other entities will require extra permissions to access custom properties.",
-        "Value": "User.RoleAssignment.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "3fdf65aa-36ad-4467-b81b-fd3cabf21bae",
-        "DisplayName": "Read User Preference data of a user",
-        "Description": "The permission allows access to the UserPreference entity in GQL and access the fields directly for all the users in case of application token. In case of delegated token, only the entities for which the signed in user has access will be returned.",
-        "Value": "User.UserPreference.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "258b6873-dfa5-4aa7-b9a2-8d5fd8212565",
-        "DisplayName": "Read Role definition data of the Role assignments of a user",
-        "Description": "The permission allows access to the RoleDefintion entity in GQL and access the fields directly for all the users in case of application token. In case of delegated token, only the entities for which the signed in user has access will be returned.\nThe other entities will require extra permissions to access custom properties.",
-        "Value": "User.RoleAssignment.RoleDefinition.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "e5906b35-9215-4fa6-917a-7e998234cbf4",
-        "DisplayName": "Read Permissions in Role definition data of the Role assignments of a user",
-        "Description": "The permission allows access to the Permissions entity in GQL and access the fields directly for all the users in case of application token. In case of delegated token, only the entities for which the signed in user has access will be returned.\nThe other entities will require extra permissions to access custom properties.",
-        "Value": "User.RoleAssignment.RoleDefinition.Permission.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "87068edc-81c7-445d-9dfa-ed02b6fa65ce",
-        "DisplayName": "Read the aggregate model for the enrollment",
-        "Description": "The permission allows access to the Enrollment Aggregate Model entity in GQL and access the fields directly for all the users in case of application token. In case of delegated token, only the entities for which the signed in user has access will be returned.\nThe other entities will require extra permissions to access custom properties.",
-        "Value": "Enrollment.AggregateModel.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "7a2d1e1e-f68d-40fd-a691-31ad57b5248f",
-        "DisplayName": "Read the Programs for the enrollment",
-        "Description": "The permission allows access to the Program entity in GQL and access the fields directly for all the users in case of application token. In case of delegated token, only the entities for which the signed in user has access will be returned.\nThe other entities will require extra permissions to access custom properties. ",
-        "Value": "Enrollment.Program.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "52317952-330e-4d79-9b32-3e67467bd65c",
-        "DisplayName": "Read the Vetting for the enrollment",
-        "Description": "The permission allows access to the Vetting entity in GQL and access the fields directly for all the users in case of application token. In case of delegated token, only the entities for which the signed in user has access will be returned.\nThe other entities will require extra permissions to access custom properties.",
-        "Value": "Enrollment.Vetting.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "c25a641c-2da3-4743-b07b-1fa16185d70c",
-        "DisplayName": "Read the Approval for the enrollment",
-        "Description": "The permission allows access to the Approval entity in GQL and access the fields directly for all the users in case of application token. In case of delegated token, only the entities for which the signed in user has access will be returned.\nThe other entities will require extra permissions to access custom properties.",
-        "Value": "Enrollment.Approval.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "c6af4589-67db-4af7-98f5-272e00227818",
-        "DisplayName": "Read the Agreement Signature for the account",
-        "Description": "The permission allows access to the Agreement signature entity in GQL and access the fields directly for all the users in case of application token. In case of delegated token, only the entities for which the signed in user has access will be returned.\nThe other entities will require extra permissions to access custom properties.",
-        "Value": "Account.AgreementSignature.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "85aa02b9-02da-4bb4-aa3b-2fda3dcdeb2b",
-        "DisplayName": "Read the Related data for the account",
-        "Description": "The permission allows access to the partner profile contact entity in GQL and access the fields directly for all the users in case of application token. In case of delegated token, only the entities for which the signed in user has access will be returned.\nThe other entities will require extra permissions to access custom properties.",
-        "Value": "Account.Related.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "a370cf36-fb1a-43d4-9a7e-503b99d10d88",
-        "DisplayName": "Read the Agreement Signature for the account",
-        "Description": "The permission allows access to the partner profile contact entity in GQL and access the fields directly for all the users in case of application token. In case of delegated token, only the entities for which the signed in user has access will be returned.\nThe other entities will require extra permissions to access custom properties.",
-        "Value": "Account.Profile.Contact.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "b02c7b82-e664-4451-a983-79ac1689d756",
-        "DisplayName": "Read domain verification data",
-        "Description": "Allows to read all domain verification data without a signed-in user.",
-        "Value": "Tenant.Verification.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "17fbdc49-23a5-4ee0-99a2-d5398766da2a",
-        "DisplayName": "Read Learning Profile data of a user",
-        "Description": "Allows the app to read User Learning profile entity for all the users, on your behalf.",
-        "Value": "User.LearningProfile.Read",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "4d1b8381-eb4d-4f04-baa0-b8a579ca9441",
-        "DisplayName": "Access legacy user id for the user",
-        "Description": "Allows the app to read the legacy user id field.",
-        "Value": "User.Read.UserId",
-        "IsEnabled": false,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "9e2ade61-037a-4b62-b3da-692c5d365dc8",
-        "DisplayName": "Access legacy user id for the user",
-        "Description": "Allows the app to read the legacy user id field.",
-        "Value": "User.UserId.Read",
+        "Id": "e4379901-face-4c29-8c1e-9f17503cda9c",
+        "DisplayName": "(Internal) Access all data",
+        "Description": "(Internal only) The permission allows access to enter all the Entities in the GraphQL service",
+        "Value": "Tardis.Read.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -2758,10 +2381,406 @@
         "Origin": "Application"
       },
       {
-        "Id": "e4379901-face-4c29-8c1e-9f17503cda9c",
-        "DisplayName": "(Internal) Access all data",
-        "Description": "(Internal only) The permission allows access to enter all the Entities in the GraphQL service",
-        "Value": "Tardis.Read.All",
+        "Id": "9e2ade61-037a-4b62-b3da-692c5d365dc8",
+        "DisplayName": "Access legacy user id for the user",
+        "Description": "Allows the app to read the legacy user id field.",
+        "Value": "User.UserId.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "4d1b8381-eb4d-4f04-baa0-b8a579ca9441",
+        "DisplayName": "Access legacy user id for the user",
+        "Description": "Allows the app to read the legacy user id field.",
+        "Value": "User.Read.UserId",
+        "IsEnabled": false,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "17fbdc49-23a5-4ee0-99a2-d5398766da2a",
+        "DisplayName": "Read Learning Profile data of a user",
+        "Description": "Allows the app to read User Learning profile entity for all the users, on your behalf.",
+        "Value": "User.LearningProfile.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "b02c7b82-e664-4451-a983-79ac1689d756",
+        "DisplayName": "Read domain verification data",
+        "Description": "Allows to read all domain verification data without a signed-in user.",
+        "Value": "Tenant.Verification.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "a370cf36-fb1a-43d4-9a7e-503b99d10d88",
+        "DisplayName": "Read the Agreement Signature for the account",
+        "Description": "The permission allows access to the partner profile contact entity in GQL and access the fields directly for all the users in case of application token. In case of delegated token, only the entities for which the signed in user has access will be returned.\nThe other entities will require extra permissions to access custom properties.",
+        "Value": "Account.Profile.Contact.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "85aa02b9-02da-4bb4-aa3b-2fda3dcdeb2b",
+        "DisplayName": "Read the Related data for the account",
+        "Description": "The permission allows access to the partner profile contact entity in GQL and access the fields directly for all the users in case of application token. In case of delegated token, only the entities for which the signed in user has access will be returned.\nThe other entities will require extra permissions to access custom properties.",
+        "Value": "Account.Related.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "c6af4589-67db-4af7-98f5-272e00227818",
+        "DisplayName": "Read the Agreement Signature for the account",
+        "Description": "The permission allows access to the Agreement signature entity in GQL and access the fields directly for all the users in case of application token. In case of delegated token, only the entities for which the signed in user has access will be returned.\nThe other entities will require extra permissions to access custom properties.",
+        "Value": "Account.AgreementSignature.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "c25a641c-2da3-4743-b07b-1fa16185d70c",
+        "DisplayName": "Read the Approval for the enrollment",
+        "Description": "The permission allows access to the Approval entity in GQL and access the fields directly for all the users in case of application token. In case of delegated token, only the entities for which the signed in user has access will be returned.\nThe other entities will require extra permissions to access custom properties.",
+        "Value": "Enrollment.Approval.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "52317952-330e-4d79-9b32-3e67467bd65c",
+        "DisplayName": "Read the Vetting for the enrollment",
+        "Description": "The permission allows access to the Vetting entity in GQL and access the fields directly for all the users in case of application token. In case of delegated token, only the entities for which the signed in user has access will be returned.\nThe other entities will require extra permissions to access custom properties.",
+        "Value": "Enrollment.Vetting.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "7a2d1e1e-f68d-40fd-a691-31ad57b5248f",
+        "DisplayName": "Read the Programs for the enrollment",
+        "Description": "The permission allows access to the Program entity in GQL and access the fields directly for all the users in case of application token. In case of delegated token, only the entities for which the signed in user has access will be returned.\nThe other entities will require extra permissions to access custom properties. ",
+        "Value": "Enrollment.Program.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "87068edc-81c7-445d-9dfa-ed02b6fa65ce",
+        "DisplayName": "Read the aggregate model for the enrollment",
+        "Description": "The permission allows access to the Enrollment Aggregate Model entity in GQL and access the fields directly for all the users in case of application token. In case of delegated token, only the entities for which the signed in user has access will be returned.\nThe other entities will require extra permissions to access custom properties.",
+        "Value": "Enrollment.AggregateModel.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "e5906b35-9215-4fa6-917a-7e998234cbf4",
+        "DisplayName": "Read Permissions in Role definition data of the Role assignments of a user",
+        "Description": "The permission allows access to the Permissions entity in GQL and access the fields directly for all the users in case of application token. In case of delegated token, only the entities for which the signed in user has access will be returned.\nThe other entities will require extra permissions to access custom properties.",
+        "Value": "User.RoleAssignment.RoleDefinition.Permission.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "258b6873-dfa5-4aa7-b9a2-8d5fd8212565",
+        "DisplayName": "Read Role definition data of the Role assignments of a user",
+        "Description": "The permission allows access to the RoleDefintion entity in GQL and access the fields directly for all the users in case of application token. In case of delegated token, only the entities for which the signed in user has access will be returned.\nThe other entities will require extra permissions to access custom properties.",
+        "Value": "User.RoleAssignment.RoleDefinition.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "3fdf65aa-36ad-4467-b81b-fd3cabf21bae",
+        "DisplayName": "Read User Preference data of a user",
+        "Description": "The permission allows access to the UserPreference entity in GQL and access the fields directly for all the users in case of application token. In case of delegated token, only the entities for which the signed in user has access will be returned.",
+        "Value": "User.UserPreference.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "4cd8c7df-57ab-4fc5-9416-47482f47170f",
+        "DisplayName": "Read Role Assignment data of a user",
+        "Description": "The permission allows access to the RoleDefintion entity in GQL and access the fields directly for all the users in case of application token. In case of delegated token, only the entities for which the signed in user has access will be returned.\nThe other entities will require extra permissions to access custom properties.",
+        "Value": "User.RoleAssignment.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "d8c47afe-bc52-4c21-9194-82a61b80d00b",
+        "DisplayName": "Read Directory Object data of a user",
+        "Description": "The permission allows access to enter the DirectoryObject entity of graphQL and access the accessible fields of the object mentioned on the left for all users in case of Application token. In case of delegated token, only the entities for which the signed in user has access will be returned.",
+        "Value": "User.DirectoryObject.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "a157a6b9-90f1-4929-a399-340cd2584351",
+        "DisplayName": "Read program data",
+        "Description": "Allows to read programs without a signed-in user.",
+        "Value": "Program.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "923c1a20-7d93-4632-95ff-0cdac5a67825",
+        "DisplayName": "Read enrollment agreement data",
+        "Description": "Allows to read agreements data without a signed-in user.",
+        "Value": "Enrollment.Agreement.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "db00fd11-169d-4b06-b4ae-b10cfd7593d5",
+        "DisplayName": "Read enrollment verification data",
+        "Description": "Allows to read all enrollment verification data without a signed-in user.",
+        "Value": "Enrollment.Verification.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "aca97bbb-0198-4c67-babc-2dbb6713d28d",
+        "DisplayName": "Read enrollment data",
+        "Description": "Allows to read all enrollment data without a signed-in user.",
+        "Value": "Enrollment.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "af9d518a-e16f-4280-8039-0ec6b5fbc4eb",
+        "DisplayName": "Read profile verification data",
+        "Description": "Allows to read the profile verification data of the account/enrollment without a signed-in user.",
+        "Value": "Account.Profile.Verification.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "fa743923-d777-4eb3-a1eb-9dd5295c565f",
+        "DisplayName": "Read profile address data",
+        "Description": "Allows to read the profile address of the account without a signed-in user.",
+        "Value": "Account.Profile.Address.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "d8823cb8-bb0f-4615-9c28-f82688002802",
+        "DisplayName": "Read profile data",
+        "Description": "Allows to read profile data of the account without a signed-in user.",
+        "Value": "Account.Profile.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "1be96291-1800-4d30-ac71-5982dbb1f297",
+        "DisplayName": "Read all account data",
+        "Description": "Allows to read all account data without a signed-in user.",
+        "Value": "Account.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "a471ae2a-83ea-4b8b-b784-c4e6e89b98c0",
+        "DisplayName": "Read account data",
+        "Description": "Allows to read data in account without a signed-in user.",
+        "Value": "Account.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "5939dfe2-a98c-4e6b-92bf-12cd2a1a9137",
+        "DisplayName": "Read tenant data",
+        "Description": "Allows to read all domain data without a signed-in user.",
+        "Value": "Tenant.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "d7bb246d-057f-4526-8060-fe376567683d",
+        "DisplayName": "Read all user data",
+        "Description": "Allows to read all data in directory, accounts, preferences, role assignments  in the tenant without a signed-in user.",
+        "Value": "User.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "89fb7036-9cd4-4d2a-95a2-c629ea307c47",
+        "DisplayName": "Read all user basic data",
+        "Description": "Allows to read a basic data of other users in the tenant or account without a signed-in user.",
+        "Value": "User.ReadBasic.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "37d85f0a-a5b4-4471-8e4a-64ee27de4849",
+        "DisplayName": "Read user data",
+        "Description": "Allows to read data in directory, accounts, preferences, role assignments  without a signed-in user.",
+        "Value": "User.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "e0401743-cf09-41b9-bf88-aaa4cc027cd7",
+        "DisplayName": "Access Enrollment Status Transition data",
+        "Description": "The permission allows the app to access only the EnrollmentStatusTransition entities. The other child properties as mentioned will require specific permission for access along with Enrollment.StatusTransition.Read",
+        "Value": "Enrollment.StatusTransition.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "a58a6c95-8f13-4688-ab37-5f75eac76107",
+        "DisplayName": "Access account role assignments",
+        "Description": "The permission allows access to the to the account role assignments.",
+        "Value": "Account.RoleAssignment.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "1a4e2bae-66b7-4ac4-8998-5695e855322c",
+        "DisplayName": "Access to the account role definition",
+        "Description": "The permission allows access to the to the account role definition",
+        "Value": "Account.RoleAssignment.RoleDefinition.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "f23ee971-d902-41ca-a324-36342f0a5bef",
+        "DisplayName": "Access to the account role permissions",
+        "Description": "The permission allows access to the to the account role permissions.",
+        "Value": "Account.RoleAssignment.RoleDefinition.Permission.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "16f55ad4-8144-43fb-ae7b-d253915f8807",
+        "DisplayName": "Access account metadata",
+        "Description": "Allows to read account metadata",
+        "Value": "Account.Metadata.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "dac34b97-f9b8-40eb-b313-349c89f853ae",
+        "DisplayName": "Read account digital certificates",
+        "Description": "Allows to read account digital certificates without a signed-in user.",
+        "Value": "Account.Metadata.DigitalCertificate.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "08cbda10-873a-454f-a545-4fda65db0aef",
+        "DisplayName": "Read publisher details related to enrollment",
+        "Description": "Allows to read publisher details related to an enrollment without a signed-in user.",
+        "Value": "Enrollment.Publisher.Read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "113266d1-e11d-43ec-9d1e-c9dd24a16cdf",
+        "DisplayName": "Read additional enrollment properties",
+        "Description": "Allows to read additional enrollment properties without a signed-in user.",
+        "Value": "Enrollment.Metadata.Read",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -3371,6 +3390,13 @@
   {
     "AppId": "d8c767ef-3e9a-48c4-aef9-562696539b39",
     "AppDisplayName": "Request Approvals Read Platform",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
+    "Source": "Graph"
+  },
+  {
+    "AppId": "9bc4cc98-c5f0-4916-b2ef-b55848ef0f48",
+    "AppDisplayName": "ptm-prod",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [],
     "Source": "Graph"
@@ -5656,6 +5682,28 @@
         "Origin": "Application"
       },
       {
+        "Id": "231187a1-75b7-4554-a255-682d4d4971e8",
+        "DisplayName": "Read trusted federated identity credential issuers",
+        "Description": "Allows the app to read the trusted federated credential issuers that can be used to restrict which identity providers must be used when configuring federated identity credentials, without a signed-in user.",
+        "Value": "AppFederatedCredentialIssuers.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "aa595073-8ce6-409a-8b9e-258e9faab0f3",
+        "DisplayName": "Read and write all trusted federated identity credential issuers",
+        "Description": "Allows the app to create, read, update, and delete the trusted federated credential issuers that can be used to restrict which identity providers must be used when configuring federated identity credentials, without a signed-in user",
+        "Value": "AppFederatedCredentialIssuers.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
         "Id": "3be0012a-cc4e-426b-895b-f9c836bf6381",
         "DisplayName": "Read and write the remote desktop security configuration for all apps",
         "Description": "Allows the app to read and write the remote desktop security configuration for all apps in your organization, without a signed-in user.",
@@ -7868,8 +7916,8 @@
       },
       {
         "Id": "56eda3c5-3834-4815-bd41-6f8fa1295247",
-        "DisplayName": "Read Preview jobs and snapshots",
-        "Description": "Allows the app to list the all the snapshots, jobs and enumerate the changes of a specific preview job, on behalf of the signed-in user.",
+        "DisplayName": "Read Entra Backup configuration, preview jobs, and snapshots",
+        "Description": "Allows the app to read the Entra Backup configuration, list snapshots and jobs, and enumerate the changes of a specific preview job.",
         "Value": "EntraBackup.Read.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
@@ -13987,6 +14035,28 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
+        "Id": "cdc5cfa5-1605-4ff3-be98-cf14f5bb4627",
+        "DisplayName": "CreditHoldReader",
+        "Description": "Credit Hold Reader",
+        "Value": "CreditHoldReader",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "25703bb7-1f48-4648-9715-1693bd55c29e",
+        "DisplayName": "CreditHoldManager",
+        "Description": "Credit Hold Manager",
+        "Value": "CreditHoldManager",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
         "Id": "1224c7b4-5fd0-40e8-a122-2fb278e6d012",
         "DisplayName": "FullTrustEAPartnerOrganizationsReader",
         "Description": "FullTrust EA Partner Organizations Reader",
@@ -15196,6 +15266,13 @@
     "Source": "Graph"
   },
   {
+    "AppId": "1387301c-59b7-4204-84b8-1b7559500626",
+    "AppDisplayName": "ptm-cp-prod",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
+    "Source": "Graph"
+  },
+  {
     "AppId": "607ece82-f922-494f-88b8-30effaf12214",
     "AppDisplayName": "Azure Machine Learning Compute",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
@@ -15362,10 +15439,10 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
-        "Id": "5184a2ce-115e-4318-9526-df3e39c2e839",
-        "DisplayName": "EndUser.Access",
-        "Description": "For IW service test",
-        "Value": "EndUser.Access",
+        "Id": "c107831b-9c28-4609-b219-a7b3fc5cc190",
+        "DisplayName": "Partner read and write cloud pc",
+        "Description": "Allows the partner app to read and write the properties of Cloud PCs, without a signed-in user.",
+        "Value": "CloudPC.PartnerReadWrite.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -15373,10 +15450,10 @@
         "Origin": "Application"
       },
       {
-        "Id": "c107831b-9c28-4609-b219-a7b3fc5cc190",
-        "DisplayName": "Partner read and write cloud pc",
-        "Description": "Allows the partner app to read and write the properties of Cloud PCs, without a signed-in user.",
-        "Value": "CloudPC.PartnerReadWrite.All",
+        "Id": "5184a2ce-115e-4318-9526-df3e39c2e839",
+        "DisplayName": "EndUser.Access",
+        "Description": "For IW service test",
+        "Value": "EndUser.Access",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
