@@ -527,6 +527,13 @@
     "Source": "Graph"
   },
   {
+    "AppId": "b3fa0115-39b3-4bec-8cc6-8c4fcd33e69d",
+    "AppDisplayName": "ZTNA Policy Service",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
+    "Source": "Graph"
+  },
+  {
     "AppId": "982bda36-4632-4165-a46a-9863b1bbcf7d",
     "AppDisplayName": "O365 Demeter",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
@@ -1370,10 +1377,10 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
-        "Id": "4e4d02ed-7e38-4f9d-aa08-12b14a713f5e",
-        "DisplayName": "View and modify forms",
-        "Description": "Allows the app to view and modify forms.",
-        "Value": "Forms.ReadWrite.All",
+        "Id": "5dadf886-6063-4169-a7a7-88a2a9f8f7cd",
+        "DisplayName": "View forms",
+        "Description": "Allows the app to view forms",
+        "Value": "Forms.Read.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -1381,10 +1388,10 @@
         "Origin": "Application"
       },
       {
-        "Id": "5dadf886-6063-4169-a7a7-88a2a9f8f7cd",
-        "DisplayName": "View forms",
-        "Description": "Allows the app to view forms",
-        "Value": "Forms.Read.All",
+        "Id": "4e4d02ed-7e38-4f9d-aa08-12b14a713f5e",
+        "DisplayName": "View and modify forms",
+        "Description": "Allows the app to view and modify forms.",
+        "Value": "Forms.ReadWrite.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -2216,6 +2223,13 @@
         "Origin": "Application"
       }
     ],
+    "Source": "Graph"
+  },
+  {
+    "AppId": "cd95b39f-eec0-4545-a845-c803e2542fb1",
+    "AppDisplayName": "Azure App Service Builder Control Plane",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
     "Source": "Graph"
   },
   {
@@ -3336,6 +3350,13 @@
   {
     "AppId": "0ef94e72-e4fc-4aa0-a8f4-ff27deb3e6eb",
     "AppDisplayName": "Teams NRT DLP Ingestion Service",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
+    "Source": "Graph"
+  },
+  {
+    "AppId": "a1c42e17-82a8-41a5-906d-3eaca8b54607",
+    "AppDisplayName": "Azure SRE Agent Id Application",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [],
     "Source": "Graph"
@@ -8387,6 +8408,17 @@
         "Origin": "Application"
       },
       {
+        "Id": "87f25f46-ce1e-47ed-935c-9d70b296f060",
+        "DisplayName": "Enable hard deletion protection settings",
+        "Description": "Allows the app to enable hard deletion protection settings on users, applications, groups, and service principals without a signed-in user. Requires Global Administrator or Backup Administrator role.",
+        "Value": "HardDeletionSetting.ReadWrite.Enable",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
         "Id": "5183ed5d-b7f8-4e9a-915e-dafb46b9cb62",
         "DisplayName": "Read all scenario health monitoring alert",
         "Description": "Allows the app to read all scenario health monitoring alerts, without a signed-in user.",
@@ -10745,6 +10777,83 @@
         "DisplayName": "Read and write all admin report settings",
         "Description": "Allows the app to read and update all admin report settings, such as whether to display concealed information in reports, without a signed-in user.",
         "Value": "ReportSettings.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "6ea4f0cd-532a-415b-b82f-9b9d84ca5cfd",
+        "DisplayName": "Read all resource policy assignments",
+        "Description": "Allows the app to read all resource policy assignments, without a signed-in user.",
+        "Value": "ResourcePolicyAssignment.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "4ebf7277-a0b3-4fb6-866e-9ade27c776c7",
+        "DisplayName": "Read and write all resource policy assignments",
+        "Description": "Allows the app to read and write all resource policy assignments, without a signed-in user.",
+        "Value": "ResourcePolicyAssignment.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "f5d5d13d-82db-4ee7-b7c9-4b9bc48299dc",
+        "DisplayName": "Read tenant resource policy configuration",
+        "Description": "Allows the app to read the tenant-wide resource policy configuration, including the configured privileged-read app ID, without a signed-in user.",
+        "Value": "ResourcePolicyConfiguration.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "f415468b-cf6a-4567-867d-a965e4d31e87",
+        "DisplayName": "Read and write tenant resource policy configuration",
+        "Description": "Allows the app to read and write the tenant-wide resource policy configuration, including setting the privileged-read app ID used by all fetch() calls during policy evaluation, without a signed-in user.",
+        "Value": "ResourcePolicyConfiguration.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "1de97903-f478-4d01-9cc2-b70fb1236a80",
+        "DisplayName": "Read all resource policy definitions",
+        "Description": "Allows the app to read all resource policy definitions, without a signed-in user.",
+        "Value": "ResourcePolicyDefinition.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "365dc158-5200-4b0e-9c5d-be9a2068cb4c",
+        "DisplayName": "Read and write all resource policy definitions",
+        "Description": "Allows the app to read and write all resource policy definitions, without a signed-in user.",
+        "Value": "ResourcePolicyDefinition.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "6642843d-a7e1-4fb6-9d68-9f7e75455c2b",
+        "DisplayName": "Evaluate resource policies",
+        "Description": "Allows the app to evaluate resource policies, without a signed-in user.",
+        "Value": "ResourcePolicyEvaluation.Read.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -14123,6 +14232,13 @@
   {
     "AppId": "409eb69a-5e20-4e1e-a8bf-c23300057950",
     "AppDisplayName": "Azure Container Apps Arc - Data Plane",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
+    "Source": "Graph"
+  },
+  {
+    "AppId": "5011132f-12d7-4327-bf50-7c522b0144dd",
+    "AppDisplayName": "MDA AppG DCS",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [],
     "Source": "Graph"
@@ -37344,6 +37460,12 @@
     "Source": "EntraDocs"
   },
   {
+    "AppId": "4f6144c0-a809-4c55-b3c8-7f9b7b15a1bf",
+    "AppDisplayName": "Partner Admin Reader",
+    "AppOwnerOrganizationId": "",
+    "Source": "EntraDocs"
+  },
+  {
     "AppId": "c15c22c0-9faf-424c-9b7e-bd91c06a240b",
     "AppDisplayName": "Account Owner",
     "AppOwnerOrganizationId": "",
@@ -38144,12 +38266,6 @@
   {
     "AppId": "c836cbdb-7a5b-44cc-a54f-564b4b486fc6",
     "AppDisplayName": "US Gov Portal App Id",
-    "AppOwnerOrganizationId": "",
-    "Source": "EntraDocs"
-  },
-  {
-    "AppId": "b3fa0115-39b3-4bec-8cc6-8c4fcd33e69d",
-    "AppDisplayName": "Global Secure Access Policy Service Resource Id",
     "AppOwnerOrganizationId": "",
     "Source": "EntraDocs"
   },
@@ -39926,6 +40042,42 @@
   {
     "AppId": "61d6811f-7544-4e75-a1e6-1c59c0383311",
     "AppDisplayName": "Fabric Platform CMK",
+    "AppOwnerOrganizationId": "",
+    "Source": "EntraDocs"
+  },
+  {
+    "AppId": "887c6b43-ba92-4adb-a82b-73670fc48dac",
+    "AppDisplayName": "Azure Durable task scheduler App ID",
+    "AppOwnerOrganizationId": "",
+    "Source": "EntraDocs"
+  },
+  {
+    "AppId": "30b00405-3b4e-4003-933c-0d96ce47d670",
+    "AppDisplayName": "Davis Instruments WeatherLink FarmBeats Connector",
+    "AppOwnerOrganizationId": "",
+    "Source": "EntraDocs"
+  },
+  {
+    "AppId": "92c174ac-8e41-4815-a1b7-d81b19ab03ce",
+    "AppDisplayName": "Discovery control-plane service App",
+    "AppOwnerOrganizationId": "",
+    "Source": "EntraDocs"
+  },
+  {
+    "AppId": "6388acc4-795e-43a9-a320-33075c1eb83b",
+    "AppDisplayName": "Azure Orbital Microsoft Planetary Computer Pro",
+    "AppOwnerOrganizationId": "",
+    "Source": "EntraDocs"
+  },
+  {
+    "AppId": "d828acde-4b48-47f5-a6e8-52460104a052",
+    "AppDisplayName": "Azure Automanage Account",
+    "AppOwnerOrganizationId": "",
+    "Source": "EntraDocs"
+  },
+  {
+    "AppId": "f3c21649-0979-4721-ac85-b0216b2cf413",
+    "AppDisplayName": "Microsoft.Azure.CertificateRegistration",
     "AppOwnerOrganizationId": "",
     "Source": "EntraDocs"
   }
