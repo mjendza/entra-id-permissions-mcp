@@ -972,6 +972,30 @@
     "AdditionalProperties": {}
   },
   {
+    "AdminConsentDescription": "Allows the app to read all security automation rules and runs, on behalf of the signed-in user.",
+    "AdminConsentDisplayName": "Read all security automation rules and runs",
+    "Id": "bca94595-72ec-4c72-9d5b-dd0161da49bb",
+    "IsEnabled": true,
+    "Origin": null,
+    "Type": "Admin",
+    "UserConsentDescription": "Allows the app to read all security automation rules and runs that you have access to.",
+    "UserConsentDisplayName": "Read all security automation rules and runs",
+    "Value": "AutomationRules.Read.All",
+    "AdditionalProperties": {}
+  },
+  {
+    "AdminConsentDescription": "Allows the app to read and write all security automation rules, and read their runs, on behalf of the signed-in user.",
+    "AdminConsentDisplayName": "Read and write all security automation rules",
+    "Id": "8319ce7f-47f7-4c79-b118-9690338f9356",
+    "IsEnabled": true,
+    "Origin": null,
+    "Type": "Admin",
+    "UserConsentDescription": "Allows the app to read and write all security automation rules, and read their runs, that you have access to.",
+    "UserConsentDisplayName": "Read and write all security automation rules",
+    "Value": "AutomationRules.ReadWrite.All",
+    "AdditionalProperties": {}
+  },
+  {
     "AdminConsentDescription": "Allows the app to read the backup configuration, and list of Microsoft 365 service resources to be backed-up, on behalf of the signed in user.",
     "AdminConsentDisplayName": "Read backup configuration policies",
     "Id": "444ed4b6-0554-4dc6-8e9c-3f9a34ee3ff6",
@@ -2073,6 +2097,18 @@
     "UserConsentDescription": "Allows the app to read, create, update, and delete your organization's Copilot spending policies on your behalf, including changing who receives a policy's spending alerts. Creating a policy also sets who it applies to, may take effect immediately and begin restricting how much users can spend, and may include selecting the billing method that funds it.",
     "UserConsentDisplayName": "Read and write Copilot spending policies",
     "Value": "CopilotCostManagement-Policy.ReadWrite.All",
+    "AdditionalProperties": {}
+  },
+  {
+    "AdminConsentDescription": "Allows the app to read the organization's aggregate Copilot cost data on behalf of the signed-in user, including its credit balance and usage and spending reports. It can also check Copilot cost export job status and download completed exports, which may contain full report details. This permission is separate from Reports.Read.All for Microsoft 365 Copilot usage reporting.",
+    "AdminConsentDisplayName": "Read Copilot cost reports and export results",
+    "Id": "db3b53cd-01a9-45db-8f48-b97de4e9e8ff",
+    "IsEnabled": true,
+    "Origin": null,
+    "Type": "Admin",
+    "UserConsentDescription": "Allows the app to read your organization's aggregate Copilot cost data on your behalf, including its Copilot credit balance and aggregate usage and spending reports, and to check and download the results of Copilot cost export jobs.",
+    "UserConsentDisplayName": "Read Copilot cost reports and export results",
+    "Value": "CopilotCostManagement-Reports.Read.All",
     "AdditionalProperties": {}
   },
   {
@@ -3240,14 +3276,14 @@
     "AdditionalProperties": {}
   },
   {
-    "AdminConsentDescription": "Allows the app to manage self-service entitlement management resources on behalf of the signed-in user.  This includes operations such as requesting access and approving access of others.",
-    "AdminConsentDisplayName": "Read and write entitlement management resources related to self-service operations",
+    "AdminConsentDescription": "Allows the app to manage self-service entitlement management resources on behalf of the signed-in user. This includes operations such as requesting access and approving access of others.",
+    "AdminConsentDisplayName": "Read and write your entitlement management access",
     "Id": "e9fdcbbb-8807-410f-b9ec-8d5468c7c2ac",
     "IsEnabled": true,
     "Origin": null,
     "Type": "User",
-    "UserConsentDescription": "Allows the app to create and manage self-service entitlement management resources that you have access to.  This includes operations such as requesting access and approving access for others.",
-    "UserConsentDisplayName": "Read and write self-service entitlement management resources",
+    "UserConsentDescription": "Allows the app to request, view, and cancel your access package assignments and view available access packages on your behalf.",
+    "UserConsentDisplayName": "Read and write your entitlement management access",
     "Value": "EntitlementMgmt-SubjectAccess.ReadWrite",
     "AdditionalProperties": {}
   },
@@ -4320,6 +4356,18 @@
     "AdditionalProperties": {}
   },
   {
+    "AdminConsentDescription": "Allows the app to read the attribute values the signed-in user can apply to a document.",
+    "AdminConsentDisplayName": "Read your information protection attribute assignments.",
+    "Id": "249ac77a-2c50-4a29-a441-5f5ea69e8dae",
+    "IsEnabled": true,
+    "Origin": null,
+    "Type": "User",
+    "UserConsentDescription": "Allows the app to read the attribute values you can apply to a document.",
+    "UserConsentDisplayName": "Read your information protection attribute assignments.",
+    "Value": "InfoProtectAttributeAssignment.Read",
+    "AdditionalProperties": {}
+  },
+  {
     "AdminConsentDescription": "Allows the app to read ABAC attribute assignments for users, on behalf of the signed-in user.",
     "AdminConsentDisplayName": "Read information protection attribute assignments.",
     "Id": "53216fbf-d31e-415b-9c4c-486a30f2aa8f",
@@ -5004,6 +5052,18 @@
     "AdditionalProperties": {}
   },
   {
+    "AdminConsentDescription": "Allows the app to connect to and call the Microsoft Graph Model Context Protocol (MCP) server on behalf of the signed-in user.",
+    "AdminConsentDisplayName": "Access the Microsoft Graph MCP server",
+    "Id": "e0cdafaf-ffab-413a-9fe4-c85afbe0fa56",
+    "IsEnabled": true,
+    "Origin": null,
+    "Type": "Admin",
+    "UserConsentDescription": "Allows the app to connect to the Microsoft Graph MCP server on your behalf.",
+    "UserConsentDisplayName": "Access the Microsoft Graph MCP server",
+    "Value": "MCP.Server.Access",
+    "AdditionalProperties": {}
+  },
+  {
     "AdminConsentDescription": "Allows the app to read the memberships of hidden groups and administrative units on behalf of the signed-in user, for those hidden groups and administrative units that the signed-in user has access to.",
     "AdminConsentDisplayName": "Read hidden memberships",
     "Id": "f6a3db3e-f7e8-4ed2-a414-557c8c9830be",
@@ -5661,6 +5721,30 @@
     "UserConsentDescription": "Allows the application to read and write tenant-wide people settings on your behalf.",
     "UserConsentDisplayName": "Read and write tenant-wide people settings",
     "Value": "PeopleSettings.ReadWrite.All",
+    "AdditionalProperties": {}
+  },
+  {
+    "AdminConsentDescription": "Allows the app to read Agentic Security resources, create sessions and request cancellation on behalf of the signed-in user, subject to the user's access.",
+    "AdminConsentDisplayName": "Read and manage Agentic Security sessions you can access",
+    "Id": "71c43817-a289-4216-ad88-2455ed77701b",
+    "IsEnabled": true,
+    "Origin": null,
+    "Type": "Admin",
+    "UserConsentDescription": "Allows the app to read Agentic Security resources, create sessions and request cancellation for those resources.",
+    "UserConsentDisplayName": "Read and manage Agentic Security sessions you can access",
+    "Value": "Perception.Manage.All",
+    "AdditionalProperties": {}
+  },
+  {
+    "AdminConsentDescription": "Allows the app to read Agentic Security playbook definitions, sessions, agent runs, inputs, outputs and messages on behalf of the signed-in user, subject to the user's access.",
+    "AdminConsentDisplayName": "Read Agentic Security resources you can access",
+    "Id": "51c03e79-bb86-4250-a33f-16ea4a002076",
+    "IsEnabled": true,
+    "Origin": null,
+    "Type": "Admin",
+    "UserConsentDescription": "Allows the app to read Agentic Security playbook definitions, sessions, agent runs, inputs, outputs and messages that you can access.",
+    "UserConsentDisplayName": "Read Agentic Security resources you can access",
+    "Value": "Perception.Read.All",
     "AdditionalProperties": {}
   },
   {
@@ -7077,6 +7161,30 @@
     "UserConsentDescription": "Allows the app to delete the eligible role-based access control (RBAC) assignments for your company's directory, on your behalf.",
     "UserConsentDisplayName": "Delete all eligible role assignments for your company's directory",
     "Value": "RoleEligibilitySchedule.Remove.Directory",
+    "AdditionalProperties": {}
+  },
+  {
+    "AdminConsentDescription": "Allows the app to read unified role definitions, multi-scope role assignments, and their resource scopes, on behalf of the signed-in user.",
+    "AdminConsentDisplayName": "Read unified role definitions and multi-scope role assignments",
+    "Id": "ffa1c477-c836-4612-a223-49d76538b939",
+    "IsEnabled": true,
+    "Origin": null,
+    "Type": "Admin",
+    "UserConsentDescription": "Allows the app to read unified role definitions, multi-scope role assignments, and their resource scopes, on your behalf.",
+    "UserConsentDisplayName": "Read unified role definitions and multi-scope role assignments",
+    "Value": "RoleManagement-Authorization.Read.All",
+    "AdditionalProperties": {}
+  },
+  {
+    "AdminConsentDescription": "Allows the app to create, read, update, and delete unified role definitions; create, read, and delete multi-scope role assignments; and create, read, update, and delete their resource scopes, on behalf of the signed-in user.",
+    "AdminConsentDisplayName": "Manage unified roles and multi-scope role assignments",
+    "Id": "3bce3dea-b39c-4580-a038-6e1d30d042cb",
+    "IsEnabled": true,
+    "Origin": null,
+    "Type": "Admin",
+    "UserConsentDescription": "Allows the app to create, read, update, and delete unified role definitions; create, read, and delete multi-scope role assignments; and create, read, update, and delete their resource scopes, on your behalf.",
+    "UserConsentDisplayName": "Manage unified roles and multi-scope role assignments",
+    "Value": "RoleManagement-Authorization.ReadWrite.All",
     "AdditionalProperties": {}
   },
   {

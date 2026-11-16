@@ -897,25 +897,6 @@
     "Source": "Graph"
   },
   {
-    "AppId": "bc56af95-7a3b-459f-98a9-bd86532b0e89",
-    "AppDisplayName": "EntraGDAP",
-    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
-    "AppRoles": [
-      {
-        "Id": "300da3a8-12a5-4d2e-a63a-43565cd8dfa8",
-        "DisplayName": "EntraXTAP.All",
-        "Description": "Allows access to all EntraXTAP APIs",
-        "Value": "EntraXTAP.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      }
-    ],
-    "Source": "Graph"
-  },
-  {
     "AppId": "a766fecb-91ef-4d42-8bd3-41a61b3eb0e5",
     "AppDisplayName": "AzS VIS Prod App",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
@@ -3650,7 +3631,7 @@
   },
   {
     "AppId": "792f12a3-4a76-40f7-9037-7cdf6ac226af",
-    "AppDisplayName": "Engage Grouper",
+    "AppDisplayName": "Engage Membership Manager",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [],
     "Source": "Graph"
@@ -4743,21 +4724,10 @@
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [
       {
-        "Id": "d5760789-170d-4f8a-aafd-a03522e38f43",
-        "DisplayName": "Intune Windows Updates Sync Management",
-        "Description": "Allows the application to manage synchronization of Windows Updates from Intune",
-        "Value": "WindowsUpdates.IntuneSync.All",
-        "IsEnabled": true,
-        "AllowedMemberTypes": [
-          "Application"
-        ],
-        "Origin": "Application"
-      },
-      {
-        "Id": "50d736c0-5102-4a54-b3f6-95509aae4293",
-        "DisplayName": "Microsoft Managed Desktop Support Manager",
-        "Description": "Allows read and write access to Microsoft Managed Desktop support tools",
-        "Value": "MmdSupport.ReadWrite",
+        "Id": "318a1541-71b6-4e1e-ab46-874e6095cdfa",
+        "DisplayName": "Microsoft Managed Desktop Device Enroller",
+        "Description": "Allows full access to Microsoft Managed Desktop device enrollment content",
+        "Value": "MmdDeviceEnroller.ReadWrite",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application",
@@ -4766,21 +4736,22 @@
         "Origin": "Application"
       },
       {
-        "Id": "cc7c4bbe-899d-4d36-931e-acd7450e2257",
-        "DisplayName": "Microsoft Managed Desktop Security Manager",
-        "Description": "Allows full access to Microsoft Managed Desktop security content",
-        "Value": "MmdSecurityManager.ReadWrite",
+        "Id": "1dcf702a-7efe-47e6-961f-68634c4a4ecd",
+        "DisplayName": "MMD Application Tester",
+        "Description": "Allows access to MMD application tester content",
+        "Value": "MmdAppTester.ReadWrite",
         "IsEnabled": true,
         "AllowedMemberTypes": [
+          "Application",
           "User"
         ],
         "Origin": "Application"
       },
       {
-        "Id": "e2b1b7fd-b461-407c-acc6-4a2f357fc161",
-        "DisplayName": "Microsoft Managed Desktop Service Reader",
-        "Description": "Allows read access to Microsoft Managed Desktop service content",
-        "Value": "MmdServiceAdmin.Read",
+        "Id": "c6590ff6-a8c9-4a49-a7df-97e6a0bf8025",
+        "DisplayName": "MMD Support Partner",
+        "Description": "Allows full access to MMD support partner content",
+        "Value": "MmdSupportPartner.ReadWrite",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "User"
@@ -4799,10 +4770,10 @@
         "Origin": "Application"
       },
       {
-        "Id": "c6590ff6-a8c9-4a49-a7df-97e6a0bf8025",
-        "DisplayName": "MMD Support Partner",
-        "Description": "Allows full access to MMD support partner content",
-        "Value": "MmdSupportPartner.ReadWrite",
+        "Id": "e2b1b7fd-b461-407c-acc6-4a2f357fc161",
+        "DisplayName": "Microsoft Managed Desktop Service Reader",
+        "Description": "Allows read access to Microsoft Managed Desktop service content",
+        "Value": "MmdServiceAdmin.Read",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "User"
@@ -4810,10 +4781,21 @@
         "Origin": "Application"
       },
       {
-        "Id": "1dcf702a-7efe-47e6-961f-68634c4a4ecd",
-        "DisplayName": "MMD Application Tester",
-        "Description": "Allows access to MMD application tester content",
-        "Value": "MmdAppTester.ReadWrite",
+        "Id": "cc7c4bbe-899d-4d36-931e-acd7450e2257",
+        "DisplayName": "Microsoft Managed Desktop Security Manager",
+        "Description": "Allows full access to Microsoft Managed Desktop security content",
+        "Value": "MmdSecurityManager.ReadWrite",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "User"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "50d736c0-5102-4a54-b3f6-95509aae4293",
+        "DisplayName": "Microsoft Managed Desktop Support Manager",
+        "Description": "Allows read and write access to Microsoft Managed Desktop support tools",
+        "Value": "MmdSupport.ReadWrite",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application",
@@ -4822,14 +4804,13 @@
         "Origin": "Application"
       },
       {
-        "Id": "318a1541-71b6-4e1e-ab46-874e6095cdfa",
-        "DisplayName": "Microsoft Managed Desktop Device Enroller",
-        "Description": "Allows full access to Microsoft Managed Desktop device enrollment content",
-        "Value": "MmdDeviceEnroller.ReadWrite",
+        "Id": "d5760789-170d-4f8a-aafd-a03522e38f43",
+        "DisplayName": "Intune Windows Updates Sync Management",
+        "Description": "Allows the application to manage synchronization of Windows Updates from Intune",
+        "Value": "WindowsUpdates.IntuneSync.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
-          "Application",
-          "User"
+          "Application"
         ],
         "Origin": "Application"
       }
@@ -6035,6 +6016,28 @@
         "Origin": "Application"
       },
       {
+        "Id": "d80433ba-c09b-4b88-a6bf-1082396453c1",
+        "DisplayName": "Read all security automation rules and runs",
+        "Description": "Allows the app to read all security automation rules and runs, without a signed-in user.",
+        "Value": "AutomationRules.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "7204d4f0-1c22-42ce-adf2-a9f29db01c68",
+        "DisplayName": "Read and write all security automation rules",
+        "Description": "Allows the app to read and write all security automation rules, and read their runs, without a signed-in user.",
+        "Value": "AutomationRules.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
         "Id": "5fbb5982-3230-4882-93c0-2167523ce0c2",
         "DisplayName": "Read all backup configuration policies",
         "Description": "Allows the app to read all backup configurations, and lists of Microsoft 365 service resources to be backed-up, without a signed-in user.",
@@ -6805,6 +6808,17 @@
         "Origin": "Application"
       },
       {
+        "Id": "4c0843c0-d623-4e87-b4c1-93777f7be9e8",
+        "DisplayName": "Claim and unclaim cloud licenses",
+        "Description": "Allows an approved app to claim and unclaim supported product licenses for users in the tenant, without a signed-in user.",
+        "Value": "CloudLicensing.ClaimLicenses.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
         "Id": "a9e09520-8ed4-4cde-838e-4fdea192c227",
         "DisplayName": "Read Cloud PCs",
         "Description": "Allows the app to read the properties of Cloud PCs, without a signed-in user.",
@@ -7007,6 +7021,72 @@
         "DisplayName": "Read contracts",
         "Description": "Allows the app to read available properties on contracts, without a signed-in user.",
         "Value": "Contracts.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "8e41e0e4-d03a-475a-8ece-129d8cde33f2",
+        "DisplayName": "Read Copilot spending policy assignments",
+        "Description": "Allows the app to read which users and security groups each Copilot spending policy applies to, without a signed-in user. This exposes the identifiers of the security groups and the users that are targeted by each policy.",
+        "Value": "CopilotCostManagement-Assignment.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "e8d341e1-ddd7-422e-83ee-b3cd34f21d0a",
+        "DisplayName": "Read and write Copilot spending policy assignments",
+        "Description": "Allows the app to read and change which users and security groups each Copilot spending policy applies to, without a signed-in user. Adding or removing an assignment immediately changes which users are subject to that policy's spending limits, and may grant or remove their ability to consume Copilot credits. This also exposes the identifiers of the security groups targeted by each policy.",
+        "Value": "CopilotCostManagement-Assignment.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "7f06c49d-bf28-43b5-bad0-0805f51d0bf7",
+        "DisplayName": "Read Copilot spending policies",
+        "Description": "Allows the app to read Copilot spending policies and their configuration without a signed-in user, including budget limits and alert thresholds. This also exposes the identities of the users who created and last modified each policy and of the users who receive its alert notifications.",
+        "Value": "CopilotCostManagement-Policy.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "14b35599-28a4-4a40-bc65-7cdca3d4e141",
+        "DisplayName": "Read and write Copilot spending policies",
+        "Description": "Allows the app to read, create, update, and delete Copilot spending policies without a signed-in user. It can set the initial audience, read and change alert recipients, and select a billing method. New or changed policies may take effect immediately and restrict user spending. The app can also see who created and last modified each policy.",
+        "Value": "CopilotCostManagement-Policy.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "ec42fb68-397f-40ab-baa1-c8d0b745a680",
+        "DisplayName": "Read Copilot cost reports and export results",
+        "Description": "Allows the app to read the organization's aggregate Copilot cost data without a signed-in user, including its credit balance and usage and spending reports. It can also check Copilot cost export job status and download completed exports, which may contain full report details. This permission is separate from Reports.Read.All for Microsoft 365 Copilot usage reporting.",
+        "Value": "CopilotCostManagement-Reports.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "f033faa1-6d51-46ba-824a-ad86f514eed1",
+        "DisplayName": "Read all Copilot cost management data",
+        "Description": "Allows the app to read all organizational Copilot cost management data without a signed-in user, including any user's credit balance, per-user rankings and itemized usage, usage by security group, spending policies, their configuration and assignments, and the identities of policy creators, modifiers, and alert recipients. This is the broadest Copilot cost management read permission.",
+        "Value": "CopilotCostManagement.Read.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -10989,6 +11069,28 @@
         "DisplayName": "Delete all eligible role assignments of your company's directory",
         "Description": "Delete all eligible privileged role-based access control (RBAC) assignments of your company's directory, without a signed-in user.",
         "Value": "RoleEligibilitySchedule.Remove.Directory",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "edca3046-3375-4d07-81a2-18dffcff6bc7",
+        "DisplayName": "Read unified role definitions and multi-scope role assignments",
+        "Description": "Allows the app to read unified role definitions, multi-scope role assignments, and their resource scopes, without a signed-in user.",
+        "Value": "RoleManagement-Authorization.Read.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "7c4d6288-8d2f-40e0-82ce-efa72265e9fb",
+        "DisplayName": "Manage unified roles and multi-scope role assignments",
+        "Description": "Allows the app to create, read, update, and delete unified role definitions; create, read, and delete multi-scope role assignments; and create, read, update, and delete their resource scopes, without a signed-in user.",
+        "Value": "RoleManagement-Authorization.ReadWrite.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -40135,6 +40237,12 @@
   {
     "AppId": "09041fae-0b25-ec11-b6e6-000d3a4f0858",
     "AppDisplayName": "AI Services community forum",
+    "AppOwnerOrganizationId": "",
+    "Source": "EntraDocs"
+  },
+  {
+    "AppId": "0ec893e0-5785-4de6-99da-4ed124e5296c",
+    "AppDisplayName": "Microsoft Copilot desktop app ID",
     "AppOwnerOrganizationId": "",
     "Source": "EntraDocs"
   }
