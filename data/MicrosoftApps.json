@@ -2828,6 +2828,25 @@
     "Source": "Graph"
   },
   {
+    "AppId": "801546d2-55cc-4ff4-b66d-134b1208deb5",
+    "AppDisplayName": "Azure Commercial Services Tool - CST",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [
+      {
+        "Id": "801546d2-55cc-4ff4-b66d-134b1208deb5",
+        "DisplayName": "CST SP",
+        "Description": "CST SP",
+        "Value": "samples.read",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      }
+    ],
+    "Source": "Graph"
+  },
+  {
     "AppId": "aeb86249-8ea3-49e2-900b-54cc8e308f85",
     "AppDisplayName": "M365 License Manager",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
@@ -6017,8 +6036,8 @@
       },
       {
         "Id": "d80433ba-c09b-4b88-a6bf-1082396453c1",
-        "DisplayName": "Read all security automation rules and runs",
-        "Description": "Allows the app to read all security automation rules and runs, without a signed-in user.",
+        "DisplayName": "Read all security automation rules",
+        "Description": "Allows the app to read all security automation rules, without a signed-in user.",
         "Value": "AutomationRules.Read.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
@@ -6029,7 +6048,7 @@
       {
         "Id": "7204d4f0-1c22-42ce-adf2-a9f29db01c68",
         "DisplayName": "Read and write all security automation rules",
-        "Description": "Allows the app to read and write all security automation rules, and read their runs, without a signed-in user.",
+        "Description": "Allows the app to read and write all security automation rules, without a signed-in user.",
         "Value": "AutomationRules.ReadWrite.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
@@ -7063,7 +7082,7 @@
       {
         "Id": "14b35599-28a4-4a40-bc65-7cdca3d4e141",
         "DisplayName": "Read and write Copilot spending policies",
-        "Description": "Allows the app to read, create, update, and delete Copilot spending policies without a signed-in user. It can set the initial audience, read and change alert recipients, and select a billing method. New or changed policies may take effect immediately and restrict user spending. The app can also see who created and last modified each policy.",
+        "Description": "Allows the app to read, create, and update Copilot spending policies without a signed-in user. It can manage alert settings and recipients, set the initial audience, and select a billing method. New or changed policies may take effect immediately and restrict user spending. The app can also see who created and last modified each policy. Deleting a policy requires a signed-in administrator.",
         "Value": "CopilotCostManagement-Policy.ReadWrite.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
@@ -7085,7 +7104,7 @@
       {
         "Id": "f033faa1-6d51-46ba-824a-ad86f514eed1",
         "DisplayName": "Read all Copilot cost management data",
-        "Description": "Allows the app to read all organizational Copilot cost management data without a signed-in user, including any user's credit balance, per-user rankings and itemized usage, usage by security group, spending policies, their configuration and assignments, and the identities of policy creators, modifiers, and alert recipients. This is the broadest Copilot cost management read permission.",
+        "Description": "Allows the app to read the organization's Copilot credit balance and usage by service and funding class without a signed-in user, plus per-user rankings, security-group usage and raw per-user usage by service or activity session, with native session identifiers when available and first and last activity timestamps. Excludes individual user balances, spending policies and assignments.",
         "Value": "CopilotCostManagement.Read.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
@@ -7813,6 +7832,17 @@
         "DisplayName": "Read and write domains",
         "Description": "Allows the app to read and write all domain properties without a signed in user.  Also allows the app to add,  verify and remove domains.",
         "Value": "Domain.ReadWrite.All",
+        "IsEnabled": true,
+        "AllowedMemberTypes": [
+          "Application"
+        ],
+        "Origin": "Application"
+      },
+      {
+        "Id": "3d67268e-b577-45f4-8feb-347a5ca24a37",
+        "DisplayName": "Read all dynamic permission detections and remediation history",
+        "Description": "Allows the app to read dynamic permission detections and their remediation history across all catalogs in the organization, without a signed-in user. Does not allow configuration changes, remediation execution, or access to orchestration sessions, requests, or assignments.",
+        "Value": "DynamicPermissions.Read.DetectionAndRemediation",
         "IsEnabled": true,
         "AllowedMemberTypes": [
           "Application"
@@ -12859,8 +12889,8 @@
       },
       {
         "Id": "dd98c7f5-2d42-42d3-a0e4-633161547251",
-        "DisplayName": "Run hunting queries and read shared saved hunting queries",
-        "Description": "Allows the app to run hunting queries and read shared saved hunting queries, without a signed-in user.",
+        "DisplayName": "Run hunting queries and read schemas, shared queries, and functions",
+        "Description": "Allows the app to run hunting queries and read hunting schema tables, shared saved hunting queries, and built-in and shared saved hunting functions, without a signed-in user.",
         "Value": "ThreatHunting.Read.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
@@ -12870,8 +12900,8 @@
       },
       {
         "Id": "6e251752-0d87-4158-b87b-b60e768fa657",
-        "DisplayName": "Run hunting queries and manage all hunting functions",
-        "Description": "Allows the app to run hunting queries and to read and write hunting functions, without a signed-in user.",
+        "DisplayName": "Run hunting queries and manage shared hunting functions",
+        "Description": "Allows the app to run hunting queries and to read and write shared hunting functions, without a signed-in user.",
         "Value": "ThreatHunting.ReadWrite.All",
         "IsEnabled": true,
         "AllowedMemberTypes": [
@@ -14032,6 +14062,13 @@
   {
     "AppId": "9324e81a-10cf-4694-a355-4dae0905638c",
     "AppDisplayName": "SQL ADX Proxy",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
+    "Source": "Graph"
+  },
+  {
+    "AppId": "11cd3e2e-fccb-42ad-ad00-878b93575e07",
+    "AppDisplayName": "Automated Call Distribution",
     "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
     "AppRoles": [],
     "Source": "Graph"
@@ -17684,6 +17721,13 @@
         "Origin": "Application"
       }
     ],
+    "Source": "Graph"
+  },
+  {
+    "AppId": "64a7b174-5779-4506-b54c-fbb0d80f1c9b",
+    "AppDisplayName": "CMAT",
+    "AppOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "AppRoles": [],
     "Source": "Graph"
   },
   {
